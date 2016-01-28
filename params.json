@@ -1,7 +1,7 @@
 {
   "name": "梦里风林",
-  "tagline": "关于Android和一些其他的技术心得",
-  "body": "### Welcome to CwhGitHub Blog.\r\n（华南理工大学计算机学院陈伟航，现阶段主Android开发）\r\n\r\n##希望在这里记录下一些解决方案和心得。\r\n\r\n#   [android](hello-world.html)\r\n#   ubuntu\r\n#   github\r\n#   website\r\n#   etc \r\n\r\n",
+  "tagline": "Github是代码库，博客是记事本",
+  "body": "熟悉Android开发，也想学点java后台开发，学点web前端，学点go，学点Hadoop\r\n\r\n#   [android](hello-world.html)\r\n#   ubuntu\r\n#   github\r\n#   website\r\n#   etc \r\n\r\n",
   "google": "",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
