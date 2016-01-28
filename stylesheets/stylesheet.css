@@ -1,4 +1,5 @@
 * {
+    /*http://www.w3school.com.cn/cssref/pr_box-sizing.asp*/
     box-sizing: border-box;
 }
 
@@ -13,10 +14,12 @@ body {
 
 a {
     color: #1e6bb8;
+    /*http://www.w3school.com.cn/cssref/pr_text_text-decoration.asp*/
     text-decoration: none;
 }
 
 a:hover {
+    color: #3e8bd8;
     text-decoration: underline;
 }
 
@@ -27,6 +30,7 @@ a:hover {
     background-color: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 0.3rem;
+    /*http://www.w3school.com.cn/cssref/pr_transition.asp*/
     transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 }
 
@@ -40,7 +44,7 @@ a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     border-color: rgba(255, 255, 255, 0.3);
 }
-
+/*不同屏幕尺寸下的适配*/
 @media screen and (min-width: 64em) {
     .btn {
         padding: 0.75rem 1rem;
@@ -70,7 +74,9 @@ a:hover {
 
 .page-header {
     color: #fff;
+    /*文本对齐*/
     text-align: center;
+    /*线性渐变*/
     background: #159957 linear-gradient(120deg, #155799, #159957);
 }
 
@@ -119,6 +125,7 @@ a:hover {
     margin-bottom: 2rem;
     font-weight: normal;
     opacity: 0.7;
+/*不透明度*/
 }
 
 @media screen and (min-width: 64em) {
@@ -173,6 +180,8 @@ a:hover {
     margin-bottom: 1rem;
     font: 1rem Consolas, "Liberation Mono", Menlo, Courier, monospace;
     color: #567482;
+    /*是否换行*/
+    /*http://www.w3school.com.cn/cssref/pr_word-wrap.asp*/
     word-wrap: normal;
     background-color: #f3f6fa;
     border: solid 1px #dce6f0;
@@ -196,6 +205,8 @@ a:hover {
 
 .main-content .highlight pre {
     margin-bottom: 0;
+    /*http://www.w3school.com.cn/cssref/pr_word-break.asp*/
+    /*断字*/
     word-break: normal;
 }
 
@@ -208,6 +219,7 @@ a:hover {
 }
 
 .main-content pre code, .main-content pre tt {
+    /*http://www.w3school.com.cn/cssref/pr_class_display.asp*/
     display: inline;
     max-width: initial;
     padding: 0;
