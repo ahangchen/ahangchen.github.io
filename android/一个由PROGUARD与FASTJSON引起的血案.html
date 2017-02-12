@@ -1,0 +1,1004 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>一个由Proguard与FastJson引起的血案 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="note.html" />
+    
+    
+    <link rel="prev" href="Android_project结构.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Android
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="activity/">
+            
+                <a href="activity/">
+            
+                    
+                    activity
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="activity/Activity四种启动模式.html">
+            
+                <a href="activity/Activity四种启动模式.html">
+            
+                    
+                    Activity四种启动模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="activity/INTENT FLAG.html">
+            
+                <a href="activity/INTENT FLAG.html">
+            
+                    
+                    Intent Flag
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="activity/多TASK的应用.html">
+            
+                <a href="activity/多TASK的应用.html">
+            
+                    
+                    多task的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="activity/Task和回退栈.html">
+            
+                <a href="activity/Task和回退栈.html">
+            
+                    
+                    Task和回退栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="sqlite/">
+            
+                <a href="sqlite/">
+            
+                    
+                    sqlite
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="sqlite/从源码看ANDROID中SQLITE是怎么通过CURSORWINDOW读DB的.html">
+            
+                <a href="sqlite/从源码看ANDROID中SQLITE是怎么通过CURSORWINDOW读DB的.html">
+            
+                    
+                    【源码】CursorWindow读DB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="sqlite/SQLITE在ANDROID上的一个BUG.html">
+            
+                <a href="sqlite/SQLITE在ANDROID上的一个BUG.html">
+            
+                    
+                    Sqlite在Android上的一个Bug
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="chromium/">
+            
+                <a href="chromium/">
+            
+                    
+                    Chromium
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="listview_db.html">
+            
+                <a href="listview_db.html">
+            
+                    
+                    ListView读取DB数据最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="Android_project结构.html">
+            
+                <a href="Android_project结构.html">
+            
+                    
+                    Android Project结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.6" data-path="一个由PROGUARD与FASTJSON引起的血案.html">
+            
+                <a href="一个由PROGUARD与FASTJSON引起的血案.html">
+            
+                    
+                    一个由Proguard与FastJson引起的血案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="note.html">
+            
+                <a href="note.html">
+            
+                    
+                    琐碎的一些tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../ml/">
+            
+                <a href="../ml/">
+            
+                    
+                    Machine Learning
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../ml/reid.html">
+            
+                <a href="../ml/reid.html">
+            
+                    
+                    Re-identification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" >
+            
+                <a target="_blank" href="https://github.com/ahangchen/GDLNotes">
+            
+                    
+                    Tensorflow学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../ml/cvpr-reid.html">
+            
+                <a href="../ml/cvpr-reid.html">
+            
+                    
+                    CVPR-2016 Re-id
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../ml/mla_2016.html">
+            
+                <a href="../ml/mla_2016.html">
+            
+                    
+                    MLA2016笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../ml/zzh_ml_notes.html">
+            
+                <a href="../ml/zzh_ml_notes.html">
+            
+                    
+                    《机器学习》（周志华）读书笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../java/">
+            
+                <a href="../java/">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../java/java-web/note.html">
+            
+                <a href="../java/java-web/note.html">
+            
+                    
+                    java web
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../java/java-web/Servlet组织.html">
+            
+                <a href="../java/java-web/Servlet组织.html">
+            
+                    
+                    Servlet部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../java/java-web/note.html">
+            
+                <a href="../java/java-web/note.html">
+            
+                    
+                    琐碎的tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../java/jni/note.html">
+            
+                <a href="../java/jni/note.html">
+            
+                    
+                    JNI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../java/note.html">
+            
+                <a href="../java/note.html">
+            
+                    
+                    Note
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../java/ej/l1-new-delete.html">
+            
+                <a href="../java/ej/l1-new-delete.html">
+            
+                    
+                    Effective Java笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../python/">
+            
+                <a href="../python/">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../python/django/note.html">
+            
+                <a href="../python/django/note.html">
+            
+                    
+                    django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../python/raw.html">
+            
+                <a href="../python/raw.html">
+            
+                    
+                    原生模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../web-front/">
+            
+                <a href="../web-front/">
+            
+                    
+                    web前端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../web-front/head_content.html">
+            
+                <a href="../web-front/head_content.html">
+            
+                    
+                    header div固定，content div填充父容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../web-front/json_res.html">
+            
+                <a href="../web-front/json_res.html">
+            
+                    
+                    json接口资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../linux/note.html">
+            
+                <a href="../linux/note.html">
+            
+                    
+                    linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../linux/ubuntu_init.html">
+            
+                <a href="../linux/ubuntu_init.html">
+            
+                    
+                    Ubuntu安装与初始配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../UI/">
+            
+                <a href="../UI/">
+            
+                    
+                    UI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../kit/">
+            
+                <a href="../kit/">
+            
+                    
+                    kit
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../kit/vim/note.html">
+            
+                <a href="../kit/vim/note.html">
+            
+                    
+                    vim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../kit/git/note.html">
+            
+                <a href="../kit/git/note.html">
+            
+                    
+                    git/github
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.2.1" data-path="../kit/git/green_blush.html">
+            
+                <a href="../kit/git/green_blush.html">
+            
+                    
+                    刷爆github小绿点
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../kit/markdown/">
+            
+                <a href="../kit/markdown/">
+            
+                    
+                    Markdown/gitbook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.3.1" data-path="../kit/markdown/pieces.html">
+            
+                <a href="../kit/markdown/pieces.html">
+            
+                    
+                    琐碎知识点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.2" data-path="../kit/markdown/gitbook_disqus.html">
+            
+                <a href="../kit/markdown/gitbook_disqus.html">
+            
+                    
+                    gitbook添加disqus作为评论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3.3" data-path="../kit/markdown/chrome_mark2_md.html">
+            
+                <a href="../kit/markdown/chrome_mark2_md.html">
+            
+                    
+                    导出chrome书签为Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../thinking-in-program/">
+            
+                <a href="../thinking-in-program/">
+            
+                    
+                    thinking-in-program
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../thinking-in-program/log.html">
+            
+                <a href="../thinking-in-program/log.html">
+            
+                    
+                    怎样打日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../star.html">
+            
+                <a href="../star.html">
+            
+                    
+                    我的收藏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../pieces.html">
+            
+                <a href="../pieces.html">
+            
+                    
+                    琐记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../paper.html">
+            
+                <a href="../paper.html">
+            
+                    
+                    论文心得
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >一个由Proguard与FastJson引起的血案</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x4E00;&#x4E2A;&#x7531;proguard&#x4E0E;fastjson&#x5F15;&#x8D77;&#x7684;&#x8840;&#x6848;">&#x4E00;&#x4E2A;&#x7531;PROGUARD&#x4E0E;FASTJSON&#x5F15;&#x8D77;&#x7684;&#x8840;&#x6848;</h2>
+<p>&#x66F4;&#x65B0;&#x5FAE;&#x4FE1;sdk&#x5BFC;&#x81F4;ComposeData&#x4E2D;&#x7684;&#x5185;&#x90E8;&#x7C7B;ComposeDataSender&#x65B9;&#x6CD5;&#x88AB;&#x6DF7;&#x6DC6;</p>
+<p>&#x6839;&#x672C;&#x539F;&#x56E0;&#xFF0C;fastjson&#x4F7F;&#x7528;&#x59FF;&#x52BF;&#x4E0D;&#x5BF9;&#x3002;</p>
+<p><strong>&#x95EE;&#x9898;&#x63CF;&#x8FF0;&#xFF1A;</strong></p>
+<p>&#x4E00;&#x4E2A;&#x53D1;&#x4EF6;&#x4EBA;&#x5217;&#x8868;&#x91CC;&#xFF0C;&#x5E94;&#x5F53;&#x5448;&#x73B0;&#x7684;&#x6570;&#x636E;&#xFF08;&#x8FD9;&#x91CC;&#x547D;&#x540D;&#x4E3A;ComposeData&#xFF09;&#x4E3A;&#x7A7A;</p>
+<p>&#xFF08;1&#xFF09;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x5C42;</p>
+<p>&#x83B7;&#x53D6;&#x53D1;&#x4EF6;&#x4EBA;&#x5217;&#x8868;&#x65F6;&#xFF0C;&#x5982;&#x679C;Composedata&#x8D85;&#x65F6;&#xFF0C;&#x4F1A;&#x4ECE;&#x7F51;&#x7EDC;&#x91CD;&#x65B0;&#x62C9;&#x53D6;Json&#x683C;&#x5F0F;&#x7684;ComposeData&#xFF0C;&#x62C9;&#x53D6;&#x540E;&#x5229;&#x7528;FastJson&#x7684;toString()&#x65B9;&#x6CD5;&#xFF0C;&#x5C06;ComposeData&#x5199;&#x5165;DB&#x3002;</p>
+<p>&#x6DF7;&#x6DC6;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;toString()&#x751F;&#x6210;&#x7684;json&#x5B57;&#x7B26;&#x4E32;&#x4F1A;&#x7F3A;&#x5C11;alias&#x5B57;&#x6BB5;&#x3002;</p>
+<p><strong>&#x5B9A;&#x4F4D;&#x95EE;&#x9898;&#x5230;FastJson&#x7684;toString()&#x3002;</strong></p>
+<p>&#xFF08;2&#xFF09;FastJson&#x5C42;</p>
+<p>FastJson&#x6267;&#x884C;JSON&#x7C7B;&#x7684;toString()&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;</p>
+<p>&#x5BF9;&#x666E;&#x901A;&#x7684;Object&#x5BF9;&#x8C61;&#xFF08;&#x8FD9;&#x91CC;&#x662F;ComposeDataSender&#xFF09;&#xFF0C;&#x4F1A;&#x5C06;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x5F53;&#x505A;JavaBean&#x5BF9;&#x8C61;&#x5904;&#x7406;&#xFF0C;</p>
+<p>&#x5728;JavaBeanSerializer&#x4E2D;&#xFF0C;&#x627E;&#x5230;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;getter&#x65B9;&#x6CD5;&#xFF0C;</p>
+<p>&#x6765;&#x786E;&#x5B9A;&#x8981;&#x751F;&#x6210;&#x7684;Json&#x683C;&#x5F0F;&#x6570;&#x636E;&#x4E2D;&#xFF0C;K-V&#x7684;&#x503C;&#x3002;</p>
+<p>&#x5728;JavaBeanSerializer&#x4E2D;&#x6253;log&#xFF0C;&#x53D1;&#x73B0;&#x4E0D;&#x6DF7;&#x6DC6;&#x65F6;&#xFF0C;getter&#x6709;4&#x4E2A;&#xFF08;getNick(),getAlias(),getType(),getSignvalid()&#xFF09;&#xFF0C;&#x6DF7;&#x6DC6;&#x540E;&#xFF0C;&#x53EA;&#x627E;&#x5230;&#x4E00;&#x4E2A;getter&#xFF08;getType()&#xFF09;&#x3002;</p>
+<p><strong>&#x5B9A;&#x4F4D;&#x95EE;&#x9898;&#x5230;getter&#x65B9;&#x6CD5;&#x3002;</strong></p>
+<p>&#xFF08;3&#xFF09;&#x6DF7;&#x6DC6;&#x540E;&#x7684;ComposeDataSender</p>
+<p>&#x53CD;&#x7F16;&#x8BD1;&#x6CA1;&#x95EE;&#x9898;&#x7684;&#x65E7;&#x5305;&#x548C;&#x6709;&#x95EE;&#x9898;&#x7684;&#x65B0;&#x5305;&#xFF0C;</p>
+<p><strong>&#x53D1;&#x73B0;&#xFF0C; &#x65E7;&#x5305;&#x7684;ComposeDataSender&#x6709;getAlias()&#x548C;getType()&#x65B9;&#x6CD5;&#x548C;&#x4E00;&#x4E2A;&#x88AB;&#x6DF7;&#x6DC6;&#x540E;&#x7684;return this.XXX&#x65B9;&#x6CD5;&#xFF08;&#x6DF7;&#x6DC6;&#x524D;&#x4E3A;getNick()&#x65B9;&#x6CD5;&#xFF09;</strong></p>
+<p><strong>&#x65B0;&#x5305;&#x7684;ComposeDataSender&#x6709;getType()&#x65B9;&#x6CD5;&#x548C;&#x4E24;&#x4E2A;&#x88AB;&#x6DF7;&#x6DC6;&#x540E;&#x7684;return this.XXX&#x65B9;&#x6CD5;&#xFF08;&#x6DF7;&#x6DC6;&#x524D;&#x4E3A;getNick(),getAlias()&#x65B9;&#x6CD5;&#xFF09;
+</strong></p>
+<p>&#x5BFC;&#x81F4;&#x53D1;&#x4EF6;&#x4EBA;&#x5217;&#x8868;&#x4E3A;&#x7A7A;&#x7684;&#x539F;&#x56E0;&#xFF1A;</p>
+<p>&#x83B7;&#x53D6;&#x53D1;&#x4EF6;&#x4EBA;&#x5217;&#x8868;&#x65F6;&#xFF0C;&#x4F9D;&#x8D56;&#x4E8E;&#x9700;&#x8981;&#x8BFB;&#x53D6;DB&#x4E2D;&#x7684;&#x5404;&#x4E2A;&#x522B;&#x540D;&#x5E10;&#x53F7;&#x7684;alias&#x548C;type &#xFF0C;</p>
+<p>&#x65E7;&#x5305;&#x4E2D;&#xFF0C;getAlias()&#x548C;getType()&#x65B9;&#x6CD5;&#x6CA1;&#x6709;&#x6DF7;&#x6DC6;&#xFF0C;toString()&#x65F6;&#x5B58;&#x5165;DB&#x7684;&#x6570;&#x636E;&#x662F;&#x53EF;&#x7528;&#x7684;&#xFF08;&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;nick&#x5B57;&#x6BB5;&#x5728;4.1.1&#x4E5F;&#x4E22;&#x5931;&#x4E86;&#xFF0C;&#x4F46;&#x7531;&#x4E8E;&#x6CA1;&#x6709;&#x4F7F;&#x7528;&#x5230;&#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#xFF0C;&#x4E0D;&#x4F1A;&#x5F15;&#x8D77;&#x95EE;&#x9898;&#xFF09;</p>
+<p>&#x65B0;&#x5305;&#x4E2D;&#xFF0C;getType()&#x65B9;&#x6CD5;&#x6CA1;&#x6709;&#x6DF7;&#x6DC6;&#xFF0C;&#x5176;&#x4ED6;getter&#x88AB;&#x6DF7;&#x6DC6;&#xFF0C;toString()&#x5B58;&#x5165;DB&#x7684;&#x6570;&#x636E;&#x53EA;&#x6709;type&#xFF08;&#x4E22;&#x5931;&#x4E86;nick&#xFF0C;alias&#xFF09;&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x83B7;&#x53D6;&#x53D1;&#x4EF6;&#x4EBA;&#x5217;&#x8868;&#x65F6;&#xFF0C;alias&#x4E3A;&#x7A7A;</p>
+<p>&#xFF08;4&#xFF09;&#x65B0;&#x5305;&#x4E22;&#x5931;alias&#x5206;&#x6790;</p>
+<p>&#x5728;&#x53CD;&#x7F16;&#x8BD1;&#x540E;&#x7684;&#x65E7;&#x5305;&#x6240;&#x6709;&#x4EE3;&#x7801;&#x4E2D;&#x4E2D;&#x67E5;&#x627E;getAlias()</p>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x5230;mm.sdk.contact&#x4E2D;&#x6709;RContact&#x8FD9;&#x4E2A;&#x7C7B;&#xFF0C;&#x5305;&#x542B;&#x4E86;getAlias&#x65B9;&#x6CD5;&#xFF0C;&#x56E0;&#x4E3A;&#x662F;&#x7B2C;&#x4E09;&#x65B9;&#x5E93;&#xFF0C;&#x5176;&#x4E2D;public&#x7684;getAlias&#x65B9;&#x6CD5;&#x6CA1;&#x6709;&#x88AB;&#x6DF7;&#x6DC6;&#xFF0C;</p>
+<p>&#x56E0;&#x4E3A;proguard&#x6DF7;&#x6DC6;&#x65F6;&#xFF0C;&#x540C;&#x540D;&#x7684;&#x65B9;&#x6CD5;&#xFF08;&#x4E0D;&#x8BBA;&#x662F;&#x5426;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x7C7B;&#x4E2D;&#xFF09;&#x662F;&#x88AB;&#x66FF;&#x6362;&#x4E3A;&#x76F8;&#x540C;&#x7684;&#x540D;&#x5B57;&#xFF0C;&#xFF08;&#x53EF;&#x4EE5;&#x67E5;&#x770B;~\build\outputs\mapping\debug\mapping.txt&#x67E5;&#x770B;&#x6DF7;&#x6DC6;&#x65F6;&#x53D8;&#x91CF;&#x548C;&#x65B9;&#x6CD5;&#x7684;&#x66FF;&#x6362;&#x89C4;&#x5219;&#xFF09;</p>
+<p>&#x6240;&#x4EE5;&#xFF0C;&#x4EE3;&#x7801;&#x4E2D;&#x6240;&#x6709;getAlias&#x65B9;&#x6CD5;&#x90FD;&#x6CA1;&#x6709;&#x88AB;&#x6DF7;&#x6DC6;&#xFF0C;&#xFF08;&#x76F8;&#x540C;&#x7684;&#x60C5;&#x51B5;&#x8FD8;&#x53EF;&#x4EE5;&#x5728;ComposeDataSender&#x91CC;&#x770B;&#x5230;&#xFF0C;accountId&#x5C5E;&#x6027;&#x867D;&#x7136;&#x662F;&#x79C1;&#x6709;&#x7684;&#xFF0C;&#x4F46;&#x4E5F;&#x6CA1;&#x6709;&#x88AB;&#x6DF7;&#x6DC6;&#xFF09;</p>
+<p>&#x800C;&#x65B0;&#x5305;&#x4E2D;&#xFF0C;&#x66F4;&#x65B0;&#x4E86;mm.sdk&#xFF0C;&#x53BB;&#x6389;&#x4E86;RContact&#x8FD9;&#x4E2A;&#x7C7B;&#xFF0C;&#x6CA1;&#x6709;getAlias&#x65B9;&#x6CD5;&#xFF0C;&#x6240;&#x4EE5;ComposeDataSender&#x91CC;&#x7684;getAlias&#x88AB;&#x6DF7;&#x6DC6;</p>
+<p>&#x800C;getType()&#x6CA1;&#x6709;&#x4E22;&#x5931;&#xFF1A;</p>
+<p>&#x67E5;&#x627E;getType()&#x65B9;&#x6CD5;&#xFF0C;&#x53D1;&#x73B0;&#x5728;&#x65B0;&#x5305;&#x6216;&#x65E7;&#x5305;&#x4E2D;&#x7684;&#x5F88;&#x591A;&#x7B2C;&#x4E09;&#x65B9;&#x5E93;&#x4E2D;&#x4ECD;&#x7136;&#x88AB;&#x4FDD;&#x7559;&#xFF0C;&#x6240;&#x4EE5;&#x6CA1;&#x6709;&#x88AB;&#x6DF7;&#x6DC6;&#xFF0C;toString()&#x65F6;&#x4ECD;&#x7136;&#x53EF;&#x4EE5;&#x5C06;type&#x5B57;&#x6BB5;&#x6B63;&#x786E;&#x5B58;&#x5165;DB</p>
+<p>&#xFF08;&#x7ECF;&#x5B9E;&#x9A8C;&#xFF0C;&#x628A;ComposeDataSender&#x91CC;&#x7684;type&#x540D;&#x5B57;&#x6539;&#x4E3A;senderType&#xFF0C;&#x5E76;&#x76F8;&#x5E94;&#x5730;&#x6539;&#x53D8;get&#x65B9;&#x6CD5;&#x548C;set&#x65B9;&#x6CD5;&#xFF0C;&#x5C31;&#x4F1A;&#x88AB;&#x6DF7;&#x6DC6;&#xFF09;</p>
+<p>&#xFF08;5&#xFF09;&#x89E3;&#x51B3;&#x65B9;&#x6848;</p>
+<p>&#x4FEE;&#x6539;ComposeData toString()&#x65B9;&#x6CD5;&#xFF0C;&#x539F;&#x6709;toString()&#x65B9;&#x6CD5;&#xFF0C;&#x5728;&#x5904;&#x7406;items&#x8FD9;&#x4E00;array&#x5BF9;&#x8C61;&#x65F6;&#xFF0C;&#x76F4;&#x63A5;&#x5F80;JSONArray&#x4E2D;&#x5B58;&#x5165;&#x4E86;ComposeDataSender&#x5BF9;&#x8C61;&#xFF0C;</p>
+<p>&#x6240;&#x4EE5;toString&#x751F;&#x6210;K-V&#x65F6;&#x4F1A;&#x4F9D;&#x8D56;&#x4E8E;ComposeDataSender&#x7684;getter&#x65B9;&#x6CD5;&#x3002;</p>
+<p>&#x4FEE;&#x6539;&#x4E3A;&#xFF1A;</p>
+<p><strong>&#x5F80;JSONArray&#x4E2D;&#x5B58;&#x5165;JSONObject&#x5BF9;&#x8C61;&#xFF0C;&#x5C06;K-V&#x4FE1;&#x606F;&#x5B58;&#x5165;JSONObject&#xFF0C;&#x89E3;&#x6790;&#x65F6;&#x8D70;MapSerializer&#x6D41;&#x7A0B;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x4F9D;&#x8D56;&#x4E8E;ComposeDataSender&#x7684;getter&#x65B9;&#x6CD5;&#x3002;&#x4E0D;&#x4F1A;&#x53D7;&#x6DF7;&#x6DC6;&#x5F71;&#x54CD;&#x3002;
+</strong></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Android_project结构.html" class="navigation navigation-prev " aria-label="Previous page: Android Project结构">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="note.html" class="navigation navigation-next " aria-label="Next page: 琐碎的一些tips">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"一个由Proguard与FastJson引起的血案","level":"1.2.6","depth":2,"next":{"title":"琐碎的一些tips","level":"1.2.7","depth":2,"path":"android/note.md","ref":"android/note.md","articles":[]},"previous":{"title":"Android Project结构","level":"1.2.5","depth":2,"path":"android/Android_project结构.md","ref":"android/Android_project结构.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["disqus"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"ahangchen-blog"},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"android/一个由PROGUARD与FASTJSON引起的血案.md","mtime":"2016-12-01T16:29:09.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-12T07:54:09.419Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
