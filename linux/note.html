@@ -916,6 +916,15 @@
 </code></pre>
 <h3 id="ubuntu-&#x5168;&#x5C40;&#x4EE3;&#x7406;">Ubuntu &#x5168;&#x5C40;&#x4EE3;&#x7406;</h3>
 <p>&#x7CFB;&#x7EDF;&#x8BBE;&#x7F6E;-&#x7F51;&#x7EDC;-&#x4EE3;&#x7406;&#x8BBE;&#x7F6E;-&#x624B;&#x52A8;-&#x586B;&#x81EA;&#x5DF1;&#x7684;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;&#x548C;&#x7AEF;&#x53E3;&#x5373;&#x53EF;</p>
+<h3 id="&#x5BFC;&#x5165;&#x5168;&#x5C40;&#x8BC1;&#x4E66;">&#x5BFC;&#x5165;&#x5168;&#x5C40;&#x8BC1;&#x4E66;</h3>
+<pre><code class="lang-shell">sudo cp your.crt /usr/share/ca-certificates/your.crt
+sudo dpkg-reconfigure ca-certificates
+</code></pre>
+<p>&#x7136;&#x540E;&#x7F16;&#x8F91; <code>/etc/ca-certificates.conf</code></p>
+<p>&#x7136;&#x540E;</p>
+<pre><code class="lang-shell">sudo update-ca-certificates
+sudo dpkg-reconfigure ca-certificates
+</code></pre>
 <h3 id="ubuntu-desktop&#x5E94;&#x7528;&#x8BBE;&#x7F6E;&#x73AF;&#x5883;&#x53D8;&#x91CF;">Ubuntu desktop&#x5E94;&#x7528;&#x8BBE;&#x7F6E;&#x73AF;&#x5883;&#x53D8;&#x91CF;</h3>
 <p>&#x76F4;&#x63A5;&#x4E0A;&#x4EE3;&#x7801;</p>
 <pre><code>[Desktop Entry]
@@ -981,10 +990,6 @@ gnome-session &amp;
 <li>android&#x624B;&#x673A;wifi&#x8FDE;&#x63A5;&#x90A3;&#x91CC;&#xFF0C;&#x8BBE;&#x7F6E;&#x4EE3;&#x7406;&#xFF0C;&#x8BBE;&#x7F6E;ip&#x4E3A;&#x7535;&#x8111;ip&#xFF0C;&#x7AEF;&#x53E3;&#x4E3A;8087(xx-net&#x7684;&#x4EE3;&#x7406;&#x7AEF;&#x53E3;)</li>
 <li>end</li>
 </ul>
-<h3 id="ubuntu&#x5168;&#x5C40;&#x7FFB;&#x5899;">Ubuntu&#x5168;&#x5C40;&#x7FFB;&#x5899;</h3>
-<ul>
-<li>&#x7CFB;&#x7EDF;&#x8BBE;&#x7F6E;-&#x7F51;&#x7EDC;-&#x7F51;&#x7EDC;&#x4EE3;&#x7406;-&#x624B;&#x52A8;-&#x8BBE;&#x7F6E;&#x6210;xx-net&#x7684;&#x4EE3;&#x7406;&#x5730;&#x5740;&#x5373;&#x53EF;&#x5168;&#x5C40;&#x7FFB;&#x5899;</li>
-</ul>
 <h3 id="ubuntu-nautilus-&#x6587;&#x4EF6;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#xFF0C;ctrl--l&#x53EF;&#x4EE5;&#x5C06;&#x5730;&#x5740;&#x53D8;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x65B9;&#x4FBF;&#x590D;&#x5236;">Ubuntu nautilus &#x6587;&#x4EF6;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#xFF0C;Ctrl + L&#x53EF;&#x4EE5;&#x5C06;&#x5730;&#x5740;&#x53D8;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;&#x65B9;&#x4FBF;&#x590D;&#x5236;</h3>
 <h3 id="ubuntu-1604&#x53D1;wifi">Ubuntu 16.04&#x53D1;wifi</h3>
 <ul>
@@ -996,15 +1001,6 @@ gnome-session &amp;
 </code></pre>
 </li>
 </ul>
-<h3 id="&#x5BFC;&#x5165;&#x5168;&#x5C40;&#x8BC1;&#x4E66;">&#x5BFC;&#x5165;&#x5168;&#x5C40;&#x8BC1;&#x4E66;</h3>
-<pre><code class="lang-shell">sudo cp your.crt /usr/share/ca-certificates/your.crt
-sudo dpkg-reconfigure ca-certificates
-</code></pre>
-<p>&#x7136;&#x540E;&#x7F16;&#x8F91; <code>/etc/ca-certificates.conf</code></p>
-<p>&#x7136;&#x540E;</p>
-<pre><code class="lang-python">sudo update-ca-certificates
-sudo dpkg-reconfigure ca-certificates
-</code></pre>
 <h3 id="ubuntu-kernel-&#x66F4;&#x65B0;&#x540E;&#x65E0;&#x6CD5;&#x767B;&#x5F55;&#x5FAA;&#x73AF;&#x767B;&#x5F55;">Ubuntu kernel &#x66F4;&#x65B0;&#x540E;&#x65E0;&#x6CD5;&#x767B;&#x5F55;&#x5FAA;&#x73AF;&#x767B;&#x5F55;</h3>
 <ul>
 <li>&#x65B0;&#x88C5;&#x4E86;&#x663E;&#x5361;&#x9A71;&#x52A8;&#xFF0C;&#x7136;&#x540E;&#x53D1;&#x73B0;&#x8FC7;&#x4E86;&#x51E0;&#x5929;&#x91CD;&#x542F;&#x5C31;&#x6CA1;&#x6CD5;&#x767B;&#x5F55;&#x4E86;&#xFF0C;ssh&#x53EF;&#x4EE5;&#x767B;&#x5F55;&#xFF0C;-X &#x767B;&#x5F55;&#x63D0;&#x793A; .Xauthority unwritable</li>
@@ -1113,7 +1109,7 @@ sudo ln -s /your/conf/path/mywebsite.conf
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"linux","level":"1.7","depth":1,"next":{"title":"Ubuntu安装与初始配置","level":"1.7.1","depth":2,"path":"linux/ubuntu_init.md","ref":"linux/ubuntu_init.md","articles":[]},"previous":{"title":"json接口资源","level":"1.6.2","depth":2,"path":"web-front/json_res.md","ref":"web-front/json_res.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["disqus","github","toggle-chapters"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"ahangchen-blog"},"github":{"url":"https://github.com/ahangchen/windy-afternoon"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux/note.md","mtime":"2017-02-13T10:24:06.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-13T10:24:33.878Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"linux","level":"1.7","depth":1,"next":{"title":"Ubuntu安装与初始配置","level":"1.7.1","depth":2,"path":"linux/ubuntu_init.md","ref":"linux/ubuntu_init.md","articles":[]},"previous":{"title":"json接口资源","level":"1.6.2","depth":2,"path":"web-front/json_res.md","ref":"web-front/json_res.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["disqus","github","toggle-chapters"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"ahangchen-blog"},"github":{"url":"https://github.com/ahangchen/windy-afternoon"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"linux/note.md","mtime":"2017-02-13T10:33:54.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-13T10:34:11.139Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
