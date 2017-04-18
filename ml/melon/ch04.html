@@ -384,7 +384,21 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" >
+        <li class="chapter " data-level="1.3.2" data-path="../kit/">
+            
+                <a href="../kit/">
+            
+                    
+                    工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" >
             
                 <a target="_blank" href="https://github.com/ahangchen/GDLNotes">
             
@@ -394,6 +408,24 @@
                 </a>
             
 
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../kit/caffe/mscnn.html">
+            
+                <a href="../kit/caffe/mscnn.html">
+            
+                    
+                    mscnn
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -1188,8 +1220,8 @@
 <p>  &#x51B3;&#x7B56;&#x6811;&#x5B66;&#x4E60;&#x7B97;&#x6CD5;&#x6700;&#x91CD;&#x8981;&#x7684;&#x5730;&#x65B9;&#x5C31;&#x662F;&#x9009;&#x62E9;&#x6700;&#x4F18;&#x5212;&#x5206;&#x5C5E;&#x6027;&#x3002;</p>
 </li>
 <li><p>Page75: &#x4FE1;&#x606F;&#x589E;&#x76CA;&#xFF08;information gain&#xFF09;</p>
-<p>  &#x5C5E;&#x6027;&#x5212;&#x5206;&#x51CF;&#x5C11;&#x7684;&#x4FE1;&#x606F;&#x71B5;&#xFF0C;&#x4FE1;&#x606F;&#x71B5;&#x662F;&#x5EA6;&#x91CF;&#x6837;&#x672C;&#x96C6;&#x5408;&#x7EAF;&#x5EA6;&#x7684;&#x4E00;&#x79CD;&#x6307;&#x6807;&#xFF0C;&#x5047;&#x8BBE;&#x7B2C;k&#x7C7B;&#x6837;&#x672C;&#x6240;&#x5360;&#x6BD4;&#x4F8B;&#x4E3A;pk&#xFF0C;&#x5219;&#x6570;&#x636E;&#x96C6;D&#x7684;&#x4FE1;&#x606F;&#x71B5;&#x4E3A;&#xFF1A;Ent(D)=-&#x2211;pklogpk&#xFF0C;Ent(D)&#x8D8A;&#x5C0F;&#xFF0C;D&#x7684;&#x7EAF;&#x5EA6;&#x8D8A;&#x9AD8;&#x3002;
-  Gain(D,a)=Ent(D)-&#x2211;(Dv/D*Ent(Dv))&#xFF0C;Dv&#x662F;&#x67D0;&#x4E2A;&#x5C5E;&#x6027;a&#x7684;&#x67D0;&#x4E2A;&#x53EF;&#x80FD;&#x53D6;&#x503C;&#x7684;&#x6837;&#x672C;&#x96C6;&#x5408;</p>
+<p>  &#x5C5E;&#x6027;&#x5212;&#x5206;&#x51CF;&#x5C11;&#x7684;&#x4FE1;&#x606F;&#x71B5;&#xFF0C;&#x4FE1;&#x606F;&#x71B5;&#x662F;&#x5EA6;&#x91CF;&#x6837;&#x672C;&#x96C6;&#x5408;&#x7EAF;&#x5EA6;&#x7684;&#x4E00;&#x79CD;&#x6307;&#x6807;&#xFF0C;&#x5047;&#x8BBE;&#x7B2C;k&#x7C7B;&#x6837;&#x672C;&#x6240;&#x5360;&#x6BD4;&#x4F8B;&#x4E3A;pk&#xFF0C;&#x5219;&#x6570;&#x636E;&#x96C6;D&#x7684;&#x4FE1;&#x606F;&#x71B5;&#x4E3A;&#xFF1A;Ent(D)=-&#x2211;pklogpk&#xFF0C;Ent(D)&#x8D8A;&#x5C0F;&#xFF0C;D&#x7684;&#x7EAF;&#x5EA6;&#x8D8A;&#x9AD8;&#x3002;</p>
+<p>  Gain(D,a)=Ent(D)-&#x2211;(Dv/D*Ent(Dv))&#xFF0C;Dv&#x662F;&#x67D0;&#x4E2A;&#x5C5E;&#x6027;a&#x7684;&#x67D0;&#x4E2A;&#x53EF;&#x80FD;&#x53D6;&#x503C;&#x7684;&#x6837;&#x672C;&#x96C6;&#x5408;</p>
 </li>
 <li><p>Page77: &#x589E;&#x76CA;&#x7387;&#xFF08;gain ratio&#xFF09;</p>
 <p>  &#x4FE1;&#x606F;&#x589E;&#x76CA;&#x51C6;&#x5219;&#x5BF9;&#x53EF;&#x53D6;&#x503C;&#x6570;&#x76EE;&#x8F83;&#x591A;&#x7684;&#x5C5E;&#x6027;&#x6709;&#x504F;&#x597D;&#xFF0C;&#x4E3A;&#x51CF;&#x5C11;&#x8FD9;&#x79CD;&#x504F;&#x597D;&#x7684;&#x4E0D;&#x5229;&#x5F71;&#x54CD;&#xFF0C;&#x4F7F;&#x7528;&#x589E;&#x76CA;&#x7387;&#x9009;&#x62E9;&#x6700;&#x4F18;&#x5212;&#x5206;&#x5C5E;&#x6027;&#xFF0C;&#x589E;&#x76CA;&#x7387;&#x5B9A;&#x4E49;&#x4E3A;:Gain_ratio(D,a)=Gain(D,a)/IV(a), IV(a)=-&#x2211;(Dv/D*log(Dv/D))&#xFF0C;IV(a)&#x79F0;&#x4E3A;&#x4E3A;a&#x7684;&#x56FA;&#x6709;&#x503C;&#x3002;&#x5C5E;&#x6027;&#x53EF;&#x80FD;&#x53D6;&#x503C;&#x6570;&#x76EE;&#x8D8A;&#x591A;&#xFF0C;IV(a)&#x7684;&#x503C;&#x8D8A;&#x5927;&#xFF0C;&#x589E;&#x76CA;&#x7387;&#x5373;&#x589E;&#x76CA;/&#x56FA;&#x6709;&#x503C;</p>
@@ -1272,7 +1304,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"决策树","level":"1.3.4.1.4","depth":4,"next":{"title":"神经网络","level":"1.3.4.1.5","depth":4,"path":"ml/melon/ch05.md","ref":"ml/melon/ch05.md","articles":[]},"previous":{"title":"线性模型","level":"1.3.4.1.3","depth":4,"path":"ml/melon/ch03.md","ref":"ml/melon/ch03.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["disqus","github","toggle-chapters"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"ahangchen-blog"},"github":{"url":"https://github.com/ahangchen/windy-afternoon"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ml/melon/ch04.md","mtime":"2017-02-21T17:31:48.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-13T16:28:13.833Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"决策树","level":"1.3.4.1.4","depth":4,"next":{"title":"神经网络","level":"1.3.4.1.5","depth":4,"path":"ml/melon/ch05.md","ref":"ml/melon/ch05.md","articles":[]},"previous":{"title":"线性模型","level":"1.3.4.1.3","depth":4,"path":"ml/melon/ch03.md","ref":"ml/melon/ch03.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["disqus","github","toggle-chapters"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"ahangchen-blog"},"github":{"url":"https://github.com/ahangchen/windy-afternoon"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ml/melon/ch04.md","mtime":"2017-04-18T03:22:53.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-18T03:23:20.170Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
