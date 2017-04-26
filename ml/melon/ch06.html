@@ -1259,28 +1259,76 @@
 <li><script type="math/tex; ">\alpha _i(y_if(x_i)-1)=0</script></li>
 </ul>
 </li>
-<li><p>Page126: &#x6838;&#x51FD;&#x6570;</p>
+<li><p>Page126: &#x6838;&#x51FD;&#x6570;  </p>
+<p>  &#x53EF;&#x4EE5;&#x770B;&#x6210;&#x662F;&#x4E00;&#x79CD;&#x6620;&#x5C04;&#xFF0C;&#x4E0D;&#x4EC5;&#x53EF;&#x4EE5;&#x662F;&#x70B9;&#x5BF9;&#x70B9;&#x7684;&#x6620;&#x5C04;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x5206;&#x5E03;&#x5BF9;&#x70B9;&#x7684;&#x6620;&#x5C04;&#x3002;</p>
 </li>
-<li>Page127: &#x6838;&#x6280;&#x5DE7;</li>
-<li>Page127: &#x652F;&#x6301;&#x5411;&#x91CF;&#x5C55;&#x5F0F;</li>
-<li>Page128: RKHS</li>
-<li>Page128: &#x9AD8;&#x65AF;&#x6838;</li>
-<li>Page128: &#x6838;&#x77E9;&#x9635;(138,233)</li>
-<li>Page128: &#x7EBF;&#x6027;&#x6838;</li>
-<li>Page128: &#x518D;&#x751F;&#x6838;&#x5E0C;&#x5C14;&#x4F2F;&#x7279;&#x7A7A;&#x95F4;</li>
-<li>Page129: &#x8F6F;&#x95F4;&#x9694;</li>
-<li>Page129: &#x786C;&#x95F4;&#x9694;</li>
-<li>Page130: 0/1&#x635F;&#x5931;&#x51FD;&#x6570;(page147)</li>
-<li>Page130: hinge&#x635F;&#x5931;</li>
-<li>Page130: &#x5BF9;&#x7387;&#x635F;&#x5931;</li>
-<li>Page130: &#x677E;&#x5F1B;&#x53D8;&#x91CF;</li>
-<li>Page130: &#x66FF;&#x4EE3;&#x635F;&#x5931;</li>
-<li>Page130: &#x6307;&#x6570;&#x635F;&#x5931;(173)</li>
-<li>Page131: &#x8F6F;&#x95F4;&#x9694;&#x652F;&#x6301;&#x5411;&#x91CF;&#x673A;</li>
-<li>Page133: &#x7F5A;&#x51FD;&#x6570;&#x6CD5;</li>
-<li>Page133: &#x7ED3;&#x6784;&#x98CE;&#x9669;</li>
-<li>Page133: &#x7ECF;&#x9A8C;&#x98CE;&#x9669;</li>
-<li>Page133: &#x652F;&#x6301;&#x5411;&#x91CF;&#x56DE;&#x5F52;</li>
+<li><p>Page127: &#x6838;&#x6280;&#x5DE7;(kernel trick)  </p>
+<p>  <script type="math/tex; ">x_i</script>&#x4E0E;<script type="math/tex; ">x_j</script>&#x5728;&#x7279;&#x5F81;&#x7A7A;&#x95F4;&#x7684;&#x5185;&#x79EF;&#x7B49;&#x4E8E;&#x5B83;&#x4EEC;&#x5728;&#x539F;&#x59CB;&#x6837;&#x672C;&#x7A7A;&#x95F4;&#x4E2D;&#x901A;&#x8FC7;&#x51FD;&#x6570;&#x3BA;(&#xB7;,&#xB7;)&#x8BA1;&#x7B97;&#x7684;&#x7ED3;&#x679C;&#x3002;</p>
+</li>
+<li><p>Page127: &#x652F;&#x6301;&#x5411;&#x91CF;&#x5C55;&#x5F0F;   </p>
+<p>  &#x6A21;&#x578B;&#x6700;&#x4F18;&#x89E3;&#x8BFE;&#x901A;&#x8FC7;&#x8BAD;&#x7EC3;&#x6837;&#x672C;&#x7684;&#x6838;&#x51FD;&#x6570;&#x5C55;&#x5F00;&#xFF0C;<script type="math/tex; ">$$这一展示称为支持向量展式。
+- Page128: 核矩阵(138,233)  
+
+    </script>K
+=\begin{bmatrix}
+\kappa(x<em>1,y_1) &amp; \cdots\ &amp; \kappa(x_1,y_j) &amp; \cdots\ &amp;\kappa(x_1,y_m)\
+\vdots &amp; \ddots &amp; \vdots &amp; \ddots  &amp; \vdots  \
+\kappa(x_i,y_1) &amp; \cdots\  &amp; \kappa(x_i,y_j)  &amp; \cdots\ &amp; \kappa(x_i,y_m)\
+\vdots &amp; \ddots &amp; \vdots &amp; \ddots  &amp; \vdots  \
+\kappa(x_m,y_1) &amp; \cdots\ &amp; \kappa(x_m,y_j)  &amp; \cdots\ &amp; \kappa(x_m,y_m)\
+\end{bmatrix}
+<script type="math/tex; ">  
+    形为这样的核函数，可以将低维空间映射为高维空间，将原来线性不可分的分布转化为线性可分的分布。核函数可以表示高维空间的内积。  
+    此外，核函数必须满足对称性和矩阵半正定。
+
+- Page128: RKHS
+
+    非线性映射ϕ，它将原始特征空间中的数据点映射到另一个高维空间中，这个高维空间称为再生核希尔伯特空间(Reproducing Kernel Hilbert Space)，简称RKHS。
+- Page128: 高斯核
+
+- Page128: 线性核  
+
+    线性核函数是</script>\kappa(x_i,y_i)=x_i^Tx_j<script type="math/tex; ">；多项式核是</script>\kappa(x_i,y_i)=(x_i^Tx_j)^d<script type="math/tex; ">，即d为1时退化为线性核。
+- Page129: 软间隔  
+
+    允许支持向量机在一些样本上出错，即允许某些样本不满足约束。
+- Page129: 硬间隔  
+
+    要求所有样本均满足约束，即所有样本都划分正确。
+- Page130: 0/1损失函数(page147)
+
+    </script> l</em>{0/1}(z) = \left{ \begin{array}{rl} 1, &amp;\mbox{ if $z&lt;0$} \ 0, &amp;\mbox{ otherwise} \end{array} \right. <script type="math/tex; mode=display">
+- Page130: 替代损失  
+
+    0/1损失函数不易直接求解（非连续，不是convex），所以通常会用其他函数来替代求解，也叫替代损失。
+- Page130: hinge损失  
+
+    </script>l<em>{hinge}(z)=\max(0,1-z)<script type="math/tex; ">，采用hinge损失函数，则优化目标变成</script>\min</em>{w,b}\frac{1}{2}||w||^2+C\sum<em>{i=1}^{m}max(0,1-y_i(w^Tx_i+b))<script type="math/tex; mode=display">
+- Page130: 指数损失(173)  
+
+    </script>l</em>{exp}(z)=\exp(-z)<script type="math/tex; mode=display">
+- Page130: 对率损失
+
+    </script>l_{log}(z)=\log(1+\exp(-z))$$</p>
+</li>
+<li><p>Page130: &#x677E;&#x5F1B;&#x53D8;&#x91CF;  </p>
+<p>  &#x677E;&#x5F1B;&#x53D8;&#x91CF;&#xFF0C;&#x5373;slack variables$\xi_i$</p>
+</li>
+<li><p>Page131: &#x8F6F;&#x95F4;&#x9694;&#x652F;&#x6301;&#x5411;&#x91CF;&#x673A;</p>
+<p>  &#x5F15;&#x5165;&#x4E86;&#x677E;&#x5F1B;&#x53D8;&#x91CF;$\xi<em>i$&#xFF0C;&#x5F0F;&#x5B50;&#x53EF;&#x91CD;&#x5199;&#x4E3A;&#xFF1A;<br>  \begin{align*}&amp; \min</em>{w,b}\frac{1}{2}||w||^2+C\sum_{i=1}^{m}max(0,1-y_i(w^Tx_i+b))\&amp; \begin{array}{r@{\quad}r@{}l@{\quad}l}s.t.&amp;yi(w^Tx_i+b)\geq1-\xi_i\ &amp;\xi_i\geq0, i=1,2\ldots,m  \\end{array} .\end{align*}</p>
+</li>
+<li>Page133: &#x7ED3;&#x6784;&#x98CE;&#x9669;  </li>
+</ul>
+<ul>
+<li>Page133: &#x7ECF;&#x9A8C;&#x98CE;&#x9669;  </li>
+</ul>
+<ul>
+<li><p>Page133: &#x7F5A;&#x51FD;&#x6570;&#x6CD5;  </p>
+<p>  &#x6B63;&#x5219;&#x5316;&#x3002;&#x5BF9;&#x4E0D;&#x5E0C;&#x671B;&#x5F97;&#x5230;&#x7684;&#x7ED3;&#x679C;&#x65BD;&#x4EE5;&#x60E9;&#x7F5A;&#xFF0C;&#x4ECE;&#x800C;&#x4F7F;&#x5F97;&#x4F18;&#x5316;&#x8FC7;&#x7A0B;&#x8D8B;&#x5411;&#x4E8E;&#x5E0C;&#x671B;&#x76EE;&#x6807;&#x3002;</p>
+</li>
+<li><p>Page133: &#x652F;&#x6301;&#x5411;&#x91CF;&#x56DE;&#x5F52;  </p>
+<p>  Support Vector Regression(SVR)</p>
+</li>
 <li>Page137: Mercer&#x5B9A;&#x7406;</li>
 <li>Page137: &#x8868;&#x793A;&#x5B9A;&#x7406;</li>
 <li>Page137: &#x6838;&#x65B9;&#x6CD5;</li>
@@ -1333,7 +1381,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"支持向量机","level":"1.3.4.1.6","depth":4,"next":{"title":"贝叶斯分类器","level":"1.3.4.1.7","depth":4,"path":"ml/melon/ch07.md","ref":"ml/melon/ch07.md","articles":[]},"previous":{"title":"神经网络","level":"1.3.4.1.5","depth":4,"path":"ml/melon/ch05.md","ref":"ml/melon/ch05.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["disqus","github","toggle-chapters","mathjax"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"ahangchen-blog"},"github":{"url":"https://github.com/ahangchen/windy-afternoon"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ml/melon/ch06.md","mtime":"2017-04-18T03:22:53.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-23T14:25:47.106Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"支持向量机","level":"1.3.4.1.6","depth":4,"next":{"title":"贝叶斯分类器","level":"1.3.4.1.7","depth":4,"path":"ml/melon/ch07.md","ref":"ml/melon/ch07.md","articles":[]},"previous":{"title":"神经网络","level":"1.3.4.1.5","depth":4,"path":"ml/melon/ch05.md","ref":"ml/melon/ch05.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["disqus","github","toggle-chapters","mathjax"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"ahangchen-blog"},"github":{"url":"https://github.com/ahangchen/windy-afternoon"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ml/melon/ch06.md","mtime":"2017-04-26T13:42:12.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-26T13:42:21.232Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

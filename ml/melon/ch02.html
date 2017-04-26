@@ -1337,24 +1337,24 @@
 </li>
 <li><p>Page32: F1</p>
 <p>  &#x67E5;&#x51C6;&#x7387;&#x548C;&#x67E5;&#x5168;&#x7387;&#x7684;&#x8C03;&#x548C;&#x5E73;&#x5747;&#xFF0C;&#x6BD4;&#x7B97;&#x672F;&#x5E73;&#x5747;&#xFF08;&#x6C42;&#x548C;&#x9664;&#x4EE5;2&#xFF09;&#x548C;&#x51E0;&#x4F55;&#x5E73;&#x5747;&#xFF08;&#x5E73;&#x65B9;&#x76F8;&#x4E58;&#x5F00;&#x65B9;&#xFF09;&#x66F4;&#x91CD;&#x89C6;&#x8F83;&#x5C0F;&#x503C;&#x3002;</p>
-<p>  1/F1 = 1/2 (1/P + 1/R)</p>
-<p>  1/F&#x3B2; = 1/(1+&#x3B2;)&#xFF08;1/P + &#x3B2;&#xB2;/R&#xFF09;</p>
+<p>  <script type="math/tex; ">\frac{1}{F1} = \frac{1}{2} \cdot (\frac{1}{P} + \frac{1}{R})</script></p>
+<p>  <script type="math/tex; ">\frac{1}{F_\beta} = \frac{1}{1+\beta^2} \cdot (\frac{1}{P} + \frac{\beta^2}{R})</script></p>
 </li>
 <li><p>Page32: &#x5B8F;F1(macro-F1)</p>
 <p>  &#x5982;&#x679C;&#x8FDB;&#x884C;&#x591A;&#x6B21;&#x8BAD;&#x7EC3;/&#x6D4B;&#x8BD5;&#xFF0C;&#x6BCF;&#x6B21;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x6DF7;&#x6DC6;&#x77E9;&#x9635;&#xFF0C;&#x6216;&#x662F;&#x5728;&#x591A;&#x4E2A;&#x6570;&#x636E;&#x96C6;&#x4E0A;&#x8FDB;&#x884C;&#x8BAD;&#x7EC3;/&#x6D4B;&#x8BD5;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;n&#x4E2A;&#x6DF7;&#x6DC6;&#x77E9;&#x9635;&#x4E0A;&#x7EFC;&#x5408;&#x8003;&#x5BDF;&#x67E5;&#x51C6;&#x7387;&#x548C;&#x67E5;&#x5168;&#x7387;</p>
-<p>  macro-P = 1/n(&#x2211;Pi)</p>
-<p>  macro-R = 1/n(&#x2211;Ri)</p>
-<p>  1/macro-F1 = 1/2*(1/macro-P + 1/macro-R)</p>
+<p>  <script type="math/tex; ">\text{macro-}P=\frac{1}{n}\sum_{i=1}^{n}P_i</script></p>
+<p>  <script type="math/tex; ">\text{macro-}R=\frac{1}{n}\sum_{i=1}^{n}R_i</script></p>
+<p>  <script type="math/tex; ">\text{macro-}F1=\frac{2\times\text{macro-}P\times\text{macro-}R}{\text{macro-}P+\text{macro-}R}</script></p>
 </li>
 <li><p>Page32: &#x5B8F;&#x67E5;&#x5168;&#x7387;</p>
-<p>  &#x89C1;&#x5B8F;F1&#x4E4B;macro-R</p>
+<p>  &#x89C1;&#x5B8F;F1&#x4E4B;(<script type="math/tex; ">\text{macro-}R</script>)</p>
 </li>
 <li>Page32: &#x5B8F;&#x67E5;&#x51C6;&#x7387;</li>
 </ul>
-<pre><code>&#x89C1;&#x5B8F;F1&#x4E4B;macro-P
+<pre><code>&#x89C1;&#x5B8F;F1&#x4E4B;({% math %}\text{macro-}P{% endmath %})
 </code></pre><ul>
-<li><p>Page32: &#x5FAE;F1(micro-F1)</p>
-<p>  &#x5C06;&#x5404;&#x6DF7;&#x6DC6;&#x77E9;&#x9635;&#x7684;&#x5BF9;&#x5E94;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x5E73;&#x5747;&#xFF0C;&#x518D;&#x53BB;&#x8BA1;&#x7B97;&#xFF0C;&#x53EF;&#x4EE5;&#x5F97;&#x5230;micro-F1</p>
+<li><p>Page32: &#x5FAE;F1(<script type="math/tex; ">\text{macro-}F1</script>)</p>
+<p>  &#x5C06;&#x5404;&#x6DF7;&#x6DC6;&#x77E9;&#x9635;&#x7684;&#x5BF9;&#x5E94;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x5E73;&#x5747;&#xFF0C;&#x518D;&#x53BB;&#x8BA1;&#x7B97;&#xFF0C;&#x53EF;&#x4EE5;&#x5F97;&#x5230;<script type="math/tex; ">\text{macro-}F1</script></p>
 </li>
 <li><p>Page32: &#x5FAE;&#x67E5;&#x51C6;&#x7387;</p>
 <p>  &#x5C06;&#x5404;&#x6DF7;&#x6DC6;&#x77E9;&#x9635;&#x7684;&#x5BF9;&#x5E94;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x5E73;&#x5747;&#xFF0C;&#x518D;&#x53BB;&#x8BA1;&#x7B97;</p>
@@ -1364,8 +1364,8 @@
 </li>
 <li><p>Page33: ROC&#x66F2;&#x7EBF;(46)</p>
 <p>  &#x771F;&#x6B63;&#x4F8B;&#x7387;&#xFF08;True Positive Rate&#xFF0C;TPR&#xFF09;&#x548C;&#x5047;&#x6B63;&#x4F8B;&#x7387;&#xFF08;FPR&#xFF09;&#x7684;&#x5173;&#x7CFB;&#x66F2;&#x7EBF;</p>
-<p>  TPR = TP/(TP+FN)</p>
-<p>  FPR = FP/(TN+FP)</p>
+<p>  <script type="math/tex; ">TPR=\frac{TP}{TP+FN}</script></p>
+<p>  <script type="math/tex; ">FPR=\frac{FP}{TN+FP}</script></p>
 </li>
 </ul>
 <ul>
@@ -1401,8 +1401,8 @@
 </li>
 <li><p>Page36: &#x4EE3;&#x4EF7;&#x66F2;&#x7EBF;</p>
 <p>  &#x6B63;&#x4F8B;&#x6982;&#x7387;&#x4EE3;&#x4EF7;&#xFF08;&#x6A2A;&#x8F74;&#xFF09;&#x548C;&#x5F52;&#x4E00;&#x5316;&#x4EE3;&#x4EF7;&#xFF08;&#x7EB5;&#x8F74;&#xFF09;&#x7684;&#x66F2;&#x7EBF;</p>
-<p>  &#x6B63;&#x4F8B;&#x6982;&#x7387;&#x4EE3;&#x4EF7;&#xFF1A; P(+)cost = p <em> cost01 /( p </em> cost01 + (1 - p) * cost10)&#xFF0C;p&#x662F;&#x6837;&#x4F8B;&#x4E3A;&#x6B63;&#x4F8B;&#x7684;&#x6982;&#x7387;</p>
-<p>  &#x5F52;&#x4E00;&#x5316;&#x4EE3;&#x4EF7;&#xFF1A; cost_norm = (FNR <em> p </em> cost01 + FPR <em> (1-p) </em> cost10)/(p <em> cost01+ (1-p) </em> cost10)</p>
+<p>  &#x6B63;&#x4F8B;&#x6982;&#x7387;&#x4EE3;&#x4EF7;&#xFF1A; <script type="math/tex; ">P(+)cost = \frac{p\times cost_{01}}{p \times cost_{01} + (1 - p) \times cost_{10}}</script>&#xFF0C;p&#x662F;&#x6837;&#x4F8B;&#x4E3A;&#x6B63;&#x4F8B;&#x7684;&#x6982;&#x7387;</p>
+<p>  &#x5F52;&#x4E00;&#x5316;&#x4EE3;&#x4EF7;&#xFF1A; <script type="math/tex; ">cost_{norm} = \frac{FNR \times p \times cost_{01} + FPR \times (1-p) \times cost_{10}}{(p \times cost_{01}+ (1-p) \times cost_{10}}</script></p>
 </li>
 <li><p>Page36: &#x89C4;&#x8303;&#x5316;(183)(normalization)</p>
 <p>  &#x5C06;&#x4E0D;&#x540C;&#x53D8;&#x5316;&#x8303;&#x56F4;&#x7684;&#x503C;&#x6620;&#x5C04;&#x5230;&#x76F8;&#x540C;&#x7684;&#x56FA;&#x5B9A;&#x8303;&#x56F4;&#x4E2D;&#xFF0C;&#x5E38;&#x89C1;&#x7684;&#x662F;[0,1]&#xFF0C;&#x6B64;&#x65F6;&#x4EA6;&#x79F0;&#x5F52;&#x4E00;&#x5316;</p>
@@ -1423,7 +1423,7 @@
 <p>  &#x4F30;&#x8BA1;&#x603B;&#x4F53;&#x53C2;&#x6570;&#x843D;&#x5728;&#x67D0;&#x4E00;&#x533A;&#x95F4;&#x65F6;&#xFF0C;&#x53EF;&#x80FD;&#x4E0D;&#x72AF;&#x9519;&#x8BEF;&#x7684;&#x6982;&#x7387;&#xFF0C;&#x4E00;&#x822C;&#x7528;&#x7B26;&#x53F7;1-&#x3B1;&#x8868;&#x793A;&#x3002;</p>
 </li>
 <li><p>Page40: &#x4EA4;&#x53C9;&#x9A8C;&#x8BC1;&#x6210;&#x5BF9;t&#x6821;&#x9A8C;&#xFF08;paired t-tests&#xFF09;</p>
-<p>  &#x5BF9;&#x4E24;&#x4E2A;&#x5B66;&#x4E60;&#x5668;A&#x548C;B&#xFF0C;&#x4F7F;&#x7528;k&#x6298;&#x4EA4;&#x53C9;&#x9A8C;&#x8BC1;&#x6CD5;&#x5206;&#x522B;&#x5F97;&#x5230;k&#x4E2A;&#x6D4B;&#x8BD5;&#x9519;&#x8BEF;&#x7387;&#xFF0C;&#x5982;&#x679C;&#x4E24;&#x4E2A;&#x5B66;&#x4E60;&#x5668;&#x6027;&#x80FD;&#x76F8;&#x540C;&#xFF0C;&#x5219;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x8BAD;&#x7EC3;/&#x6D4B;&#x8BD5;&#x96C6;&#x65F6;&#x6D4B;&#x8BD5;&#x9519;&#x8BEF;&#x7387;&#x5E94;&#x8BE5;&#x76F8;&#x540C;&#xFF0C;&#x6C42;&#x4E24;&#x4E2A;&#x5B66;&#x4E60;&#x5668;&#x7684;k&#x4E2A;&#x6D4B;&#x8BD5;&#x9519;&#x8BEF;&#x7387;&#x7684;&#x5DEE;&#xFF0C;&#x82E5;abs(sqrt(k)*&#x3BC;/&#x3C3;)&#xFF1C;&#x4E34;&#x754C;&#x503C;&#x5219;&#x8BA4;&#x4E3A;&#x4E24;&#x4E2A;&#x5B66;&#x4E60;&#x5668;&#x6027;&#x80FD;&#x76F8;&#x540C;&#x3002;</p>
+<p>  &#x5BF9;&#x4E24;&#x4E2A;&#x5B66;&#x4E60;&#x5668;A&#x548C;B&#xFF0C;&#x4F7F;&#x7528;k&#x6298;&#x4EA4;&#x53C9;&#x9A8C;&#x8BC1;&#x6CD5;&#x5206;&#x522B;&#x5F97;&#x5230;k&#x4E2A;&#x6D4B;&#x8BD5;&#x9519;&#x8BEF;&#x7387;&#xFF0C;&#x5982;&#x679C;&#x4E24;&#x4E2A;&#x5B66;&#x4E60;&#x5668;&#x6027;&#x80FD;&#x76F8;&#x540C;&#xFF0C;&#x5219;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x8BAD;&#x7EC3;/&#x6D4B;&#x8BD5;&#x96C6;&#x65F6;&#x6D4B;&#x8BD5;&#x9519;&#x8BEF;&#x7387;&#x5E94;&#x8BE5;&#x76F8;&#x540C;&#xFF0C;&#x6C42;&#x4E24;&#x4E2A;&#x5B66;&#x4E60;&#x5668;&#x7684;k&#x4E2A;&#x6D4B;&#x8BD5;&#x9519;&#x8BEF;&#x7387;&#x7684;&#x5DEE;&#xFF0C;&#x82E5;<script type="math/tex; ">\left | \frac{\sqrt{k}\mu}{\sigma}\right|</script>&#xFF1C;&#x4E34;&#x754C;&#x503C;&#x5219;&#x8BA4;&#x4E3A;&#x4E24;&#x4E2A;&#x5B66;&#x4E60;&#x5668;&#x6027;&#x80FD;&#x76F8;&#x540C;&#x3002;</p>
 </li>
 <li><p>Page41: 5x2&#x4EA4;&#x53C9;&#x9A8C;&#x8BC1;</p>
 <p>  &#x7531;&#x4E8E;&#x4EA4;&#x53C9;&#x9A8C;&#x8BC1;&#x4E2D;&#xFF0C;&#x4E0D;&#x540C;&#x8F6E;&#x6B21;&#x7684;&#x8BAD;&#x7EC3;&#x96C6;&#x4E4B;&#x95F4;&#x6709;&#x4E00;&#x5B9A;&#x7A0B;&#x5EA6;&#x7684;&#x91CD;&#x590D;&#xFF0C;&#x4F1A;&#x8FC7;&#x9AD8;&#x4F30;&#x8BA1;&#x5047;&#x8BBE;&#x6210;&#x7ACB;&#x7684;&#x6982;&#x7387;&#xFF0C;&#x56E0;&#x6B64;&#x505A;5&#x6B21;2&#x6298;&#x4EA4;&#x53C9;&#x9A8C;&#x8BC1;&#xFF0C;&#x6BCF;&#x6B21;&#x9A8C;&#x8BC1;&#x524D;&#x5C06;&#x6570;&#x636E;&#x6253;&#x4E71;&#xFF0C;&#x5BF9;5&#x6B21;2&#x5BF9;2&#x4E2A;&#x5B66;&#x4E60;&#x5668;&#x7684;&#x6D4B;&#x8BD5;&#x9519;&#x8BEF;&#x7387;&#x6C42;&#x5DEE;&#x503C;&#xFF0C;&#x5BF9;&#x6240;&#x6709;&#x5DEE;&#x503C;&#x6C42;&#x65B9;&#x5DEE;&#xFF0C;&#x5BF9;&#x524D;&#x4E24;&#x6B21;&#x5DEE;&#x503C;&#x6C42;&#x5747;&#x503C;&#xFF0C;&#x518D;&#x8FDB;&#x884C;&#x4E34;&#x754C;&#x503C;&#x5224;&#x65AD;&#x3002;</p>
@@ -1462,10 +1462,10 @@
 <p>  &#x6709;&#x591A;&#x4E2A;&#x6570;&#x636E;&#x96C6;&#x591A;&#x4E2A;&#x5B66;&#x4E60;&#x5668;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#x65F6;&#x4F7F;&#x7528;&#xFF0C;&#x5BF9;&#x5404;&#x4E2A;&#x7B97;&#x6CD5;&#x5728;&#x5404;&#x4E2A;&#x6570;&#x636E;&#x96C6;&#x4E0A;&#x5BF9;&#x6D4B;&#x8BD5;&#x6027;&#x80FD;&#x6392;&#x5E8F;&#xFF0C;&#x5BF9;&#x5E73;&#x5747;&#x5E8F;&#x503C;&#x8BA1;&#x7B97;&#x3C4;x&#xB2;&#x548C;&#x3C4;F,&#x5E76;&#x8FDB;&#x884C;&#x4E34;&#x754C;&#x503C;&#x68C0;&#x9A8C;&#x3002;</p>
 </li>
 <li><p>Page43: Nemenyi&#x540E;&#x7EED;&#x68C0;&#x9A8C;(Nemenyi post-hoc test)</p>
-<p>  &#x5B66;&#x4E60;&#x5668;&#x6027;&#x80FD;&#x6027;&#x80FD;&#x663E;&#x8457;&#x4E0D;&#x540C;&#x65F6;&#xFF0C;&#x8FDB;&#x884C;&#x540E;&#x7EED;&#x68C0;&#x9A8C;&#x6765;&#x8FDB;&#x4E00;&#x6B65;&#x533A;&#x5206;&#x5404;&#x7B97;&#x6CD5;&#xFF0C;&#x4E34;&#x754C;&#x503C;&#x57DF;&#xFF1A;CD=q&#x3B1;<em> sqrt(k</em>(k+1)/6N)</p>
+<p>  &#x5B66;&#x4E60;&#x5668;&#x6027;&#x80FD;&#x6027;&#x80FD;&#x663E;&#x8457;&#x4E0D;&#x540C;&#x65F6;&#xFF0C;&#x8FDB;&#x884C;&#x540E;&#x7EED;&#x68C0;&#x9A8C;&#x6765;&#x8FDB;&#x4E00;&#x6B65;&#x533A;&#x5206;&#x5404;&#x7B97;&#x6CD5;&#xFF0C;&#x4E34;&#x754C;&#x503C;&#x57DF;&#xFF1A;<script type="math/tex; ">CD=q\alpha \times \sqrt{\frac{k(k+1)}{6N}}</script></p>
 </li>
 <li><p>Page44: &#x504F;&#x5DEE;-&#x65B9;&#x5DEE;&#x5206;&#x89E3;(177)</p>
-<p>  &#x5BF9;&#x5B66;&#x4E60;&#x7B97;&#x6CD5;&#x7684;&#x671F;&#x671B;&#x6CDB;&#x5316;&#x9519;&#x8BEF;&#x7387;&#x8FDB;&#x884C;&#x62C6;&#x89E3;&#xFF0C;&#x5B66;&#x4E60;&#x7B97;&#x6CD5;&#x5728;&#x4E0D;&#x540C;&#x8BAD;&#x7EC3;&#x96C6;&#x4E0A;&#x5B66;&#x5F97;&#x7684;&#x7ED3;&#x679C;&#x5F88;&#x53EF;&#x80FD;&#x4E0D;&#x540C;&#xFF0C;&#x771F;&#x5B9E;&#x8F93;&#x51FA;&#x4E0E;&#x671F;&#x671B;&#x8F93;&#x51FA;&#x7684;&#x5DEE;&#x522B;&#x79F0;&#x4E3A;&#x504F;&#x5DEE;(bias)&#xFF0C;&#x4F7F;&#x7528;&#x6837;&#x672C;&#x6570;&#x76F8;&#x540C;&#x7684;&#x4E0D;&#x540C;&#x8BAD;&#x7EC3;&#x96C6;&#x4EA7;&#x751F;&#x7684;&#x8F93;&#x51FA;&#x7684;&#x65B9;&#x5DEE;&#x4E3A;var(x)&#xFF0C;&#x6709;&#xFF1A;E(f;D) = bias&#xB2;(x) + var(x) + &#x3B5;&#xB2;</p>
+<p>  &#x5BF9;&#x5B66;&#x4E60;&#x7B97;&#x6CD5;&#x7684;&#x671F;&#x671B;&#x6CDB;&#x5316;&#x9519;&#x8BEF;&#x7387;&#x8FDB;&#x884C;&#x62C6;&#x89E3;&#xFF0C;&#x5B66;&#x4E60;&#x7B97;&#x6CD5;&#x5728;&#x4E0D;&#x540C;&#x8BAD;&#x7EC3;&#x96C6;&#x4E0A;&#x5B66;&#x5F97;&#x7684;&#x7ED3;&#x679C;&#x5F88;&#x53EF;&#x80FD;&#x4E0D;&#x540C;&#xFF0C;&#x771F;&#x5B9E;&#x8F93;&#x51FA;&#x4E0E;&#x671F;&#x671B;&#x8F93;&#x51FA;&#x7684;&#x5DEE;&#x522B;&#x79F0;&#x4E3A;&#x504F;&#x5DEE;(bias)&#xFF0C;&#x4F7F;&#x7528;&#x6837;&#x672C;&#x6570;&#x76F8;&#x540C;&#x7684;&#x4E0D;&#x540C;&#x8BAD;&#x7EC3;&#x96C6;&#x4EA7;&#x751F;&#x7684;&#x8F93;&#x51FA;&#x7684;&#x65B9;&#x5DEE;&#x4E3A;var(x)&#xFF0C;&#x6709;&#xFF1A;<script type="math/tex; ">E(f;D)=bias^2(x)+var(x)+\varepsilon^2</script></p>
 </li>
 </ul>
 
@@ -1511,7 +1511,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"模型评估与选择","level":"1.3.4.1.2","depth":4,"next":{"title":"线性模型","level":"1.3.4.1.3","depth":4,"path":"ml/melon/ch03.md","ref":"ml/melon/ch03.md","articles":[]},"previous":{"title":"绪论","level":"1.3.4.1.1","depth":4,"path":"ml/melon/ch01.md","ref":"ml/melon/ch01.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["disqus","github","toggle-chapters","mathjax"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"ahangchen-blog"},"github":{"url":"https://github.com/ahangchen/windy-afternoon"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ml/melon/ch02.md","mtime":"2017-02-21T17:30:12.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-23T14:25:47.106Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"模型评估与选择","level":"1.3.4.1.2","depth":4,"next":{"title":"线性模型","level":"1.3.4.1.3","depth":4,"path":"ml/melon/ch03.md","ref":"ml/melon/ch03.md","articles":[]},"previous":{"title":"绪论","level":"1.3.4.1.1","depth":4,"path":"ml/melon/ch01.md","ref":"ml/melon/ch01.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["disqus","github","toggle-chapters","mathjax"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"ahangchen-blog"},"github":{"url":"https://github.com/ahangchen/windy-afternoon"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ml/melon/ch02.md","mtime":"2017-04-26T13:42:12.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-04-26T13:42:21.232Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
