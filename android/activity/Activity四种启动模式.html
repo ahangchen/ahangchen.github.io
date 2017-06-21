@@ -1,0 +1,1386 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Activity四种启动模式 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="INTENT_FLAG.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Android
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    activity
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1.1" data-path="Activity四种启动模式.html">
+            
+                <a href="Activity四种启动模式.html">
+            
+                    
+                    Activity四种启动模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="INTENT_FLAG.html">
+            
+                <a href="INTENT_FLAG.html">
+            
+                    
+                    Intent Flag
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="多TASK的应用.html">
+            
+                <a href="多TASK的应用.html">
+            
+                    
+                    多task的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="Task和回退栈.html">
+            
+                <a href="Task和回退栈.html">
+            
+                    
+                    Task和回退栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../sqlite/">
+            
+                <a href="../sqlite/">
+            
+                    
+                    sqlite
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../sqlite/从源码看ANDROID中SQLITE是怎么通过CURSORWINDOW读DB的.html">
+            
+                <a href="../sqlite/从源码看ANDROID中SQLITE是怎么通过CURSORWINDOW读DB的.html">
+            
+                    
+                    【源码】CursorWindow读DB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../sqlite/SQLITE在ANDROID上的一个BUG.html">
+            
+                <a href="../sqlite/SQLITE在ANDROID上的一个BUG.html">
+            
+                    
+                    Sqlite在Android上的一个Bug
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chromium/">
+            
+                <a href="../chromium/">
+            
+                    
+                    Chromium
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../listview_db.html">
+            
+                <a href="../listview_db.html">
+            
+                    
+                    ListView读取DB数据最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Android_project结构.html">
+            
+                <a href="../Android_project结构.html">
+            
+                    
+                    Android Project结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../一个由PROGUARD与FASTJSON引起的血案.html">
+            
+                <a href="../一个由PROGUARD与FASTJSON引起的血案.html">
+            
+                    
+                    一个由Proguard与FastJson引起的血案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../note.html">
+            
+                <a href="../note.html">
+            
+                    
+                    琐碎的一些tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../ml/">
+            
+                <a href="../../ml/">
+            
+                    
+                    Machine Learning
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../ml/reid/">
+            
+                <a href="../../ml/reid/">
+            
+                    
+                    Re-identification
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../../ml/reid/reid.html">
+            
+                <a href="../../ml/reid/reid.html">
+            
+                    
+                    Person Re-identification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../../ml/reid/cvpr-reid.html">
+            
+                <a href="../../ml/reid/cvpr-reid.html">
+            
+                    
+                    CVPR2016 Re-id
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../../ml/reid/reid-topo.html">
+            
+                <a href="../../ml/reid/reid-topo.html">
+            
+                    
+                    Camera topology and Person Re-id
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../ml/kit/">
+            
+                <a href="../../ml/kit/">
+            
+                    
+                    工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" >
+            
+                <a target="_blank" href="https://github.com/ahangchen/GDLNotes">
+            
+                    
+                    Tensorflow学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../../ml/kit/caffe/mscnn.html">
+            
+                <a href="../../ml/kit/caffe/mscnn.html">
+            
+                    
+                    mscnn
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../../ml/mla_2016.html">
+            
+                <a href="../../ml/mla_2016.html">
+            
+                    
+                    MLA2016笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../../ml/zzh_ml_notes.html">
+            
+                <a href="../../ml/zzh_ml_notes.html">
+            
+                    
+                    《机器学习》（周志华）读书笔记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../../ml/melon/">
+            
+                <a href="../../ml/melon/">
+            
+                    
+                    西瓜书概念整理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1.1" data-path="../../ml/melon/ch01.html">
+            
+                <a href="../../ml/melon/ch01.html">
+            
+                    
+                    绪论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.2" data-path="../../ml/melon/ch02.html">
+            
+                <a href="../../ml/melon/ch02.html">
+            
+                    
+                    模型评估与选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.3" data-path="../../ml/melon/ch03.html">
+            
+                <a href="../../ml/melon/ch03.html">
+            
+                    
+                    线性模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.4" data-path="../../ml/melon/ch04.html">
+            
+                <a href="../../ml/melon/ch04.html">
+            
+                    
+                    决策树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.5" data-path="../../ml/melon/ch05.html">
+            
+                <a href="../../ml/melon/ch05.html">
+            
+                    
+                    神经网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.6" data-path="../../ml/melon/ch06.html">
+            
+                <a href="../../ml/melon/ch06.html">
+            
+                    
+                    支持向量机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.7" data-path="../../ml/melon/ch07.html">
+            
+                <a href="../../ml/melon/ch07.html">
+            
+                    
+                    贝叶斯分类器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.8" data-path="../../ml/melon/ch08.html">
+            
+                <a href="../../ml/melon/ch08.html">
+            
+                    
+                    集成学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.9" data-path="../../ml/melon/ch09.html">
+            
+                <a href="../../ml/melon/ch09.html">
+            
+                    
+                    聚类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.10" data-path="../../ml/melon/ch10.html">
+            
+                <a href="../../ml/melon/ch10.html">
+            
+                    
+                    降维与度量学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.11" data-path="../../ml/melon/ch11.html">
+            
+                <a href="../../ml/melon/ch11.html">
+            
+                    
+                    特征选择与稀疏学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.12" data-path="../../ml/melon/ch12.html">
+            
+                <a href="../../ml/melon/ch12.html">
+            
+                    
+                    计算学习理论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.13" data-path="../../ml/melon/ch13.html">
+            
+                <a href="../../ml/melon/ch13.html">
+            
+                    
+                    半监督学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.14" data-path="../../ml/melon/ch14.html">
+            
+                <a href="../../ml/melon/ch14.html">
+            
+                    
+                    概率图模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.15" data-path="../../ml/melon/ch15.html">
+            
+                <a href="../../ml/melon/ch15.html">
+            
+                    
+                    规则学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.16" data-path="../../ml/melon/ch16.html">
+            
+                <a href="../../ml/melon/ch16.html">
+            
+                    
+                    强化学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.17" data-path="../../ml/melon/ch17.html">
+            
+                <a href="../../ml/melon/ch17.html">
+            
+                    
+                    附录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../java/">
+            
+                <a href="../../java/">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../java/java-web/note.html">
+            
+                <a href="../../java/java-web/note.html">
+            
+                    
+                    java web
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../java/java-web/Servlet组织.html">
+            
+                <a href="../../java/java-web/Servlet组织.html">
+            
+                    
+                    Servlet部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../java/java-web/note.html">
+            
+                <a href="../../java/java-web/note.html">
+            
+                    
+                    琐碎的tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../java/jni/note.html">
+            
+                <a href="../../java/jni/note.html">
+            
+                    
+                    JNI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../java/note.html">
+            
+                <a href="../../java/note.html">
+            
+                    
+                    Note
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../java/ej/l1-new-delete.html">
+            
+                <a href="../../java/ej/l1-new-delete.html">
+            
+                    
+                    Effective Java笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../python/">
+            
+                <a href="../../python/">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../python/django/note.html">
+            
+                <a href="../../python/django/note.html">
+            
+                    
+                    django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../python/raw.html">
+            
+                <a href="../../python/raw.html">
+            
+                    
+                    原生模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../python/design.html">
+            
+                <a href="../../python/design.html">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../python/viz.html">
+            
+                <a href="../../python/viz.html">
+            
+                    
+                    可视化
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../matlab/">
+            
+                <a href="../../matlab/">
+            
+                    
+                    Matlab
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../matlab/ripc_auto.html">
+            
+                <a href="../../matlab/ripc_auto.html">
+            
+                    
+                    Matlab Remote IPC自动化数据处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../web-front/">
+            
+                <a href="../../web-front/">
+            
+                    
+                    web前端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../web-front/head_content.html">
+            
+                <a href="../../web-front/head_content.html">
+            
+                    
+                    header div固定，content div填充父容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../web-front/json_res.html">
+            
+                <a href="../../web-front/json_res.html">
+            
+                    
+                    json接口资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../linux/note.html">
+            
+                <a href="../../linux/note.html">
+            
+                    
+                    linux
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../linux/ubuntu_init.html">
+            
+                <a href="../../linux/ubuntu_init.html">
+            
+                    
+                    Ubuntu安装与初始配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../UI/">
+            
+                <a href="../../UI/">
+            
+                    
+                    UI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../kit/">
+            
+                <a href="../../kit/">
+            
+                    
+                    kit
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../kit/vim/note.html">
+            
+                <a href="../../kit/vim/note.html">
+            
+                    
+                    vim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../../kit/git/note.html">
+            
+                <a href="../../kit/git/note.html">
+            
+                    
+                    git/github
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.2.1" data-path="../../kit/git/green_blush.html">
+            
+                <a href="../../kit/git/green_blush.html">
+            
+                    
+                    刷爆github小绿点
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../../kit/markdown/">
+            
+                <a href="../../kit/markdown/">
+            
+                    
+                    Markdown/gitbook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.3.1" data-path="../../kit/markdown/pieces.html">
+            
+                <a href="../../kit/markdown/pieces.html">
+            
+                    
+                    琐碎知识点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3.2" data-path="../../kit/markdown/gitbook_disqus.html">
+            
+                <a href="../../kit/markdown/gitbook_disqus.html">
+            
+                    
+                    gitbook添加disqus作为评论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3.3" data-path="../../kit/markdown/chrome_mark2_md.html">
+            
+                <a href="../../kit/markdown/chrome_mark2_md.html">
+            
+                    
+                    导出chrome书签为Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3.4" data-path="../../kit/markdown/wx_md.html">
+            
+                <a href="../../kit/markdown/wx_md.html">
+            
+                    
+                    Markdown here && 微信公众号
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../thinking-in-program/">
+            
+                <a href="../../thinking-in-program/">
+            
+                    
+                    thinking-in-program
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../thinking-in-program/log.html">
+            
+                <a href="../../thinking-in-program/log.html">
+            
+                    
+                    怎样打日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../star.html">
+            
+                <a href="../../star.html">
+            
+                    
+                    我的收藏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../pieces.html">
+            
+                <a href="../../pieces.html">
+            
+                    
+                    琐记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../../paper.html">
+            
+                <a href="../../paper.html">
+            
+                    
+                    论文心得
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Activity四种启动模式</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="activity&#x56DB;&#x79CD;launchmode">ACTIVITY&#x56DB;&#x79CD;LAUNCHMODE</h1>
+<h4 id="1standard"><strong>1.Standard</strong></h4>
+<p>&#x9ED8;&#x8BA4;&#x6A21;&#x5F0F;&#xFF0C;&#x591A;&#x6B21;&#x5B9E;&#x4F8B;&#x5316;&#xFF0C;&#x6309;&#x5E8F;&#x5165;&#x6808;&#x51FA;&#x6808;&#x3002;</p>
+<h4 id="2singletop"><strong>2.SingleTop</strong></h4>
+<p>&#x6808;&#x9876;Activity&#x4E0D;&#x4F1A;&#x88AB;&#x91CD;&#x590D;&#x521B;&#x5EFA;&#xFF0C;&#x4F1A;&#x89E6;&#x53D1;onNewIntent()&#x4E8B;&#x4EF6;&#xFF0C;&#x4E0D;&#x5728;&#x6808;&#x9876;&#x65F6;&#x53EF;&#x4EE5;&#x591A;&#x6B21;&#x5B9E;&#x4F8B;&#x5316;&#x3002;</p>
+<h4 id="3singletask"><strong>3.SingleTask</strong></h4>
+<p>Developer.android.com&#x7684;&#x8BF4;&#x6CD5;&#xFF1A;</p>
+<blockquote>
+<p>&#xFF08;1&#xFF09;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;task&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;Activity&#xFF1B;</p>
+<p>&#xFF08;2&#xFF09;&#x5982;&#x679C;&#x5B58;&#x5728;&#x4E00;&#x4E2A;&#x4E0D;&#x540C;&#x7684;task&#x5305;&#x542B;&#x8FD9;&#x4E2A;Activity&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x4F1A;&#x5207;&#x6362;&#x5230;&#x8FD9;&#x4E2A;task&#xFF0C;&#x5C06;&#x8FD9;&#x4E2A;Activity&#x4EE5;&#x4E0A;&#x7684;Activity&#x5F39;&#x51FA;&#xFF0C;&#x5E76;&#x4E14;&#x89E6;&#x53D1;&#x8FD9;&#x4E2A;Activity&#x7684;onNewIntent&#x4E8B;&#x4EF6;&#xFF1B;</p>
+</blockquote>
+<p>&#xFF08;2&#xFF09;&#x63CF;&#x8FF0;&#x4E86;&#x4E0D;&#x4F1A;&#x65B0;&#x5EFA;task&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x4F46;&#x662F;&#xFF1A;</p>
+<p>&#x5B9E;&#x9A8C;&#x53D1;&#x73B0;&#xFF08;2&#xFF09;&#x7684;&#x524D;&#x63D0;&#x6761;&#x4EF6;&#xFF0C;&#x6709;&#x4E00;&#x70B9;&#x95EE;&#x9898;&#xFF1A;</p>
+<p><strong>&#xFF08;1&#xFF09;&#x201C;&#x5305;&#x542B;&#x8FD9;&#x4E2A;Activity&#x7684;&#x5B9E;&#x4F8B;&#x201D;&#x4E0D;&#x662F;&#x5FC5;&#x8981;&#x6761;&#x4EF6;&#xFF1A;</strong></p>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x4E00;&#x4E2A;task&#x5305;&#x542B;&#x8FD9;&#x4E2A;Activity&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x4F46;&#x662F;&#xFF0C;&#x5B58;&#x5728;&#x4E00;&#x4E2A;task&#x5305;&#x542B;&#x4E0E;&#x8FD9;&#x4E2A;Activity&#x5C5E;&#x4E8E;&#x540C;&#x4E00;&#x4E2A;App&#x7684;&#x5176;&#x4ED6;Activity&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x8FD9;&#x65F6;&#x4E0D;&#x4F1A;&#x65B0;&#x5EFA;task&#xFF0C;&#x800C;&#x662F;&#x5207;&#x6362;&#x5230;&#x8FD9;&#x4E2A;task&#x4E2D;&#xFF0C;&#x5728;&#x8FD9;&#x4E2A;task&#x4E2D;&#x65B0;&#x5EFA;&#x8FD9;&#x4E2A;Activity&#x3002;</p>
+<p><strong>&#xFF08;2&#xFF09; &#x201C;&#x4E0D;&#x540C;&#x7684;task&#x201D;&#x4E0D;&#x662F;&#x5FC5;&#x8981;&#x6761;&#x4EF6;&#xFF1A;</strong></p>
+<p>&#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728;&#x4E00;&#x4E2A;&#x4E0D;&#x540C;&#x7684;task&#x5305;&#x542B;&#x8FD9;&#x4E2A;Activity&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x5F53;&#x524D;&#x7684;task&#x4E2D;&#x672C;&#x8EAB;&#x5C31;&#x5B58;&#x5728;&#x8FD9;&#x4E2A;Activity&#x5B9E;&#x4F8B;&#xFF0C;&#x4E0D;&#x4F1A;&#x65B0;&#x5EFA;task&#xFF0C;&#x800C;&#x4F1A;&#x5728;&#x5F53;&#x524D;task&#x4E2D;&#xFF0C;&#x5C06;&#x8FD9;&#x4E2A;Activity&#x4EE5;&#x4E0A;&#x7684;Activity&#x5F39;&#x51FA;&#xFF0C;&#x5E76;&#x4E14;&#x89E6;&#x53D1;&#x8FD9;&#x4E2A;Activity&#x7684;onNewIntent&#x4E8B;&#x4EF6;&#xFF1B;</p>
+<h4 id="4singleinstance"><strong>4.SingleInstance</strong></h4>
+<p>&#xFF08;1&#xFF09;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x4E00;&#x4E2A;task&#x5305;&#x542B;&#x8FD9;&#x4E2A;Activity&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x4F1A;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;task&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;Activity&#xFF1B;</p>
+<p>&#xFF08;2&#xFF09;&#x5982;&#x679C;&#x5B58;&#x5728;&#x4E00;&#x4E2A;task&#x5305;&#x542B;&#x8FD9;&#x4E2A;Activity&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x4F1A;&#x5207;&#x6362;&#x5230;&#x8FD9;&#x4E2A;task&#xFF0C;&#x5E76;&#x4E14;&#x89E6;&#x53D1;&#x8FD9;&#x4E2A;Activity&#x7684;onNewIntent&#x4E8B;&#x4EF6;&#xFF0C;Activity&#x72EC;&#x5360;task&#x3002;&#x6CA1;&#x6709;&#x63CF;&#x8FF0;&#x5F39;&#x51FA;&#x5176;&#x4ED6;Activity&#x7684;&#x5FC5;&#x8981;&#x3002;</p>
+<p>&#xFF08;3&#xFF09;&#x5728;&#x5305;&#x542B;&#x8FD9;&#x4E2A;Activity&#x7684;task&#x4E2D;&#xFF0C;&#x4EC5;&#x5305;&#x542B;&#x8FD9;&#x4E2A;&#x4E00;&#x4E2A;Activity&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x6253;&#x5F00;&#x65B0;&#x7684;Activity&#xFF0C;&#x5FC5;&#x987B;&#x5728;&#x5176;&#x4ED6;task&#x4E2D;&#x6253;&#x5F00;&#xFF0C;&#x5982;&#x679C;&#x65B0;&#x5EFA;&#x4E86;task&#xFF0C;task&#x7684;&#x6839;activity&#x4E3A;&#x65B0;&#x6253;&#x5F00;&#x7684;&#x8FD9;&#x4E2A;Activity&#xFF0C;&#x4E4B;&#x540E;&#x6253;&#x5F00;&#x8FD9;&#x4E2A;Activity&#x65F6;&#xFF0C;&#x90FD;&#x4E0D;&#x4F1A;&#x65B0;&#x5EFA;Activity&#xFF0C;&#x53EA;&#x4F1A;&#x5C06;&#x8FD9;&#x4E2A;task&#x5E26;&#x5230;&#x524D;&#x53F0;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: activity">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="INTENT_FLAG.html" class="navigation navigation-next " aria-label="Next page: Intent Flag">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Activity四种启动模式","level":"1.2.1.1","depth":3,"next":{"title":"Intent Flag","level":"1.2.1.2","depth":3,"path":"android/activity/INTENT_FLAG.md","ref":"android/activity/INTENT_FLAG.md","articles":[]},"previous":{"title":"activity","level":"1.2.1","depth":2,"path":"android/activity/README.md","ref":"android/activity/README.md","articles":[{"title":"Activity四种启动模式","level":"1.2.1.1","depth":3,"path":"android/activity/Activity四种启动模式.md","ref":"android/activity/Activity四种启动模式.md","articles":[]},{"title":"Intent Flag","level":"1.2.1.2","depth":3,"path":"android/activity/INTENT_FLAG.md","ref":"android/activity/INTENT_FLAG.md","articles":[]},{"title":"多task的应用","level":"1.2.1.3","depth":3,"path":"android/activity/多TASK的应用.md","ref":"android/activity/多TASK的应用.md","articles":[]},{"title":"Task和回退栈","level":"1.2.1.4","depth":3,"path":"android/activity/Task和回退栈.md","ref":"android/activity/Task和回退栈.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["disqus","github","toggle-chapters","mathjax","mermaid"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"ahangchen-blog"},"github":{"url":"https://github.com/ahangchen/windy-afternoon"},"search":{},"mermaid":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"android/activity/Activity四种启动模式.md","mtime":"2017-05-21T01:21:54.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-06-21T07:54:37.724Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
