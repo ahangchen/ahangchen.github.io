@@ -1324,7 +1324,7 @@
 <ul>
 <li>CNN&#x8BA1;&#x7B97;&#x5F97;&#x5230;&#x6DF1;&#x5EA6;&#x7279;&#x5F81;&#xFF1A; <script type="math/tex; ">𝑦=\theta(𝑥)</script></li>
 <li>Learn a subspace defined by a dictionary D and a new representation Z in the subspace.</li>
-<li><script type="math/tex; ">(D^*, Z^*) = min_{D,Z} ||Y-DZ||_F^2 + \lambda\omega(Z)</script> s.t. ||d_i||_2^2 \leq 1</li>
+<li><script type="math/tex; ">(D^*, Z^*) = min_{D,Z} ||Y-DZ||_F^2 + \lambda\omega(Z) s.t. ||d_i||_2^2 \leq 1 </script></li>
 <li>&#x5176;&#x4E2D;<script type="math/tex; ">||Y-DZ||_F^2</script>&#x662F;reconstruction error</li>
 <li><script type="math/tex; ">\omega(Z) = \sum_{i,j} W_{ij}||z_i - z_j||_2^2</script><ul>
 <li>&#x5F53;<script type="math/tex; ">y_i</script>&#x548C;<script type="math/tex; ">y_j</script>&#x662F;&#x6700;&#x8FD1;&#x90BB;&#x65F6;&#xFF0C;$W_{ij}$&#x4E3A;1&#xFF0C;&#x5426;&#x5219;&#x4E3A;0</li>
@@ -1404,14 +1404,37 @@
 </tbody>
 </table>
 <h3 id="compare-with-other-unsupervised-method">Compare with other unsupervised method</h3>
-<p>&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x65E0;&#x76D1;&#x7763;&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x5B9E;&#x9A8C;&#x5BF9;&#x6BD4;
-|Method|Top1 acc|
-| :-:| :-:  | :-:  |
-|Self-training|42.8|
-|SubSpace|42.3|
-|Transfer|45.1|
-|CNN+AutoEncoder|36.4|
-|Adversarial|22.8|</p>
+<p>&#x4F7F;&#x7528;&#x5176;&#x4ED6;&#x65E0;&#x76D1;&#x7763;&#x65B9;&#x6CD5;&#x8FDB;&#x884C;&#x5B9E;&#x9A8C;&#x5BF9;&#x6BD4;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Method</th>
+<th style="text-align:center">Top1 acc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Self-training</td>
+<td style="text-align:center">42.8</td>
+</tr>
+<tr>
+<td style="text-align:center">SubSpace</td>
+<td style="text-align:center">42.3</td>
+</tr>
+<tr>
+<td style="text-align:center">Transfer</td>
+<td style="text-align:center">45.1</td>
+</tr>
+<tr>
+<td style="text-align:center">CNN+AutoEncoder</td>
+<td style="text-align:center">36.4</td>
+</tr>
+<tr>
+<td style="text-align:center">Adversarial</td>
+<td style="text-align:center">22.8</td>
+</tr>
+</tbody>
+</table>
 <p>&#x5176;&#x4E2D;SubSpace&#x4E3A;&#x53EA;&#x4F7F;&#x7528;Co-Model&#xFF0C;&#x4E0D;&#x4F7F;&#x7528;CNN&#x6A21;&#x578B;&#xFF0C;Self-training&#x4E3A;&#x53EA;&#x4F7F;&#x7528;CNN&#x6A21;&#x578B;&#xFF0C;Transfer&#x662F;&#x4E24;&#x8005;&#x7ED3;&#x5408;&#x7684;Co-training&#x3002;</p>
 <p>&#x603B;&#x4F53;&#x6765;&#x8BF4;&#x8FD9;&#x79CD;&#x65E0;&#x76D1;&#x7763;&#x7684;&#x65B9;&#x6CD5;&#x53D6;&#x5F97;&#x4E86;&#x6BD4;&#x8F83;&#x597D;&#x7684;&#x6548;&#x679C;&#xFF0C;&#x5728;&#x5C0F;&#x6570;&#x636E;&#x96C6;&#x4E0A;&#x751A;&#x81F3;&#x8D85;&#x8FC7;&#x4E86;&#x6709;&#x76D1;&#x7763;&#x7684;&#x6548;&#x679C;&#x3002;</p>
 <p>&#x5982;&#x679C;&#x89C9;&#x5F97;&#x6211;&#x7684;&#x6587;&#x7AE0;&#x5BF9;&#x4F60;&#x6709;&#x5E2E;&#x52A9;&#xFF0C;&#x53EF;&#x4EE5;&#x524D;&#x5F80;github&#x70B9;&#x4E2A;<a href="https://github.com/ahangchen/windy-afternoon" target="_blank">star</a></p>
@@ -1458,7 +1481,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Deep transfer learning Person Re-id","level":"1.3.1.4","depth":3,"next":{"title":"工具","level":"1.3.2","depth":2,"path":"ml/kit/README.md","ref":"ml/kit/README.md","articles":[{"title":"Tensorflow学习笔记","level":"1.3.2.1","depth":3,"url":"https://github.com/ahangchen/GDLNotes","ref":"https://github.com/ahangchen/GDLNotes","articles":[]},{"title":"mscnn","level":"1.3.2.2","depth":3,"path":"ml/kit/caffe/mscnn.md","ref":"ml/kit/caffe/mscnn.md","articles":[]}]},"previous":{"title":"Camera topology and Person Re-id","level":"1.3.1.3","depth":3,"path":"ml/reid/reid-topo.md","ref":"ml/reid/reid-topo.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["disqus","github","toggle-chapters","mathjax","mermaid-gb3"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"ahangchen-blog"},"github":{"url":"https://github.com/ahangchen/windy-afternoon"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ml/reid/deep_transfer_learning_person_reid.md","mtime":"2017-08-01T16:46:27.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-01T16:50:01.425Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Deep transfer learning Person Re-id","level":"1.3.1.4","depth":3,"next":{"title":"工具","level":"1.3.2","depth":2,"path":"ml/kit/README.md","ref":"ml/kit/README.md","articles":[{"title":"Tensorflow学习笔记","level":"1.3.2.1","depth":3,"url":"https://github.com/ahangchen/GDLNotes","ref":"https://github.com/ahangchen/GDLNotes","articles":[]},{"title":"mscnn","level":"1.3.2.2","depth":3,"path":"ml/kit/caffe/mscnn.md","ref":"ml/kit/caffe/mscnn.md","articles":[]}]},"previous":{"title":"Camera topology and Person Re-id","level":"1.3.1.3","depth":3,"path":"ml/reid/reid-topo.md","ref":"ml/reid/reid-topo.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["disqus","github","toggle-chapters","mathjax","mermaid-gb3"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"ahangchen-blog"},"github":{"url":"https://github.com/ahangchen/windy-afternoon"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ml/reid/deep_transfer_learning_person_reid.md","mtime":"2017-08-01T16:53:26.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-01T16:56:59.696Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
