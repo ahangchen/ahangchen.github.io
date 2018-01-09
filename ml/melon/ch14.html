@@ -1,0 +1,1780 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>概率图模型 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ch15.html" />
+    
+    
+    <link rel="prev" href="ch13.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../android/">
+            
+                <a href="../../android/">
+            
+                    
+                    Android
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../android/activity/">
+            
+                <a href="../../android/activity/">
+            
+                    
+                    activity
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../android/activity/Activity四种启动模式.html">
+            
+                <a href="../../android/activity/Activity四种启动模式.html">
+            
+                    
+                    Activity四种启动模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../android/activity/INTENT_FLAG.html">
+            
+                <a href="../../android/activity/INTENT_FLAG.html">
+            
+                    
+                    Intent Flag
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../../android/activity/多TASK的应用.html">
+            
+                <a href="../../android/activity/多TASK的应用.html">
+            
+                    
+                    多task的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../../android/activity/Task和回退栈.html">
+            
+                <a href="../../android/activity/Task和回退栈.html">
+            
+                    
+                    Task和回退栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../android/sqlite/">
+            
+                <a href="../../android/sqlite/">
+            
+                    
+                    sqlite
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../android/sqlite/从源码看ANDROID中SQLITE是怎么通过CURSORWINDOW读DB的.html">
+            
+                <a href="../../android/sqlite/从源码看ANDROID中SQLITE是怎么通过CURSORWINDOW读DB的.html">
+            
+                    
+                    【源码】CursorWindow读DB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../android/sqlite/SQLITE在ANDROID上的一个BUG.html">
+            
+                <a href="../../android/sqlite/SQLITE在ANDROID上的一个BUG.html">
+            
+                    
+                    Sqlite在Android上的一个Bug
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../android/chromium/">
+            
+                <a href="../../android/chromium/">
+            
+                    
+                    Chromium
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../android/listview_db.html">
+            
+                <a href="../../android/listview_db.html">
+            
+                    
+                    ListView读取DB数据最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../android/Android_project结构.html">
+            
+                <a href="../../android/Android_project结构.html">
+            
+                    
+                    Android Project结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../android/一个由PROGUARD与FASTJSON引起的血案.html">
+            
+                <a href="../../android/一个由PROGUARD与FASTJSON引起的血案.html">
+            
+                    
+                    一个由Proguard与FastJson引起的血案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../android/note.html">
+            
+                <a href="../../android/note.html">
+            
+                    
+                    琐碎的一些tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Machine Learning
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../reid/">
+            
+                <a href="../reid/">
+            
+                    
+                    Re-identification
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../reid/reid.html">
+            
+                <a href="../reid/reid.html">
+            
+                    
+                    Person Re-identification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../reid/cvpr-reid.html">
+            
+                <a href="../reid/cvpr-reid.html">
+            
+                    
+                    CVPR2016 Re-id
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../reid/reid-topo.html">
+            
+                <a href="../reid/reid-topo.html">
+            
+                    
+                    Camera topology and Person Re-id
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../reid/deep_transfer_learning_person_reid.html">
+            
+                <a href="../reid/deep_transfer_learning_person_reid.html">
+            
+                    
+                    Deep transfer learning Person Re-id
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="../reid/evaluate.html">
+            
+                <a href="../reid/evaluate.html">
+            
+                    
+                    Evaluate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../kit/">
+            
+                <a href="../kit/">
+            
+                    
+                    工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" >
+            
+                <a target="_blank" href="https://github.com/ahangchen/GDLNotes">
+            
+                    
+                    Tensorflow学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../kit/caffe/mscnn.html">
+            
+                <a href="../kit/caffe/mscnn.html">
+            
+                    
+                    mscnn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../matlab/">
+            
+                <a href="../matlab/">
+            
+                    
+                    Matlab
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.3.1" data-path="../matlab/ripc_auto.html">
+            
+                <a href="../matlab/ripc_auto.html">
+            
+                    
+                    Matlab Remote IPC自动化数据处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../papers/">
+            
+                <a href="../papers/">
+            
+                    
+                    讲座论文系列
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../papers/cncc2017.html">
+            
+                <a href="../papers/cncc2017.html">
+            
+                    
+                    CNCC2017 琐记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../papers/eccv2016_hydra_ccnn.html">
+            
+                <a href="../papers/eccv2016_hydra_ccnn.html">
+            
+                    
+                    ECCV 2016 Hydra CCNN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../papers/cncc_cv.html">
+            
+                <a href="../papers/cncc_cv.html">
+            
+                    
+                    CNCC2017深度学习与跨媒体智能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.4" data-path="../mla_2016.html">
+            
+                <a href="../mla_2016.html">
+            
+                    
+                    MLA2016笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../zzh_ml_notes.html">
+            
+                <a href="../zzh_ml_notes.html">
+            
+                    
+                    《机器学习》（周志华）读书笔记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    西瓜书概念整理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1.1" data-path="ch01.html">
+            
+                <a href="ch01.html">
+            
+                    
+                    绪论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.2" data-path="ch02.html">
+            
+                <a href="ch02.html">
+            
+                    
+                    模型评估与选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.3" data-path="ch03.html">
+            
+                <a href="ch03.html">
+            
+                    
+                    线性模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.4" data-path="ch04.html">
+            
+                <a href="ch04.html">
+            
+                    
+                    决策树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.5" data-path="ch05.html">
+            
+                <a href="ch05.html">
+            
+                    
+                    神经网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.6" data-path="ch06.html">
+            
+                <a href="ch06.html">
+            
+                    
+                    支持向量机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.7" data-path="ch07.html">
+            
+                <a href="ch07.html">
+            
+                    
+                    贝叶斯分类器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.8" data-path="ch08.html">
+            
+                <a href="ch08.html">
+            
+                    
+                    集成学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.9" data-path="ch09.html">
+            
+                <a href="ch09.html">
+            
+                    
+                    聚类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.10" data-path="ch10.html">
+            
+                <a href="ch10.html">
+            
+                    
+                    降维与度量学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.11" data-path="ch11.html">
+            
+                <a href="ch11.html">
+            
+                    
+                    特征选择与稀疏学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.12" data-path="ch12.html">
+            
+                <a href="ch12.html">
+            
+                    
+                    计算学习理论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.13" data-path="ch13.html">
+            
+                <a href="ch13.html">
+            
+                    
+                    半监督学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.4.1.14" data-path="ch14.html">
+            
+                <a href="ch14.html">
+            
+                    
+                    概率图模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.15" data-path="ch15.html">
+            
+                <a href="ch15.html">
+            
+                    
+                    规则学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.16" data-path="ch16.html">
+            
+                <a href="ch16.html">
+            
+                    
+                    强化学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.1.17" data-path="ch17.html">
+            
+                <a href="ch17.html">
+            
+                    
+                    附录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../java/">
+            
+                <a href="../../java/">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../java/java-web/note.html">
+            
+                <a href="../../java/java-web/note.html">
+            
+                    
+                    java web
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../java/java-web/Servlet组织.html">
+            
+                <a href="../../java/java-web/Servlet组织.html">
+            
+                    
+                    Servlet部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../java/java-web/note.html">
+            
+                <a href="../../java/java-web/note.html">
+            
+                    
+                    琐碎的tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../java/jni/note.html">
+            
+                <a href="../../java/jni/note.html">
+            
+                    
+                    JNI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../../java/note.html">
+            
+                <a href="../../java/note.html">
+            
+                    
+                    Note
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../java/ej/l1-new-delete.html">
+            
+                <a href="../../java/ej/l1-new-delete.html">
+            
+                    
+                    Effective Java笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../backend/">
+            
+                <a href="../../backend/">
+            
+                    
+                    后端开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../backend/design.html">
+            
+                <a href="../../backend/design.html">
+            
+                    
+                    架构设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../backend/db.html">
+            
+                <a href="../../backend/db.html">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../java/java-web/note.html">
+            
+                <a href="../../java/java-web/note.html">
+            
+                    
+                    java web
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../../java/java-web/Servlet组织.html">
+            
+                <a href="../../java/java-web/Servlet组织.html">
+            
+                    
+                    Servlet部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="../../java/java-web/note.html">
+            
+                <a href="../../java/java-web/note.html">
+            
+                    
+                    琐碎的tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../backend/spring_boot.html">
+            
+                <a href="../../backend/spring_boot.html">
+            
+                    
+                    Spring boot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../../python/django/note.html">
+            
+                <a href="../../python/django/note.html">
+            
+                    
+                    django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../../backend/concurrent.html">
+            
+                <a href="../../backend/concurrent.html">
+            
+                    
+                    分布式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../linux/note.html">
+            
+                <a href="../../linux/note.html">
+            
+                    
+                    Linux && Hardware
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../linux/ubuntu_init.html">
+            
+                <a href="../../linux/ubuntu_init.html">
+            
+                    
+                    Ubuntu安装与初始配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../linux/raspbian/">
+            
+                <a href="../../linux/raspbian/">
+            
+                    
+                    树莓派相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" data-path="../../linux/raspbian/rtlwifi.html">
+            
+                <a href="../../linux/raspbian/rtlwifi.html">
+            
+                    
+                    树莓派3B+无线网卡监听模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" data-path="../../linux/raspbian/tlwr703n_openwrt.html">
+            
+                <a href="../../linux/raspbian/tlwr703n_openwrt.html">
+            
+                    
+                    TP-LINK TL-WR703N v1.7 openwrt flashing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../python/">
+            
+                <a href="../../python/">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../python/django/note.html">
+            
+                <a href="../../python/django/note.html">
+            
+                    
+                    django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../python/raw.html">
+            
+                <a href="../../python/raw.html">
+            
+                    
+                    原生模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../../python/design.html">
+            
+                <a href="../../python/design.html">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../../python/viz.html">
+            
+                <a href="../../python/viz.html">
+            
+                    
+                    可视化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../../python/libs.html">
+            
+                <a href="../../python/libs.html">
+            
+                    
+                    常用库踩坑指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../web-front/">
+            
+                <a href="../../web-front/">
+            
+                    
+                    web前端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../web-front/head_content.html">
+            
+                <a href="../../web-front/head_content.html">
+            
+                    
+                    header div固定，content div填充父容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../web-front/json_res.html">
+            
+                <a href="../../web-front/json_res.html">
+            
+                    
+                    json接口资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../UI/">
+            
+                <a href="../../UI/">
+            
+                    
+                    UI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../kit/">
+            
+                <a href="../../kit/">
+            
+                    
+                    kit
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../../kit/vim/note.html">
+            
+                <a href="../../kit/vim/note.html">
+            
+                    
+                    vim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../../kit/git/note.html">
+            
+                <a href="../../kit/git/note.html">
+            
+                    
+                    git/github
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.2.1" data-path="../../kit/git/green_blush.html">
+            
+                <a href="../../kit/git/green_blush.html">
+            
+                    
+                    刷爆github小绿点
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../../kit/markdown/">
+            
+                <a href="../../kit/markdown/">
+            
+                    
+                    Markdown/gitbook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.3.1" data-path="../../kit/markdown/pieces.html">
+            
+                <a href="../../kit/markdown/pieces.html">
+            
+                    
+                    琐碎知识点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3.2" data-path="../../kit/markdown/gitbook_disqus.html">
+            
+                <a href="../../kit/markdown/gitbook_disqus.html">
+            
+                    
+                    gitbook添加disqus作为评论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3.3" data-path="../../kit/markdown/chrome_mark2_md.html">
+            
+                <a href="../../kit/markdown/chrome_mark2_md.html">
+            
+                    
+                    导出chrome书签为Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3.4" data-path="../../kit/markdown/wx_md.html">
+            
+                <a href="../../kit/markdown/wx_md.html">
+            
+                    
+                    Markdown here && 微信公众号
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="../../kit/latex/">
+            
+                <a href="../../kit/latex/">
+            
+                    
+                    LaTex
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="../../kit/ss/">
+            
+                <a href="../../kit/ss/">
+            
+                    
+                    科学上网
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../thinking-in-program/">
+            
+                <a href="../../thinking-in-program/">
+            
+                    
+                    thinking-in-program
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../thinking-in-program/log.html">
+            
+                <a href="../../thinking-in-program/log.html">
+            
+                    
+                    怎样打日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../star.html">
+            
+                <a href="../../star.html">
+            
+                    
+                    我的收藏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../pieces.html">
+            
+                <a href="../../pieces.html">
+            
+                    
+                    琐记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.13.1" data-path="../../paper.html">
+            
+                <a href="../../paper.html">
+            
+                    
+                    论文心得
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../support.html">
+            
+                <a href="../../support.html">
+            
+                    
+                    打赏支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >概率图模型</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x897F;&#x74DC;&#x4E66;&#x6982;&#x5FF5;">&#x897F;&#x74DC;&#x4E66;&#x6982;&#x5FF5;.</h1>
+<h2 id="&#x7B2C;14&#x7AE0;-&#x6982;&#x7387;&#x56FE;&#x6A21;&#x578B;probabilistic-model">&#x7B2C;14&#x7AE0; &#x6982;&#x7387;&#x56FE;&#x6A21;&#x578B;(probabilistic model)</h2>
+<ul>
+<li><p>Page319: &#x9A6C;&#x5C14;&#x79D1;&#x592B;&#x7F51;(Markov network)</p>
+<p>&#x4F7F;&#x7528;&#x65E0;&#x5411;&#x56FE;&#x8868;&#x793A;&#x53D8;&#x91CF;&#x95F4;&#x7684;&#x76F8;&#x5173;&#x5173;&#x7CFB;&#x7684;&#x6982;&#x7387;&#x56FE;&#x6A21;&#x578B;&#x3002;
+&#x6982;&#x7387;&#x56FE;&#x6A21;&#x578B;&#x662F;&#x4E00;&#x7C7B;&#x7528;&#x56FE;&#x6765;&#x8868;&#x8FBE;&#x53D8;&#x91CF;&#x76F8;&#x5173;&#x5173;&#x7CFB;&#x7684;&#x6982;&#x7387;&#x6A21;&#x578B;&#x3002;&#x5B83;&#x4EE5;&#x56FE;&#x4E3A;&#x8868;&#x793A;&#x5DE5;&#x5177;&#xFF0C;&#x6700;&#x5E38;&#x89C1;&#x7684;&#x662F;&#x7528;&#x4E00;&#x4E2A;&#x7ED3;&#x70B9;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x6216;&#x4E00;&#x7EC4;&#x968F;&#x673A;&#x53D8;&#x91CF;&#xFF0C;&#x7ED3;&#x70B9;&#x4E4B;&#x95F4;&#x7684;&#x8FB9;&#x8868;&#x793A;&#x53D8;&#x91CF;&#x95F4;&#x7684;&#x6982;&#x7387;&#x76F8;&#x5173;&#x5173;&#x7CFB;&#xFF0C;&#x5373;&#x300E;&#x53D8;&#x91CF;&#x5173;&#x7CFB;&#x56FE;&#x300F;&#x3002;&#x6839;&#x636E;&#x8FB9;&#x7684;&#x6027;&#x8D28;&#x4E0D;&#x540C;&#xFF0C;&#x6982;&#x7387;&#x56FE;&#x6A21;&#x578B;&#x53EF;&#x5927;&#x81F4;&#x5206;&#x4E3A;&#x4E24;&#x7C7B;&#xFF1A;&#x7B2C;&#x4E00;&#x7C7B;&#x662F;&#x4F7F;&#x7528;&#x6709;&#x5411;&#x65E0;&#x73AF;&#x56FE;&#x8868;&#x793A;&#x53D8;&#x91CF;&#x95F4;&#x7684;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#xFF0C;&#x79F0;&#x4E3A;&#x6709;&#x5411;&#x56FE;&#x6A21;&#x578B;&#x6216;&#x8D1D;&#x53F6;&#x65AF;&#x7F51;&#xFF1B;&#x7B2C;&#x4E8C;&#x7C7B;&#x662F;&#x4F7F;&#x7528;&#x65E0;&#x5411;&#x56FE;&#x8868;&#x793A;&#x53D8;&#x91CF;&#x95F4;&#x7684;&#x76F8;&#x5173;&#x5173;&#x7CFB;&#xFF0C;&#x79F0;&#x4E3A;&#x65E0;&#x5411;&#x56FE;&#x6A21;&#x578B;&#x6216;&#x9A6C;&#x5C14;&#x79D1;&#x592B;&#x7F51;&#x3002;</p>
+</li>
+<li><p>Page319: &#x63A8;&#x65AD;</p>
+<p>&#x6982;&#x7387;&#x6A21;&#x578B;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x79CD;&#x63CF;&#x8FF0;&#x6846;&#x67B6;&#xFF0C;&#x5C06;&#x5B66;&#x4E60;&#x4EFB;&#x52A1;&#x5F52;&#x7ED3;&#x4E8E;&#x8BA1;&#x7B97;&#x53D8;&#x91CF;&#x7684;&#x6982;&#x7387;&#x5206;&#x5E03;&#x3002;&#x5728;&#x6982;&#x7387;&#x6A21;&#x578B;&#x4E2D;&#xFF0C;&#x5229;&#x7528;&#x5DF2;&#x77E5;&#x53D8;&#x91CF;&#x63A8;&#x6D4B;&#x672A;&#x77E5;&#x53D8;&#x91CF;&#x7684;&#x5206;&#x5E03;&#x79F0;&#x4E3A;&#x300E;&#x63A8;&#x65AD;&#x300F;&#xFF0C;&#x5176;&#x6838;&#x5FC3;&#x662F;&#x5982;&#x4F55;&#x57FA;&#x4E8E;&#x53EF;&#x89C2;&#x6D4B;&#x53D8;&#x91CF;&#x63A8;&#x6D4B;&#x51FA;&#x672A;&#x77E5;&#x53D8;&#x91CF;&#x7684;&#x6761;&#x4EF6;&#x5206;&#x5E03;&#x3002;  </p>
+</li>
+<li><p>Page319: &#x9690;&#x9A6C;&#x5C14;&#x79D1;&#x592B;&#x6A21;&#x578B;(Hidden Markov  Model)</p>
+<p>&#x9690;&#x9A6C;&#x5C14;&#x79D1;&#x592B;&#xFF08;HMM&#xFF09;&#x6A21;&#x578B;&#x662F;&#x7ED3;&#x6784;&#x6700;&#x7B80;&#x5355;&#x7684;&#x52A8;&#x6001;&#x8D1D;&#x53F6;&#x65AF;&#x7F51;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x65F6;&#x5E8F;&#x6570;&#x636E;&#x5EFA;&#x6A21;&#xFF0C;&#x5728;&#x8BED;&#x97F3;&#x8BC6;&#x522B;&#x3001;&#x81EA;&#x7136;&#x8BED;&#x8A00;&#x5904;&#x7406;&#x7B49;&#x9886;&#x57DF;&#x6709;&#x5E7F;&#x6CDB;&#x5E94;&#x7528;&#x3002;</p>
+</li>
+<li><p>Page322: &#x9A6C;&#x5C14;&#x79D1;&#x592B;&#x968F;&#x673A;&#x573A;(Markov Random Field)  </p>
+<p>&#x9A6C;&#x5C14;&#x79D1;&#x592B;&#x968F;&#x673A;&#x573A;&#xFF08;MRF&#xFF09;&#x662F;&#x5178;&#x578B;&#x7684;&#x9A6C;&#x5C14;&#x79D1;&#x592B;&#x7F51;&#xFF0C;&#x4E00;&#x79CD;&#x8457;&#x540D;&#x7684;&#x65E0;&#x5411;&#x56FE;&#x6A21;&#x578B;&#x3002;&#x56FE;&#x4E2D;&#x6BCF;&#x4E2A;&#x7ED3;&#x70B9;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x6216;&#x4E00;&#x7EC4;&#x53D8;&#x91CF;&#xFF0C;&#x7ED3;&#x70B9;&#x4E4B;&#x95F4;&#x7684;&#x8FB9;&#x8868;&#x793A;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;&#x4E4B;&#x95F4;&#x7684;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x3002;</p>
+</li>
+<li><p>Page322: &#x52BF;&#x51FD;&#x6570;(potential functions)</p>
+<p>&#x540C;&#x56E0;&#x5B50;&#x3002;</p>
+</li>
+<li><p>Page322: &#x56E0;&#x5B50;(factor)</p>
+<p>&#x9A6C;&#x5C14;&#x79D1;&#x592B;&#x968F;&#x673A;&#x573A;&#x6709;&#x4E00;&#x7EC4;&#x52BF;&#x51FD;&#x6570;&#xFF0C;&#x4EA6;&#x79F0;&#x300E;&#x56E0;&#x5B50;&#x300F;&#xFF0C;&#x8FD9;&#x662F;&#x5B9A;&#x4E49;&#x5728;&#x53D8;&#x91CF;&#x5B50;&#x96C6;&#x4E0A;&#x7684;&#x975E;&#x8D1F;&#x5B9E;&#x51FD;&#x6570;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x5B9A;&#x4E49;&#x6982;&#x7387;&#x5206;&#x5E03;&#x51FD;&#x6570;&#x3002;<br>&#x5BF9;&#x7ED3;&#x70B9;&#x7684;&#x4E00;&#x4E2A;&#x5B50;&#x96C6;&#xFF0C;&#x82E5;&#x4EFB;&#x610F;&#x4E24;&#x7ED3;&#x70B9;&#x95F4;&#x90FD;&#x6709;&#x8FB9;&#x8FDE;&#x63A5;&#xFF0C;&#x5219;&#x79F0;&#x8BE5;&#x7ED3;&#x70B9;&#x5B50;&#x96C6;&#x4E3A;&#x4E00;&#x4E2A;&#x300E;&#x56E2;&#x300F;&#x3002;&#x5728;&#x9A6C;&#x5C14;&#x79D1;&#x592B;&#x968F;&#x673A;&#x573A;&#x4E2D;&#xFF0C;&#x591A;&#x4E2A;&#x53D8;&#x91CF;&#x4E4B;&#x95F4;&#x7684;&#x8054;&#x5408;&#x6982;&#x7387;&#x5206;&#x5E03;&#x80FD;&#x57FA;&#x4E8E;&#x56E2;&#x5206;&#x89E3;&#x4E3A;&#x591A;&#x4E2A;&#x56E0;&#x5B50;&#x7684;&#x4E58;&#x79EF;&#xFF0C;&#x6BCF;&#x4E2A;&#x56E0;&#x5B50;&#x4EC5;&#x4E0E;&#x4E00;&#x4E2A;&#x56E2;&#x76F8;&#x5173;&#x3002;</p>
+</li>
+<li><p>Page323: &#x5168;&#x5C40;&#x9A6C;&#x5C14;&#x79D1;&#x592B;&#x6027;(global Markov property)</p>
+<p>&#x5728;&#x9A6C;&#x5C14;&#x79D1;&#x592B;&#x968F;&#x673A;&#x573A;&#x4E2D;&#x5F97;&#x5230;&#x300E;&#x6761;&#x4EF6;&#x72EC;&#x7ACB;&#x6027;&#x300F;&#x9700;&#x8981;&#x501F;&#x52A9;&#x300E;&#x5206;&#x79BB;&#x300F;&#x7684;&#x6982;&#x5FF5;&#x3002;&#x82E5;&#x4ECE;&#x7ED3;&#x70B9;&#x96C6; A &#x4E2D;&#x7684;&#x7ED3;&#x70B9;&#x5230; B &#x4E2D;&#x7684;&#x7ED3;&#x70B9;&#x90FD;&#x5FC5;&#x987B;&#x7ECF;&#x8FC7;&#x7ED3;&#x70B9;&#x96C6; C &#x4E2D;&#x7684;&#x7ED3;&#x70B9;&#xFF0C;&#x5219;&#x79F0;&#x7ED3;&#x70B9;&#x96C6; A &#x548C; B &#x88AB;&#x7ED3;&#x70B9;&#x96C6; C &#x5206;&#x79BB;&#xFF0C;C &#x79F0;&#x4E3A;&#x300E;&#x5206;&#x79BB;&#x96C6;&#x300F;&#x3002;<br>&#x5168;&#x5C40;&#x9A6C;&#x5C14;&#x79D1;&#x592B;&#x6027;&#x5C31;&#x662F;&#x6307;&#x7ED9;&#x5B9A;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;&#x5B50;&#x96C6;&#x7684;&#x5206;&#x79BB;&#x96C6;&#xFF0C;&#x5219;&#x8FD9;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;&#x5B50;&#x96C6;&#x6761;&#x4EF6;&#x72EC;&#x7ACB;&#x3002;<br>&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x82E5;&#x4EE4; A&#xFF0C;B &#x548C; C &#x5BF9;&#x5E94;&#x7684;&#x53D8;&#x91CF;&#x96C6;&#x5206;&#x522B;&#x4E3A; <script type="math/tex; ">X_A</script>&#xFF0C;<script type="math/tex; ">X_B</script>&#xFF0C;<script type="math/tex; ">X_C</script>&#xFF0C;&#x5219; <script type="math/tex; ">X_A</script> &#x548C; <script type="math/tex; ">X_B</script> &#x5728;&#x7ED9;&#x5B9A; <script type="math/tex; ">X_C</script> &#x7684;&#x6761;&#x4EF6;&#x4E0B;&#x72EC;&#x7ACB;&#xFF0C;&#x8BB0;&#x4E3A;&#xFF1A;<script type="math/tex; ">X_A \perp X_B \mid X_C</script>&#x3002;</p>
+</li>
+<li><p>Page324: &#x5C40;&#x90E8;&#x9A6C;&#x5C14;&#x79D1;&#x592B;&#x6027;(local Markov property)</p>
+<p>&#x7531;&#x5168;&#x5C40;&#x9A6C;&#x5C14;&#x79D1;&#x592B;&#x6027;&#x5F97;&#x51FA;&#x7684;&#x63A8;&#x8BBA;&#x4E4B;&#x4E00;&#x3002;&#x7ED9;&#x5B9A;&#x67D0;&#x53D8;&#x91CF;&#x7684;&#x90BB;&#x63A5;&#x53D8;&#x91CF;&#xFF0C;&#x5219;&#x8BE5;&#x53D8;&#x91CF;&#x6761;&#x4EF6;&#x72EC;&#x7ACB;&#x4E8E;&#x5176;&#x4ED6;&#x53D8;&#x91CF;&#x3002;<br>&#x5F62;&#x5F0F;&#x5316;&#x5730;&#x8BF4;&#xFF0C;&#x4EE4; <script type="math/tex; ">V</script> &#x4E3A;&#x56FE;&#x7684;&#x7ED3;&#x70B9;&#x96C6;&#xFF0C;<script type="math/tex; ">n(v)</script> &#x4E3A;&#x7ED3;&#x70B9; <script type="math/tex; ">v</script> &#x5728;&#x56FE;&#x4E0A;&#x7684;&#x90BB;&#x63A5;&#x7ED3;&#x70B9;&#xFF0C;<script type="math/tex; ">n^*(v) = n(v) \cup \{v\}</script>&#xFF0C;&#x6709; <script type="math/tex; ">X_v \perp X_{V \setminus{n}^*(v)} \mid X_n(v)</script>.<br>&#x6CE8;&#xFF1A;<script type="math/tex; ">\setminus</script> &#x8868;&#x793A;&#x300E;&#x975E;&#x300F;</p>
+</li>
+<li><p>Page325: &#x6210;&#x5BF9;&#x9A6C;&#x5C14;&#x79D1;&#x592B;&#x6027;(pairwise Markov property)</p>
+<p>&#x7531;&#x5168;&#x5C40;&#x9A6C;&#x5C14;&#x79D1;&#x592B;&#x6027;&#x5F97;&#x51FA;&#x7684;&#x63A8;&#x8BBA;&#x4E4B;&#x4E00;&#x3002;&#x7ED9;&#x5B9A;&#x6240;&#x6709;&#x5176;&#x4ED6;&#x53D8;&#x91CF;&#xFF0C;&#x4E24;&#x4E2A;&#x975E;&#x90BB;&#x63A5;&#x53D8;&#x91CF;&#x6761;&#x4EF6;&#x72EC;&#x7ACB;&#x3002;  </p>
+<p>&#x5F62;&#x5F0F;&#x5316;&#x5730;&#x8BF4;&#xFF0C;&#x4EE4;&#x56FE;&#x7684;&#x7ED3;&#x70B9;&#x96C6;&#x548C;&#x8FB9;&#x96C6;&#x5206;&#x522B;&#x4E3A; <script type="math/tex; ">V</script> &#x548C; <script type="math/tex; ">E</script>&#xFF0C;&#x5BF9;&#x56FE;&#x4E2D;&#x7684;&#x4E24;&#x4E2A;&#x7ED3;&#x70B9; <script type="math/tex; ">u</script> &#x548C; <script type="math/tex; ">v</script>&#xFF0C;&#x82E5; <script type="math/tex; ">\langle u,v \rangle \notin E</script>&#xFF0C;&#x5219; <script type="math/tex; ">X_u \perp X_v \mid X_{V\setminus \langle u,v \rangle}</script>.<br>&#x6CE8;&#xFF1A;<script type="math/tex; ">\setminus</script> &#x8868;&#x793A;&#x300E;&#x975E;&#x300F;</p>
+</li>
+<li><p>Page325: &#x9A6C;&#x5C14;&#x79D1;&#x592B;&#x6BEF;(Markov blanket)</p>
+<p>&#x67D0;&#x53D8;&#x91CF;&#x7684;&#x6240;&#x6709;&#x90BB;&#x63A5;&#x53D8;&#x91CF;&#x7EC4;&#x6210;&#x7684;&#x96C6;&#x5408;&#x79F0;&#x4E3A;&#x8BE5;&#x53D8;&#x91CF;&#x7684;&#x9A6C;&#x5C14;&#x79D1;&#x592B;&#x6BEF;&#x3002;  </p>
+</li>
+<li><p>Page325: &#x6761;&#x4EF6;&#x968F;&#x673A;&#x573A;(Conditional Random Field)</p>
+<p>&#x4E00;&#x79CD;&#x5224;&#x522B;&#x5F0F;&#x65E0;&#x5411;&#x56FE;&#x6A21;&#x578B;&#x3002;&#x5224;&#x522B;&#x5F0F;&#x6A21;&#x578B;&#x5BF9;&#x6761;&#x4EF6;&#x5206;&#x5E03;&#x8FDB;&#x884C;&#x5EFA;&#x6A21;&#xFF0C;&#x53EF;&#x770B;&#x4F5C;&#x7ED9;&#x5B9A;&#x89C2;&#x6D4B;&#x503C;&#x7684;&#x9A6C;&#x5C14;&#x79D1;&#x592B;&#x968F;&#x673A;&#x573A;&#xFF0C;&#x4E5F;&#x53EF;&#x770B;&#x4F5C;&#x5BF9;&#x7387;&#x56DE;&#x5F52;&#xFF08;&#x5E38;&#x8BF4;&#x7684;&#x903B;&#x8F91;&#x56DE;&#x5F52;&#xFF09;&#x7684;&#x6269;&#x5C55;&#x3002;<br>&#x6761;&#x4EF6;&#x968F;&#x673A;&#x573A;&#x8BD5;&#x56FE;&#x5BF9;&#x591A;&#x4E2A;&#x53D8;&#x91CF;&#x5728;&#x7ED9;&#x5B9A;&#x89C2;&#x6D4B;&#x503C;&#x540E;&#x7684;&#x6761;&#x4EF6;&#x6982;&#x7387;&#x8FDB;&#x884C;&#x5EFA;&#x6A21;&#x3002;&#x5177;&#x4F53;&#x6765;&#x8BF4;&#xFF0C;&#x82E5;&#x4EE4; <script type="math/tex; ">X=\{x_1,x_2,...,x_n\}</script> &#x4E3A;&#x89C2;&#x6D4B;&#x5E8F;&#x5217;&#xFF0C;<script type="math/tex; ">\mathrm{y} = \{y_1,y_2,...,y_n\}</script> &#x4E3A;&#x4E0E;&#x4E4B;&#x76F8;&#x5E94;&#x7684;&#x6807;&#x8BB0;&#x5E8F;&#x5217;&#xFF0C;&#x5219;&#x6761;&#x4EF6;&#x968F;&#x673A;&#x573A;&#x7684;&#x76EE;&#x6807;&#x662F;&#x6784;&#x5EFA;&#x6761;&#x4EF6;&#x6982;&#x7387;&#x6A21;&#x578B; <script type="math/tex; ">P(\mathrm{y}|X)</script>&#x3002;  </p>
+<p>&#x6807;&#x8BB0;&#x53D8;&#x91CF; <script type="math/tex; ">y</script> &#x53EF;&#x4EE5;&#x662F;&#x7ED3;&#x6784;&#x578B;&#x53D8;&#x91CF;&#xFF0C;&#x5373;&#x5176;&#x5206;&#x91CF;&#x4E4B;&#x95F4;&#x5177;&#x6709;&#x67D0;&#x79CD;&#x76F8;&#x5173;&#x6027;&#x3002;  </p>
+<p>&#x4EE4; <script type="math/tex; ">G=\langle V,E \rangle</script> &#x8868;&#x793A;&#x7ED3;&#x70B9;&#x4E0E;&#x6807;&#x8BB0;&#x53D8;&#x91CF; <script type="math/tex; ">\mathrm{y}</script> &#x4E2D;&#x5143;&#x7D20;&#x4E00;&#x4E00;&#x5BF9;&#x5E94;&#x7684;&#x65E0;&#x5411;&#x56FE;&#xFF0C;<script type="math/tex; ">\mathit{y}_v</script> &#x8868;&#x793A;&#x4E0E;&#x7ED3;&#x70B9; <script type="math/tex; ">v</script> &#x5BF9;&#x5E94;&#x7684;&#x6807;&#x8BB0;&#x53D8;&#x91CF;&#xFF0C;<script type="math/tex; ">n(v)</script> &#x8868;&#x793A;&#x7ED3;&#x70B9; <script type="math/tex; ">v</script> &#x7684;&#x90BB;&#x63A5;&#x7ED3;&#x70B9;&#xFF0C;&#x82E5;&#x56FE; <script type="math/tex; ">G</script> &#x7684;&#x6BCF;&#x4E2A;&#x53D8;&#x91CF; <script type="math/tex; ">\mathit{y}_v</script> &#x90FD;&#x6EE1;&#x8DB3;&#x9A6C;&#x5C14;&#x79D1;&#x592B;&#x6027;&#xFF0C;&#x5373;&#xFF1A;<br><script type="math/tex; ">P(\mathit{y} \mid \mathrm{x}, \mathrm{y}_{V\setminus\{v\}}) = P(\mathit{y}_v \mid \mathrm{x}, \mathrm{y}_{n(v)})</script>
+&#x5219; <script type="math/tex; ">(\mathrm{y}, \mathrm{x})</script> &#x6784;&#x6210;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;&#x968F;&#x673A;&#x573A;&#x3002;  </p>
+</li>
+<li><p>Page326: &#x94FE;&#x5F0F;&#x6761;&#x4EF6;&#x968F;&#x673A;&#x573A;(chain-structured CRF)</p>
+<p>&#x6784;&#x6210;&#x6761;&#x4EF6;&#x968F;&#x673A;&#x573A;&#x7684;&#x56FE; <script type="math/tex; ">G</script>&#xFF0C;&#x7406;&#x8BBA;&#x4E0A;&#x6765;&#x8BF4;&#x53EF;&#x5177;&#x6709;&#x4EFB;&#x610F;&#x7ED3;&#x6784;&#xFF0C;&#x53EA;&#x8981;&#x80FD;&#x8868;&#x793A;&#x6807;&#x8BB0;&#x53D8;&#x91CF;&#x4E4B;&#x95F4;&#x7684;&#x6761;&#x4EF6;&#x72EC;&#x7ACB;&#x6027;&#x5173;&#x7CFB;&#x5373;&#x53EF;&#x3002;<br>&#x4F46;&#x5728;&#x73B0;&#x5B9E;&#x5E94;&#x7528;&#x4E2D;&#xFF0C;&#x5C24;&#x5176;&#x662F;&#x5BF9;&#x6807;&#x8BB0;&#x5E8F;&#x5217;&#x5EFA;&#x6A21;&#x65F6;&#xFF0C;&#x6700;&#x5E38;&#x7528;&#x7684;&#x4ECD;&#x662F;&#x94FE;&#x5F0F;&#x7ED3;&#x6784;&#xFF0C;&#x5373;&#xFF1A;&#x94FE;&#x5F0F;&#x6761;&#x4EF6;&#x968F;&#x673A;&#x573A;&#xFF08;chain-structured CRF&#xFF09;</p>
+</li>
+<li><p>Page328: &#x8FB9;&#x9645;&#x5206;&#x5E03;(marginal distribution)</p>
+<p>&#x8FB9;&#x9645;&#x5206;&#x5E03;&#x662F;&#x6307;&#x5BF9;&#x65E0;&#x5173;&#x53D8;&#x91CF;&#x6C42;&#x548C;&#x6216;&#x79EF;&#x5206;&#x540E;&#x5F97;&#x5230;&#x7ED3;&#x679C;&#x3002;<br>&#x4F8B;&#x5982;&#x5728;&#x9A6C;&#x5C14;&#x79D1;&#x592B;&#x7F51;&#x4E2D;&#xFF0C;&#x53D8;&#x91CF;&#x7684;&#x8054;&#x5408;&#x5206;&#x5E03;&#x88AB;&#x8868;&#x793A;&#x6210;&#x6781;&#x5927;&#x56E2;&#x7684;&#x52BF;&#x51FD;&#x6570;&#x4E58;&#x79EF;&#xFF0C;&#x4E8E;&#x662F;&#xFF0C;&#x7ED9;&#x5B9A;&#x53C2;&#x6570; <script type="math/tex; ">\Theta</script> &#x6C42;&#x89E3;&#x67D0;&#x4E2A;&#x53D8;&#x91CF; <script type="math/tex; ">x</script> &#x7684;&#x5206;&#x5E03;&#xFF0C;&#x5C31;&#x53D8;&#x6210;&#x5BF9;&#x8054;&#x5408;&#x5206;&#x5E03;&#x4E2D;&#x5176;&#x4ED6;&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x79EF;&#x5206;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x8FD9;&#x79F0;&#x4E3A;&#x300E;&#x8FB9;&#x9645;&#x5316;&#x300F;&#xFF08;marginalization&#xFF09;&#x3002;</p>
+</li>
+<li><p>Page328: &#x53D8;&#x91CF;&#x6D88;&#x53BB;</p>
+<p>&#x6982;&#x7387;&#x56FE;&#x6A21;&#x578B;&#x7684;&#x63A8;&#x65AD;&#x65B9;&#x6CD5;&#x5927;&#x81F4;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#xFF1A;&#x7CBE;&#x786E;&#x63A8;&#x65AD;&#x65B9;&#x6CD5;&#x548C;&#x8FD1;&#x4F3C;&#x63A8;&#x65AD;&#x65B9;&#x6CD5;&#x3002;<br>&#x7CBE;&#x786E;&#x63A8;&#x65AD;&#x65B9;&#x6CD5;&#x5B9E;&#x8D28;&#x662F;&#x4E00;&#x79CD;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x7B97;&#x6CD5;&#xFF0C;&#x5B83;&#x5229;&#x7528;&#x56FE;&#x6A21;&#x578B;&#x6240;&#x63CF;&#x8FF0;&#x7684;&#x6761;&#x4EF6;&#x72EC;&#x7ACB;&#x6027;&#x6765;&#x524A;&#x51CF;&#x8BA1;&#x7B97;&#x76EE;&#x6807;&#x6982;&#x7387;&#x503C;&#x6240;&#x9700;&#x7684;&#x8BA1;&#x7B97;&#x91CF;&#x3002;&#x53D8;&#x91CF;&#x6D88;&#x53BB;&#x6CD5;&#x662F;&#x6700;&#x76F4;&#x89C2;&#x7684;&#x7CBE;&#x786E;&#x63A8;&#x65AD;&#x7B97;&#x6CD5;&#xFF0C;&#x4E5F;&#x662F;&#x6784;&#x5EFA;&#x5176;&#x4ED6;&#x7CBE;&#x786E;&#x63A8;&#x65AD;&#x7B97;&#x6CD5;&#x7684;&#x57FA;&#x7840;&#x3002;<br>&#x53D8;&#x91CF;&#x6D88;&#x53BB;&#x6CD5;&#x901A;&#x8FC7;&#x5229;&#x7528;&#x4E58;&#x6CD5;&#x5BF9;&#x52A0;&#x6CD5;&#x7684;&#x5206;&#x914D;&#x7387;&#xFF0C;&#x628A;&#x591A;&#x4E2A;&#x53D8;&#x91CF;&#x7684;&#x79EF;&#x7684;&#x6C42;&#x548C;&#x95EE;&#x9898;&#xFF0C;&#x8F6C;&#x5316;&#x4E3A;&#x5BF9;&#x90E8;&#x5206;&#x53D8;&#x91CF;&#x4EA4;&#x66FF;&#x8FDB;&#x884C;&#x6C42;&#x79EF;&#x4E0E;&#x6C42;&#x548C;&#x7684;&#x95EE;&#x9898;&#x3002;&#x8FD9;&#x79CD;&#x8F6C;&#x5316;&#x4F7F;&#x5F97;&#x6BCF;&#x6B21;&#x7684;&#x6C42;&#x548C;&#x4E0E;&#x6C42;&#x79EF;&#x8FD0;&#x7B97;&#x9650;&#x5236;&#x5728;&#x5C40;&#x90E8;&#xFF0C;&#x4EC5;&#x4E0E;&#x90E8;&#x5206;&#x53D8;&#x91CF;&#x6709;&#x5173;&#xFF0C;&#x4ECE;&#x800C;&#x7B80;&#x5316;&#x4E86;&#x8FD0;&#x7B97;&#x3002;<br>&#x5B83;&#x7684;&#x4E00;&#x4E2A;&#x660E;&#x663E;&#x7684;&#x7F3A;&#x70B9;&#x662F;&#xFF1A;&#x82E5;&#x9700;&#x8BA1;&#x7B97;&#x591A;&#x4E2A;&#x8FB9;&#x9645;&#x5206;&#x5E03;&#xFF0C;&#x91CD;&#x590D;&#x4F7F;&#x7528;&#x53D8;&#x91CF;&#x6D88;&#x53BB;&#x6CD5;&#x5C06;&#x4F1A;&#x9020;&#x6210;&#x5927;&#x91CF;&#x7684;&#x5197;&#x4F59;&#x8BA1;&#x7B97;&#x3002;</p>
+</li>
+<li><p>Page330: &#x4FE1;&#x5FF5;&#x4F20;&#x64AD;(340)(Belief Propagation)</p>
+<p>&#x4EA6;&#x79F0; Sum-Product &#x7B97;&#x6CD5;&#xFF0C;&#x5C06;&#x53D8;&#x91CF;&#x6D88;&#x53BB;&#x6CD5;&#x4E2D;&#x7684;&#x6C42;&#x548C;&#x64CD;&#x4F5C;&#x770B;&#x4F5C;&#x4E00;&#x4E2A;&#x6D88;&#x606F;&#x4F20;&#x9012;&#x8FC7;&#x7A0B;&#xFF0C;&#x8F83;&#x597D;&#x5730;&#x89E3;&#x51B3;&#x4E86;&#x6C42;&#x89E3;&#x591A;&#x4E2A;&#x8FB9;&#x9645;&#x5206;&#x5E03;&#x65F6;&#x7684;&#x91CD;&#x590D;&#x8BA1;&#x7B97;&#x95EE;&#x9898;&#x3002;<br>&#x4FE1;&#x5FF5;&#x4F20;&#x64AD;&#x7B97;&#x6CD5;&#x6700;&#x65E9;&#x7531; Pearl &#x4F5C;&#x4E3A;&#x7CBE;&#x786E;&#x63A8;&#x65AD;&#x6280;&#x672F;&#x63D0;&#x51FA;&#xFF0C;&#x540E;&#x6765;&#x884D;&#x751F;&#x51FA;&#x591A;&#x79CD;&#x8FD1;&#x4F3C;&#x63A8;&#x65AD;&#x7B97;&#x6CD5;&#x3002;&#x5BF9;&#x4E00;&#x822C;&#x7684;&#x5E26;&#x73AF;&#x56FE;&#xFF0C;&#x4FE1;&#x5FF5;&#x4F20;&#x64AD;&#x7B97;&#x6CD5;&#x9700;&#x5728;&#x521D;&#x59CB;&#x5316;&#x3001;&#x6D88;&#x606F;&#x4F20;&#x9012;&#x7B49;&#x73AF;&#x8282;&#x8FDB;&#x884C;&#x8C03;&#x6574;&#xFF0C;&#x7531;&#x6B64;&#x5F62;&#x6210;&#x4E86;&#x8FED;&#x4EE3;&#x4FE1;&#x5FF5;&#x4F20;&#x64AD;&#x7B97;&#x6CD5;&#xFF08;Loopy Belief Propagation&#xFF09;&#x3002;</p>
+</li>
+<li><p>Page331: MCMC(Markov Chain Monte Carlo)</p>
+<p>&#x9A6C;&#x5C14;&#x79D1;&#x592B;&#x94FE;&#x8499;&#x7279;&#x5361;&#x6D1B;&#x65B9;&#x6CD5;&#xFF0C;&#x6982;&#x7387;&#x56FE;&#x6A21;&#x578B;&#x4E2D;&#x6700;&#x5E38;&#x7528;&#x7684;&#x91C7;&#x6837;&#x6280;&#x672F;&#x3002;<br>MCMC &#x65B9;&#x6CD5;&#x5148;&#x8BBE;&#x6CD5;&#x6784;&#x9020;&#x4E00;&#x6761;&#x9A6C;&#x5C14;&#x79D1;&#x592B;&#x94FE;&#xFF0C;&#x4F7F;&#x5176;&#x6536;&#x655B;&#x81F3;&#x5E73;&#x7A33;&#x5206;&#x5E03;&#x6070;&#x4E3A;&#x5F85;&#x4F30;&#x8BA1;&#x53C2;&#x6570;&#x7684;&#x540E;&#x9A8C;&#x5206;&#x5E03;&#xFF0C;&#x7136;&#x540E;&#x901A;&#x8FC7;&#x8FD9;&#x6761;&#x9A6C;&#x5C14;&#x79D1;&#x592B;&#x94FE;&#x6765;&#x4EA7;&#x751F;&#x7B26;&#x5408;&#x540E;&#x9A8C;&#x5206;&#x5E03;&#x7684;&#x6837;&#x672C;&#xFF0C;&#x5E76;&#x57FA;&#x4E8E;&#x8FD9;&#x4E9B;&#x6837;&#x672C;&#x6765;&#x8FDB;&#x884C;&#x4F30;&#x8BA1;&#x3002;&#x8FD9;&#x91CC;&#x9A6C;&#x5C14;&#x79D1;&#x592B;&#x94FE;&#x8F6C;&#x79FB;&#x6982;&#x7387;&#x7684;&#x6784;&#x9020;&#x81F3;&#x5173;&#x91CD;&#x8981;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x5C06;&#x4EA7;&#x751F;&#x4E0D;&#x540C;&#x7684; MCMC &#x7B97;&#x6CD5;&#x3002;</p>
+</li>
+<li><p>Page333: MH &#x7B97;&#x6CD5;(Metropolis-Hastings)</p>
+<p>MH&#xFF08;Metropolis-Hastings&#xFF09;&#x7B97;&#x6CD5;&#x662F; MCMC &#x7684;&#x91CD;&#x8981;&#x4EE3;&#x8868;&#x3002;&#x5B83;&#x57FA;&#x4E8E;&#x300E;&#x62D2;&#x7EDD;&#x91C7;&#x6837;&#x300F;&#x6765;&#x903C;&#x8FD1;&#x5E73;&#x7A33;&#x5206;&#x5E03;&#x3002;&#x7B97;&#x6CD5;&#x6BCF;&#x6B21;&#x6839;&#x636E;&#x4E0A;&#x4E00;&#x8F6E;&#x91C7;&#x6837;&#x7ED3;&#x679C;&#x83B7;&#x5F97;&#x5019;&#x9009;&#x6837;&#x672C;&#xFF0C;&#x4F46;&#x8FD9;&#x4E2A;&#x5019;&#x9009;&#x6837;&#x672C;&#x4F1A;&#x4EE5;&#x4E00;&#x5B9A;&#x6982;&#x7387;&#x88AB;&#x300E;&#x62D2;&#x7EDD;&#x300F;&#x6389;&#x3002;</p>
+</li>
+<li><p>Page334: &#x53D8;&#x5206;&#x63A8;&#x65AD;(variational inference)</p>
+<p>&#x53D8;&#x5206;&#x63A8;&#x65AD;&#x901A;&#x8FC7;&#x4F7F;&#x7528;&#x5DF2;&#x77E5;&#x7B80;&#x5355;&#x5206;&#x5E03;&#x6765;&#x903C;&#x8FD1;&#x9700;&#x63A8;&#x65AD;&#x7684;&#x590D;&#x6742;&#x5206;&#x5E03;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;&#x9650;&#x5236;&#x8FD1;&#x4F3C;&#x5206;&#x5E03;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x4ECE;&#x800C;&#x5F97;&#x5230;&#x4E00;&#x79CD;&#x5C40;&#x90E8;&#x6700;&#x4F18;&#x3001;&#x4F46;&#x5177;&#x6709;&#x786E;&#x5B9A;&#x89E3;&#x7684;&#x8FD1;&#x4F3C;&#x540E;&#x9A8C;&#x5206;&#x5E03;&#x3002;<br>&#x53D8;&#x5206;&#x63A8;&#x65AD;&#x4F7F;&#x7528;&#x7684;&#x8FD1;&#x4F3C;&#x5206;&#x5E03;&#x987B;&#x5177;&#x6709;&#x826F;&#x597D;&#x7684;&#x6570;&#x503C;&#x6027;&#x8D28;&#xFF0C;&#x901A;&#x5E38;&#x662F;&#x57FA;&#x4E8E;&#x8FDE;&#x7EED;&#x578B;&#x53D8;&#x91CF;&#x7684;&#x6982;&#x7387;&#x5BC6;&#x5EA6;&#x51FD;&#x6570;&#x6765;&#x523B;&#x753B;&#x7684;&#x3002;</p>
+</li>
+<li><p>Page334: &#x76D8;&#x5F0F;&#x8BB0;&#x6CD5;(plate notation)</p>
+<p>&#x6982;&#x7387;&#x56FE;&#x6A21;&#x578B;&#x4E00;&#x79CD;&#x7B80;&#x6D01;&#x7684;&#x8868;&#x793A;&#x65B9;&#x6CD5;&#x3002;&#x76F8;&#x4E92;&#x72EC;&#x7ACB;&#x7684;&#x3001;&#x7531;&#x76F8;&#x540C;&#x673A;&#x5236;&#x751F;&#x6210;&#x7684;&#x591A;&#x4E2A;&#x53D8;&#x91CF;&#x88AB;&#x653E;&#x5728;&#x4E00;&#x4E2A;&#x65B9;&#x6846;&#xFF08;&#x76D8;&#xFF09;&#x5185;&#xFF0C;&#x5E76;&#x5728;&#x65B9;&#x6846;&#x4E2D;&#x6807;&#x51FA;&#x7C7B;&#x4F3C;&#x53D8;&#x91CF;&#x91CD;&#x590D;&#x51FA;&#x73B0;&#x7684;&#x4E2A;&#x6570; <script type="math/tex; ">N</script>&#xFF0C;&#x65B9;&#x6846;&#x53EF;&#x4EE5;&#x5D4C;&#x5957;&#x3002;&#x901A;&#x5E38;&#x7528;&#x9634;&#x5F71;&#x6807;&#x6CE8;&#x51FA;&#x5DF2;&#x77E5;&#x7684;&#x3001;&#x80FD;&#x89C2;&#x5BDF;&#x5230;&#x7684;&#x53D8;&#x91CF;&#x3002;&#x5728;&#x5F88;&#x591A;&#x5B66;&#x4E60;&#x4EFB;&#x52A1;&#x4E2D;&#xFF0C;&#x5BF9;&#x5C5E;&#x6027;&#x53D8;&#x91CF;&#x4F7F;&#x7528;&#x76D8;&#x5F0F;&#x8BB0;&#x6CD5;&#x5C06;&#x4F7F;&#x5F97;&#x56FE;&#x8868;&#x793A;&#x975E;&#x5E38;&#x7B80;&#x6D01;&#x3002;</p>
+</li>
+<li><p>Page335: KL &#x6563;&#x5EA6;(414)(Kullback-Leibler divergence)</p>
+<p>&#x4EA6;&#x79F0;&#x76F8;&#x5BF9;&#x71B5;&#x6216;&#x4FE1;&#x606F;&#x6563;&#x5EA6;&#xFF0C;&#x53EF;&#x7528;&#x4E8E;&#x5EA6;&#x91CF;&#x4E24;&#x4E2A;&#x6982;&#x7387;&#x5206;&#x90E8;&#x4E4B;&#x95F4;&#x7684;&#x5DEE;&#x5F02;&#x3002;&#x7ED9;&#x5B9A;&#x4E24;&#x4E2A;&#x6982;&#x7387;&#x5206;&#x5E03; <script type="math/tex; ">P</script> &#x548C; <script type="math/tex; ">Q</script>&#xFF0C;&#x4E8C;&#x8005;&#x4E4B;&#x95F4;&#x7684; KL &#x6563;&#x5EA6;&#x5B9A;&#x4E49;&#x4E3A;&#xFF1A;<br><script type="math/tex; ">KL(P \parallel Q) = \int_{-\infty}^{\infty} p(x) \log \frac {p(x)}{q(x)}dx</script>&#xFF0C;<br>&#x5176;&#x4E2D; <script type="math/tex; ">p(x)</script> &#x548C; <script type="math/tex; ">q(x)</script> &#x5206;&#x522B;&#x4E3A; <script type="math/tex; ">P</script> &#x548C; <script type="math/tex; ">Q</script> &#x7684;&#x6982;&#x7387;&#x5BC6;&#x5EA6;&#x51FD;&#x6570;&#x3002;  </p>
+</li>
+<li><p>Page337: &#x5E73;&#x5747;&#x573A;(mean field)</p>
+</li>
+</ul>
+<p>  &#x4F7F;&#x7528;&#x53D8;&#x5206;&#x6CD5;&#x5BF9;&#x9690;&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x63A8;&#x65AD;&#xFF0C;&#x5BF9;&#x9690;&#x53D8;&#x91CF; <script type="math/tex; ">z_j</script> &#x5206;&#x5E03;&#x8FDB;&#x884C;&#x4F30;&#x8BA1;&#x65F6;&#xFF0C;&#x878D;&#x5408;&#x4E86; <script type="math/tex; ">z_j</script> &#x4E4B;&#x5916;&#x7684;&#x5176;&#x4ED6; <script type="math/tex; ">z_{i \ne j}</script> &#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x8FD9;&#x662F;&#x901A;&#x8FC7;&#x8054;&#x5408;&#x4F3C;&#x7136;&#x51FD;&#x6570; <script type="math/tex; ">\ln p(x,z)</script> &#x5728; <script type="math/tex; ">z_j</script> &#x4E4B;&#x5916;&#x7684;&#x9690;&#x53D8;&#x91CF;&#x5206;&#x5E03;&#x4E0A;&#x6C42;&#x671F;&#x671B;&#x7684;&#x5230;&#x7684;&#xFF0C;&#x79F0;&#x4E3A;&#x5E73;&#x5747;&#x573A;&#x65B9;&#x6CD5;&#x3002;</p>
+<ul>
+<li><p>Page337: &#x8BDD;&#x9898;&#x6A21;&#x578B;(topic model)</p>
+<p>&#x4E00;&#x65CF;&#x751F;&#x6210;&#x5F0F;&#x6709;&#x5411;&#x56FE;&#x6A21;&#x578B;&#xFF0C;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x5904;&#x7406;&#x79BB;&#x6563;&#x578B;&#x7684;&#x6570;&#x636E;&#xFF08;&#x5982;&#x6587;&#x672C;&#x96C6;&#x5408;&#xFF09;&#xFF0C;&#x5728;&#x4FE1;&#x606F;&#x68C0;&#x7D22;&#x3001;&#x81EA;&#x7136;&#x8BED;&#x8A00;&#x5904;&#x7406;&#x7B49;&#x9886;&#x57DF;&#x6709;&#x5E7F;&#x6CDB;&#x5E94;&#x7528;&#x3002;<br>&#x8BDD;&#x9898;&#x8868;&#x793A;&#x4E00;&#x4E2A;&#x6982;&#x5FF5;&#xFF0C;&#x5177;&#x4F53;&#x8868;&#x793A;&#x4E3A;&#x4E00;&#x7CFB;&#x5217;&#x76F8;&#x5173;&#x7684;&#x8BCD;&#xFF0C;&#x4EE5;&#x53CA;&#x5B83;&#x4EEC;&#x5728;&#x8BE5;&#x6982;&#x5FF5;&#x4E0B;&#x51FA;&#x73B0;&#x7684;&#x6982;&#x7387;&#x3002;</p>
+</li>
+<li><p>Page337: &#x9690;&#x72C4;&#x5229;&#x514B;&#x96F7;&#x5206;&#x914D;&#x6A21;&#x578B;(Latent Dirichlet Allocation)</p>
+<p>&#x9690;&#x72C4;&#x5229;&#x514B;&#x96F7;&#x5206;&#x914D;&#x6A21;&#x578B;&#xFF08;Latent Dirichlet Allocation&#xFF0C;&#x7B80;&#x79F0; LDA&#xFF09;&#x662F;&#x8BDD;&#x9898;&#x6A21;&#x578B;&#x7684;&#x5178;&#x578B;&#x4EE3;&#x8868;&#x3002;<br>&#x73B0;&#x5B9E;&#x4EFB;&#x52A1;&#x4E2D;&#x53EF;&#x901A;&#x8FC7;&#x7EDF;&#x8BA1;&#x6587;&#x6863;&#x4E2D;&#x51FA;&#x73B0;&#x7684;&#x8BCD;&#x6765;&#x83B7;&#x5F97;&#x8BCD;&#x9891;&#x5411;&#x91CF;&#xFF0C;&#x4F46;&#x901A;&#x5E38;&#x5E76;&#x4E0D;&#x77E5;&#x9053;&#x8FD9;&#x7EC4;&#x6587;&#x6863;&#x8C08;&#x8BBA;&#x4E86;&#x54EA;&#x4E9B;&#x8BDD;&#x9898;&#x3002;LDA &#x4ECE;&#x751F;&#x6210;&#x5F0F;&#x6A21;&#x578B;&#x7684;&#x89D2;&#x5EA6;&#x770B;&#x5F85;&#x6587;&#x6863;&#x548C;&#x8BDD;&#x9898;&#x3002;<br>&#x5177;&#x4F53;&#x6765;&#x8BF4;&#xFF0C;LDA &#x8BA4;&#x4E3A;&#x6BCF;&#x7BC7;&#x6587;&#x6863;&#x5305;&#x542B;&#x591A;&#x4E2A;&#x8BDD;&#x9898;&#xFF0C;&#x4E0D;&#x59A8;&#x7528;&#x5411;&#x91CF; <script type="math/tex; ">\Theta_t \in \mathbb{R}^N</script> &#x8868;&#x793A;&#x6587;&#x6863; <script type="math/tex; ">t</script> &#x4E2D;&#x6240;&#x5305;&#x542B;&#x7684;&#x6BCF;&#x4E2A;&#x8BDD;&#x9898;&#x7684;&#x6BD4;&#x4F8B;&#xFF0C;<script type="math/tex; ">\Theta_{t,k}</script> &#x5373;&#x8868;&#x793A;&#x6587;&#x6863; <script type="math/tex; ">t</script> &#x4E2D;&#x5305;&#x542B;&#x8BDD;&#x9898; <script type="math/tex; ">k</script> &#x7684;&#x6BD4;&#x4F8B;&#xFF0C;&#x8FDB;&#x800C;&#x901A;&#x8FC7;&#x4E0B;&#x9762;&#x7684;&#x6B65;&#x9AA4;&#x7531;&#x8BDD;&#x9898;&#x751F;&#x6210;&#x6587;&#x6863; <script type="math/tex; ">t</script>&#xFF1A;  </p>
+</li>
+<li>&#x6839;&#x636E;&#x53C2;&#x6570;&#x4E3A; <script type="math/tex; ">\alpha</script> &#x7684;&#x72C4;&#x5229;&#x514B;&#x96F7;&#x5206;&#x5E03;&#x968F;&#x673A;&#x91C7;&#x6837;&#x4E00;&#x4E2A;&#x8BDD;&#x9898;&#x5206;&#x5E03; <script type="math/tex; ">\Theta_t</script>&#xFF1B;</li>
+<li><p>&#x6309;&#x5982;&#x4E0B;&#x6B65;&#x9AA4;&#x751F;&#x6210;&#x6587;&#x6863;&#x4E2D;&#x7684; <script type="math/tex; ">N</script> &#x4E2A;&#x8BCD;&#xFF1A;  </p>
+<ul>
+<li>&#x6839;&#x636E; <script type="math/tex; ">\Theta_t</script> &#x8FDB;&#x884C;&#x8BDD;&#x9898;&#x6307;&#x6D3E;&#xFF0C;&#x5F97;&#x5230;&#x6587;&#x6863; <script type="math/tex; ">t</script> &#x4E2D;&#x7684;&#x8BCD; <script type="math/tex; ">n</script> &#x7684;&#x8BDD;&#x9898; <script type="math/tex; ">z_t,n</script>&#xFF1B;</li>
+<li>&#x6839;&#x636E;&#x6307;&#x6D3E;&#x7684;&#x8BDD;&#x9898;&#x6240;&#x5BF9;&#x5E94;&#x7684;&#x8BCD;&#x9891;&#x5206;&#x5E03; <script type="math/tex; ">\mathcal{\beta_k}</script> &#x968F;&#x673A;&#x91C7;&#x6837;&#x751F;&#x6210;&#x8BCD;&#x3002;</li>
+</ul>
+</li>
+<li><p>Page340: &#x975E;&#x53C2;&#x6570;&#x5316;(non-parametric)&#x6CD5;</p>
+<p>&#x4E00;&#x822C;&#x8BA4;&#x4E3A;&#x5728;&#x4E00;&#x4E2A;&#x7EDF;&#x8BA1;&#x63A8;&#x65AD;&#x95EE;&#x9898;&#x4E2D;&#xFF0C;&#x5982;&#x7ED9;&#x5B9A;&#x6216;&#x8005;&#x5047;&#x5B9A;&#x4E86;&#x603B;&#x4F53;&#x5206;&#x5E03;&#x7684;&#x5177;&#x4F53;&#x5F62;&#x5F0F;&#xFF0C;&#x53EA;&#x662F;&#x5176;&#x4E2D;&#x542B;&#x6709;&#x82E5;&#x5E72;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x8981;&#x57FA;&#x4E8E;&#x6765;&#x81EA;&#x603B;&#x4F53;&#x7684;&#x6837;&#x672C;&#x5BF9;&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x505A;&#x51FA;&#x4F30;&#x8BA1;&#x6216;&#x8005;&#x8FDB;&#x884C;&#x67D0;&#x79CD;&#x5F62;&#x5F0F;&#x7684;&#x5047;&#x8BBE;&#x68C0;&#x9A8C;&#xFF0C;&#x8FD9;&#x7C7B;&#x63A8;&#x65AD;&#x65B9;&#x6CD5;&#x79F0;&#x4E3A;&#x975E;&#x53C2;&#x6570;&#x5316;&#x65B9;&#x6CD5;&#x3002;&#x975E;&#x53C2;&#x6570;&#x5316;&#x662F;&#x6307;&#x53C2;&#x6570;&#x7684;&#x6570;&#x76EE;&#x65E0;&#x987B;&#x4E8B;&#x5148;&#x6307;&#x5B9A;&#xFF0C;&#x662F;&#x8D1D;&#x53F6;&#x65AF;&#x5B66;&#x4E60;&#x65B9;&#x6CD5;&#x7684;&#x91CD;&#x8981;&#x53D1;&#x5C55;&#x3002;</p>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ch13.html" class="navigation navigation-prev " aria-label="Previous page: 半监督学习">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ch15.html" class="navigation navigation-next " aria-label="Next page: 规则学习">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"概率图模型","level":"1.3.4.1.14","depth":4,"next":{"title":"规则学习","level":"1.3.4.1.15","depth":4,"path":"ml/melon/ch15.md","ref":"ml/melon/ch15.md","articles":[]},"previous":{"title":"半监督学习","level":"1.3.4.1.13","depth":4,"path":"ml/melon/ch13.md","ref":"ml/melon/ch13.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["disqus","github","toggle-chapters","mathjax","mermaid-gb3"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"ahangchen-blog"},"github":{"url":"https://github.com/ahangchen/windy-afternoon"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ml/melon/ch14.md","mtime":"2017-12-05T14:29:01.079Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-01-09T07:12:15.546Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="https://cdn.mathjax.org/mathjax/2.6-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+
