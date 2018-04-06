@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Object Detection · GitBook</title>
+        <title>读论文系列·YOLO · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -75,10 +75,10 @@
     <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="rcnn.html" />
+    <link rel="next" href="../../zzh_ml_notes.html" />
     
     
-    <link rel="prev" href="../../reid/evaluate.html" />
+    <link rel="prev" href="faster_rcnn.html" />
     
 
     </head>
@@ -587,7 +587,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3.3.6" data-path="./">
+        <li class="chapter " data-level="1.3.3.6" data-path="./">
             
                 <a href="./">
             
@@ -653,7 +653,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3.6.5" data-path="yolo.html">
+        <li class="chapter active" data-level="1.3.3.6.5" data-path="yolo.html">
             
                 <a href="yolo.html">
             
@@ -1691,7 +1691,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../../.." >Object Detection</a>
+        <a href="../../.." >读论文系列·YOLO</a>
     </h1>
 </div>
 
@@ -1706,17 +1706,85 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="&#x76EE;&#x6807;&#x68C0;&#x6D4B;&#x76F8;&#x5173;&#x8BBA;&#x6587;">&#x76EE;&#x6807;&#x68C0;&#x6D4B;&#x76F8;&#x5173;&#x8BBA;&#x6587;</h2>
+                                <h1 id="&#x8BFB;&#x8BBA;&#x6587;&#x7CFB;&#x5217;&#xFF1A;object-detection-cvpr2016-yolo">&#x8BFB;&#x8BBA;&#x6587;&#x7CFB;&#x5217;&#xFF1A;Object Detection CVPR2016 YOLO</h1>
+<blockquote>
+<p>CVPR2016&#xFF1A; You Only Look Once:Unified, Real-Time Object Detection</p>
+</blockquote>
+<p>&#x8F6C;&#x8F7D;&#x8BF7;&#x6CE8;&#x660E;&#x4F5C;&#x8005;&#xFF1A;<a href="https://github.com/ahangchen" target="_blank">&#x68A6;&#x91CC;&#x8336;</a></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1828517-a88772a3cbb2c9a7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="YOLO detection system"></p>
+<p>YOLO&#xFF0C;You Only Look Once&#xFF0C;&#x6452;&#x5F03;&#x4E86;RCNN&#x7CFB;&#x5217;&#x65B9;&#x6CD5;&#x4E2D;&#x7684;region proposal&#x6B65;&#x9AA4;&#xFF0C;&#x5C06;detection&#x95EE;&#x9898;&#x8F6C;&#x4E3A;&#x4E00;&#x4E2A;&#x56DE;&#x5F52;&#x95EE;&#x9898;</p>
+<h2 id="&#x7F51;&#x7EDC;&#x7ED3;&#x6784;">&#x7F51;&#x7EDC;&#x7ED3;&#x6784;</h2>
 <ul>
-<li><a href="rcnn.html">RCNN</a></li>
-<li><a href="sppnet.html">SPPNet</a></li>
-<li><a href="fast_rcnn.html">Fast RCNN</a></li>
-<li><a href="faster_rcnn.html">Faster RCNN</a></li>
-<li><a href="yolo.html">YOLO</a></li>
-<li>SSD</li>
-<li>YOLO2</li>
-<li>YOLO3</li>
+<li><p>&#x8F93;&#x5165;&#x56FE;&#x7247;&#xFF1A;resize&#x5230;448x448</p>
+</li>
+<li><p>&#x6574;&#x5F20;&#x56FE;&#x7247;&#x8F93;&#x5165;&#x5377;&#x79EF;&#x795E;&#x7ECF;&#x7F51;&#x7EDC;&#xFF08;24&#x5C42;&#x5377;&#x79EF;+2&#x5C42;&#x5168;&#x8FDE;&#x63A5;&#xFF0C;&#x4E0B;&#x9762;&#x8FD9;&#x5F20;&#x793A;&#x610F;&#x56FE;&#x662F;Fast YOLO&#x7684;&#xFF09;</p>
+</li>
 </ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/1828517-02e0f65d4bbd1ef3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="CNN"></p>
+<ul>
+<li>&#x5C06;&#x56FE;&#x7247;&#x5212;&#x5206;&#x4E3A;SxS&#x4E2A;&#x683C;&#x5B50;&#xFF0C;S=7</li>
+<li>&#x8F93;&#x51FA;&#x4E00;&#x4E2A;SxS&#x5927;&#x5C0F;&#x7684;class probability map&#xFF0C;&#x4E3A;&#x56FE;&#x7247;&#x4E0A;&#x6BCF;&#x4E2A;&#x683C;&#x5B50;&#x6240;&#x5C5E;&#x7684;&#x5206;&#x7C7B;</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/1828517-da68332415c4cb7e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Model"></p>
+<ul>
+<li>&#x8F93;&#x51FA;&#x4E3A;&#x6BCF;&#x4E2A;&#x683C;&#x5B50;&#x8F93;&#x51FA;B&#x4E2A;bounding box&#xFF0C;&#x6BCF;&#x4E2A;bounding box&#x7531;x,y,w,h&#x8868;&#x793A;&#xFF0C;&#x4E3A;&#x6BCF;&#x4E2A;bounding box&#x8F93;&#x51FA;&#x4E00;&#x4E2A;confidence&#xFF0C;&#x5373;&#x5C5E;&#x4E8E;&#x524D;&#x666F;&#x7684;&#x7F6E;&#x4FE1;&#x5EA6;</li>
+</ul>
+<blockquote>
+<p>&#x4E8E;&#x662F;&#x8F93;&#x51FA;&#x53EF;&#x4EE5;&#x8868;&#x793A;&#x4E3A;&#x4E00;&#x4E2A;SxSx(B*(4+1)+C)&#x7684;tensor&#xFF0C;&#x8BAD;&#x7EC3;&#x53EA;&#x9700;&#x8981;&#x6839;&#x636E;&#x6570;&#x636E;&#x96C6;&#x51C6;&#x5907;&#x597D;&#x8FD9;&#x6837;&#x7684;tensor&#x8FDB;&#x884C;regression&#x5C31;&#x884C;</p>
+</blockquote>
+<ul>
+<li>&#x5BF9;&#x6240;&#x6709;bounding box&#x6309;&#x7167;confidence&#x505A;&#x975E;&#x6781;&#x5927;&#x6291;&#x5236;&#xFF0C;&#x5F97;&#x5230;&#x68C0;&#x6D4B;&#x7ED3;&#x679C;</li>
+</ul>
+<h2 id="&#x8BAD;&#x7EC3;">&#x8BAD;&#x7EC3;</h2>
+<h3 id="loss">Loss</h3>
+<p><img src="https://upload-images.jianshu.io/upload_images/1828517-0f9a4a9aa50514a2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="YOLO Loss Function"></p>
+<ul>
+<li>&#x524D;&#x4E24;&#x884C;&#x4E3A;&#x5B9A;&#x4F4D;loss&#xFF0C;&#x3BB;<sub>coord</sub>&#x4E3A;&#x5B9A;&#x4F4D;loss&#x7684;&#x6743;&#x91CD;&#xFF0C;&#x8BBA;&#x6587;&#x4E2D;&#x53D6;5</li>
+<li>&#x7B2C;&#x4E09;&#x884C;&#x4E3A;&#x4E00;&#x4E2A;bounding box&#x5C5E;&#x4E8E;&#x524D;&#x666F;&#x65F6;&#x7684;&#x7F6E;&#x4FE1;&#x5EA6;&#x56DE;&#x5F52;loss&#xFF0C;<ul>
+<li>&#x5F53;&#x683C;&#x5B50;&#x4E2D;&#x6709;&#x5BF9;&#x8C61;&#x51FA;&#x73B0;&#x65F6;&#xFF0C;&#x771F;&#x5B9E;C<sub>i</sub>&#x4E3A;1&#xFF0C;</li>
+<li>1<sub>ij</sub><sup>obj</sup>&#x662F;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x5F53;bounding box&#x201C;&#x8D1F;&#x8D23;(is responsible for)&#x201D;&#x56FE;&#x4E2D;&#x4E00;&#x4E2A;&#x771F;&#x5B9E;&#x5BF9;&#x8C61;&#x65F6;&#x4E3A;1&#xFF0C;&#x5426;&#x5219;&#x4E3A;0&#xFF0C;</li>
+<li>&#x6240;&#x8C13;&#x201C;&#x8D1F;&#x8D23;&#x201D;&#xFF0C;&#x6307;&#x7684;&#x662F;&#x5728;&#x5F53;&#x524D;&#x8FD9;&#x4E2A;&#x683C;&#x5B50;&#x7684;&#x6240;&#x6709;bounding box&#x4E2D;&#xFF0C;&#x8FD9;&#x4E2A;bounding box&#x4E0E;&#x771F;&#x5B9E;&#x7684;bounding box&#x91CD;&#x53E0;&#x7387;&#x6700;&#x5927;</li>
+</ul>
+</li>
+<li>&#x7B2C;&#x56DB;&#x884C;&#x4E3A;&#x4E00;&#x4E2A;bounding box&#x5C5E;&#x4E8E;&#x80CC;&#x666F;&#x65F6;&#x7684;&#x7F6E;&#x4FE1;&#x5EA6;&#x56DE;&#x5F52;loss&#xFF0C;<ul>
+<li>&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x8D1F;&#x6837;&#x672C;&#x8FC7;&#x591A;&#x5BFC;&#x81F4;&#x6A21;&#x578B;&#x8DD1;&#x504F;&#xFF0C; &#x3BB;<sub>noobj</sub>=0.5&#xFF0C;</li>
+<li>1<sub>ij</sub><sup>noobj</sup>&#x662F;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x4E3A;1<sub>ij</sub><sup>obj</sup>&#x53D6;&#x53CD;</li>
+<li>&#x4E8E;&#x662F;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#x4E00;&#x4E2A;&#x683C;&#x5B50;&#x7684;&#x4E24;&#x4E2A;bounding box&#x7684;&#x5206;&#x5DE5;&#xFF1A;&#x4E00;&#x4E2A;&#x8D21;&#x732E;&#x524D;&#x666F;loss&#xFF0C;&#x4E00;&#x4E2A;&#x8D21;&#x732E;&#x80CC;&#x666F;loss &#xFF0C;&#x4E0D;&#x8BBA;&#x662F;&#x524D;&#x666F;&#x80CC;&#x666F;box&#xFF0C;&#x6211;&#x4EEC;&#x90FD;&#x5E0C;&#x671B;&#x5B83;&#x4EEC;&#x7684;confidence&#x63A5;&#x8FD1;&#x771F;&#x5B9E;confidence&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#xFF0C;&#x5982;&#x679C; &#x3BB;<sub>noobj</sub>=1&#xFF0C; &#x7B2C;&#x56DB;&#x4E94;&#x884C;&#x53EF;&#x4EE5;&#x5408;&#x5E76;&#x4E3A;&#x4E00;&#x9879;&#x6C42;&#x548C;&#xFF0C;&#x4F46;&#x7531;&#x4E8E;&#x80CC;&#x666F;box&#x592A;&#x591A;&#xFF0C;&#x6240;&#x4EE5;&#x624D;&#x5355;&#x72EC;&#x62C6;&#x5F00;&#x52A0;&#x4E86;&#x6743;&#x91CD;&#x7EA6;&#x675F;</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>&#x7B2C;&#x4E94;&#x884C;&#x4E3A;&#x5206;&#x7C7B;loss&#xFF0C;1<sub>i</sub><sup>obj</sup>&#x662F;&#x4E00;&#x4E2A;&#x6761;&#x4EF6;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x5F53;&#x6709;&#x5BF9;&#x8C61;&#x51FA;&#x73B0;&#x5728;&#x8FD9;&#x4E2A;&#x683C;&#x5B50;&#x4E2D;&#xFF0C;&#x53D6;1&#xFF0C;&#x5426;&#x5219;&#x53D6;0</li>
+</ul>
+<p>YOLO&#x91CC;&#x6700;&#x6838;&#x5FC3;&#x7684;&#x4E1C;&#x897F;&#x5C31;&#x8BB2;&#x5B8C;&#x4E86;&#xFF0C;&#x5176;&#x5B9E;&#x53EF;&#x4EE5;&#x628A;YOLO&#x770B;&#x4F5C;&#x56FA;&#x5B9A;region proposal&#x7684;Faster RCNN&#xFF0C;&#x4E8E;&#x662F;&#x53EF;&#x4EE5;&#x7701;&#x6389;Faster RCNN&#x91CC;region proposal&#x90E8;&#x5206;&#xFF0C;&#x5206;&#x7C7B;&#x548C;bounding box regression&#x8DDF;Faster RCNN&#x662F;&#x5DEE;&#x4E0D;&#x591A;&#x7684;</p>
+<h2 id="&#x7EC6;&#x8282;">&#x7EC6;&#x8282;</h2>
+<h3 id="leaky-relu">Leaky Relu</h3>
+<p>&#x7F51;&#x7EDC;&#x4E2D;&#x53EA;&#x6709;&#x6700;&#x540E;&#x7684;&#x5168;&#x8FDE;&#x63A5;&#x5C42;&#x7528;&#x4E86;&#x7EBF;&#x6027;&#x7684;&#x6FC0;&#x6D3B;&#x51FD;&#x6570;&#xFF0C;&#x5176;&#x4ED6;&#x5C42;&#x7528;&#x4E86;leaky Relu&#xFF1A;f(x)=max(x, 0.1x)</p>
+<p>&#x5BF9;&#x6BD4;Relu&#x548C;leaky Relu</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1828517-0828da0d1164c024.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Relu"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1828517-6fa61d70fdc248c5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Leaky Relu"></p>
+<p>&#x5728;x&#x5C0F;&#x4E8E;0&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x7528;&#x4E86;0.1x&#xFF0C;&#x907F;&#x514D;&#x4F7F;&#x7528;relu&#x7684;&#x65F6;&#x5019;&#x6709;&#x4E9B;&#x5355;&#x5143;&#x6C38;&#x8FDC;&#x5F97;&#x4E0D;&#x5230;&#x6FC0;&#x6D3B;&#xFF08;Dead ReLU Problem&#xFF09;</p>
+<h3 id="fast-yolo">Fast YOLO</h3>
+<p>&#x5377;&#x79EF;&#x5C42;&#x66F4;&#x5C11;&#xFF0C;&#x53EA;&#x6709;9&#x5C42;&#x5377;&#x79EF;+2&#x5C42;&#x5168;&#x8FDE;&#x63A5;&#xFF0C;&#x6BCF;&#x5C42;filters&#x4E5F;&#x66F4;&#x5C11;&#xFF0C;&#x4E8E;&#x662F;&#x901F;&#x5EA6;&#x66F4;&#x5FEB;</p>
+<h2 id="&#x5B9E;&#x9A8C;&#x6548;&#x679C;">&#x5B9E;&#x9A8C;&#x6548;&#x679C;</h2>
+<ul>
+<li>&#x5BF9;&#x6BD4;&#x5F53;&#x524D;&#x6700;&#x597D;&#x65B9;&#x6CD5;&#xFF1A;</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/1828517-3d2bdaa25f96ee6d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="SOA"></p>
+<p>Fast YOLO&#x901F;&#x5EA6;&#x6700;&#x5FEB;&#xFF0C;&#x51C6;&#x786E;&#x7387;&#x4E0D;&#x592A;&#x9AD8;&#xFF0C;&#x4F46;&#x8FD8;&#x662F;&#x6BD4;&#x4F20;&#x7EDF;&#x65B9;&#x6CD5;&#x597D;&#xFF0C;YOLO&#x5219;&#x6BD4;&#x8F83;&#x4E2D;&#x5EB8;&#xFF0C;&#x901F;&#x5EA6;&#x4E0D;&#x6162;&#xFF0C;&#x51C6;&#x786E;&#x7387;&#x4E5F;&#x4E0D;&#x592A;&#x9AD8;&#xFF0C;&#x4F46;&#x4E5F;&#x8FD8;&#x884C;&#x3002;</p>
+<ul>
+<li>&#x518D;&#x770B;&#x770B;&#x5177;&#x4F53;&#x662F;&#x5728;&#x54EA;&#x4E9B;&#x7C7B;&#x578B;&#x7684;&#x56FE;&#x7247;&#x4E0A;&#x51FA;&#x9519;&#x7684;&#xFF1A;</li>
+</ul>
+<p><img src="https://upload-images.jianshu.io/upload_images/1828517-5da87baf34a44e0a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Error Analysis"></p>
+<p>&#x4E3B;&#x8981;&#x662F;&#x5B9A;&#x4F4D;&#x4E0D;&#x51C6;&#xFF08;&#x6BD5;&#x7ADF;&#x6CA1;&#x6709;&#x7CBE;&#x7EC6;&#x7684;region proposal&#xFF09;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x80CC;&#x666F;&#x4E0A;&#x51FA;&#x9519;&#x8F83;&#x5C11;&#xFF08;&#x4E0D;&#x5BB9;&#x6613;&#x628A;&#x80CC;&#x666F;&#x5F53;&#x6210;&#x5BF9;&#x8C61;&#xFF09;</p>
+<h2 id="&#x7F3A;&#x70B9;">&#x7F3A;&#x70B9;</h2>
+<ul>
+<li>&#x56FA;&#x5B9A;&#x7684;&#x683C;&#x5B50;&#x662F;&#x4E00;&#x79CD;&#x5F88;&#x5F3A;&#x7684;&#x7A7A;&#x95F4;&#x9650;&#x5236;&#xFF0C;7x7&#x7684;&#x683C;&#x5B50;&#x51B3;&#x5B9A;&#x4E86;&#x6574;&#x5F20;&#x56FE;&#x7247;&#x6700;&#x591A;&#x9884;&#x6D4B;98&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5BF9;&#x4E8E;&#x5BF9;&#x8C61;&#x6570;&#x91CF;&#x5F88;&#x591A;&#x7684;&#x56FE;&#x7247;&#xFF08;&#x6BD4;&#x5982;&#x9E1F;&#x7FA4;&#xFF09;&#x65E0;&#x80FD;&#x4E3A;&#x529B;</li>
+<li>&#x96BE;&#x4EE5;&#x6CDB;&#x5316;&#x5230;&#x5176;&#x4ED6;&#x5F62;&#x72B6;&#x6216;&#x89D2;&#x5EA6;&#x7684;&#x7269;&#x4F53;&#x4E0A;</li>
+<li>&#x635F;&#x5931;&#x51FD;&#x6570;&#x6CA1;&#x6709;&#x8003;&#x8651;&#x4E0D;&#x540C;&#x5C3A;&#x5BF8;&#x7269;&#x4F53;&#x7684;error&#x6743;&#x91CD;&#xFF0C;&#x5927;box&#x6743;&#x91CD;&#x548C;&#x5C0F;box&#x6743;&#x91CD;&#x4E00;&#x6837;</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>Anyway&#xFF0C;YOLO&#x7ED3;&#x6784;&#x8FD8;&#x662F;&#x633A;&#x4F18;&#x96C5;&#x7684;&#xFF0C;&#x6BD4;Faster RCNN&#x9ED1;&#x79D1;&#x6280;&#x5C11;&#x591A;&#x4E86;&#xFF0C;&#x66F4;&#x91CD;&#x8981;&#x7684;&#x662F;&#xFF0C;&#x5B83;&#x662F;&#x5F53;&#x65F6;&#x6700;&#x5FEB;&#x7684;&#x6DF1;&#x5EA6;&#x5B66;&#x4E60;&#x68C0;&#x6D4B;&#x6A21;&#x578B;&#xFF0C;&#x4E5F;&#x662F;&#x5F88;&#x503C;&#x5F97;&#x80AF;&#x5B9A;&#x7684;&#x3002;</p>
 
                                 
                                 </section>
@@ -1744,12 +1812,12 @@
 
             
                 
-                <a href="../../reid/evaluate.html" class="navigation navigation-prev " aria-label="Previous page: Evaluate">
+                <a href="faster_rcnn.html" class="navigation navigation-prev " aria-label="Previous page: 读论文系列·Faster RCNN">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="rcnn.html" class="navigation navigation-next " aria-label="Next page: 读论文系列·干货满满的RCNN">
+                <a href="../../zzh_ml_notes.html" class="navigation navigation-next " aria-label="Next page: 《机器学习》（周志华）读书笔记">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1760,7 +1828,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Object Detection","level":"1.3.3.6","depth":3,"next":{"title":"读论文系列·干货满满的RCNN","level":"1.3.3.6.1","depth":4,"path":"ml/papers/detection/rcnn.md","ref":"ml/papers/detection/rcnn.md","articles":[]},"previous":{"title":"Evaluate","level":"1.3.3.5.6","depth":4,"path":"ml/reid/evaluate.md","ref":"ml/reid/evaluate.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["disqus","github","toggle-chapters","mathjax","mermaid-gb3"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"ahangchen-blog"},"github":{"url":"https://github.com/ahangchen/windy-afternoon"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ml/papers/detection/README.md","mtime":"2018-04-06T12:44:29.227Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-04-06T12:44:44.964Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"读论文系列·YOLO","level":"1.3.3.6.5","depth":4,"next":{"title":"《机器学习》（周志华）读书笔记","level":"1.3.4","depth":2,"path":"ml/zzh_ml_notes.md","ref":"ml/zzh_ml_notes.md","articles":[{"title":"西瓜书概念整理","level":"1.3.4.1","depth":3,"path":"ml/melon/README.md","ref":"ml/melon/README.md","articles":[{"title":"绪论","level":"1.3.4.1.1","depth":4,"path":"ml/melon/ch01.md","ref":"ml/melon/ch01.md","articles":[]},{"title":"模型评估与选择","level":"1.3.4.1.2","depth":4,"path":"ml/melon/ch02.md","ref":"ml/melon/ch02.md","articles":[]},{"title":"线性模型","level":"1.3.4.1.3","depth":4,"path":"ml/melon/ch03.md","ref":"ml/melon/ch03.md","articles":[]},{"title":"决策树","level":"1.3.4.1.4","depth":4,"path":"ml/melon/ch04.md","ref":"ml/melon/ch04.md","articles":[]},{"title":"神经网络","level":"1.3.4.1.5","depth":4,"path":"ml/melon/ch05.md","ref":"ml/melon/ch05.md","articles":[]},{"title":"支持向量机","level":"1.3.4.1.6","depth":4,"path":"ml/melon/ch06.md","ref":"ml/melon/ch06.md","articles":[]},{"title":"贝叶斯分类器","level":"1.3.4.1.7","depth":4,"path":"ml/melon/ch07.md","ref":"ml/melon/ch07.md","articles":[]},{"title":"集成学习","level":"1.3.4.1.8","depth":4,"path":"ml/melon/ch08.md","ref":"ml/melon/ch08.md","articles":[]},{"title":"聚类","level":"1.3.4.1.9","depth":4,"path":"ml/melon/ch09.md","ref":"ml/melon/ch09.md","articles":[]},{"title":"降维与度量学习","level":"1.3.4.1.10","depth":4,"path":"ml/melon/ch10.md","ref":"ml/melon/ch10.md","articles":[]},{"title":"特征选择与稀疏学习","level":"1.3.4.1.11","depth":4,"path":"ml/melon/ch11.md","ref":"ml/melon/ch11.md","articles":[]},{"title":"计算学习理论","level":"1.3.4.1.12","depth":4,"path":"ml/melon/ch12.md","ref":"ml/melon/ch12.md","articles":[]},{"title":"半监督学习","level":"1.3.4.1.13","depth":4,"path":"ml/melon/ch13.md","ref":"ml/melon/ch13.md","articles":[]},{"title":"概率图模型","level":"1.3.4.1.14","depth":4,"path":"ml/melon/ch14.md","ref":"ml/melon/ch14.md","articles":[]},{"title":"规则学习","level":"1.3.4.1.15","depth":4,"path":"ml/melon/ch15.md","ref":"ml/melon/ch15.md","articles":[]},{"title":"强化学习","level":"1.3.4.1.16","depth":4,"path":"ml/melon/ch16.md","ref":"ml/melon/ch16.md","articles":[]},{"title":"附录","level":"1.3.4.1.17","depth":4,"path":"ml/melon/ch17.md","ref":"ml/melon/ch17.md","articles":[]}]}]},"previous":{"title":"读论文系列·Faster RCNN","level":"1.3.3.6.4","depth":4,"path":"ml/papers/detection/faster_rcnn.md","ref":"ml/papers/detection/faster_rcnn.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["disqus","github","toggle-chapters","mathjax","mermaid-gb3"],"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"ahangchen-blog"},"github":{"url":"https://github.com/ahangchen/windy-afternoon"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ml/papers/detection/yolo.md","mtime":"2018-04-06T12:44:29.227Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-04-06T12:44:44.964Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
