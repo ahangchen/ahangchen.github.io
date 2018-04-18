@@ -1,4 +1,4 @@
-gitbook build . ../tmp_mysite
+sudo gitbook build . ../tmp_mysite
 cd ../mysite
 rm -rf `ls |grep -v .git`
 cd ../ahangchen.github.io
