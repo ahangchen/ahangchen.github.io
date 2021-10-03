@@ -1,7 +1,8 @@
 gitbook build . ../tmp_mysite
 
-function publish_to(repo_name)
+function publish_to()
 {
+    repo_name=$1
     cd ../${repo_name}
     rm -rf `ls |grep -v .git`
     cp -r ../tmp_mysite/* ../${repo_name}
@@ -11,8 +12,8 @@ function publish_to(repo_name)
     git push
 }
 
-# publish_to(mysite)
-publish_to(ahangchen.github.io)
+# publish_to mysite
+publish_to ahangchen.github.io
 
 rm -rf ../tmp_mysite
 # ssh cwh@cweihang.io "cd mysite;git pull"
