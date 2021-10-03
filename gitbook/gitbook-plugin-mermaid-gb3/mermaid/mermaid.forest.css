@@ -13,9 +13,6 @@
   stroke: #13540c;
   stroke-width: 1px;
 }
-.arrowheadPath {
-  fill: green;
-}
 .edgePath .path {
   stroke: green;
   stroke-width: 1.5px;
@@ -25,7 +22,7 @@
 }
 .cluster rect {
   fill: #cdffb2 !important;
-  rx: 4 !important;
+  rx: 4  !important;
   stroke: #6eaa49 !important;
   stroke-width: 1px !important;
 }
@@ -255,11 +252,15 @@ text.actor {
   font-size: 18px;
   fill: black;
 }
+/*
+
+
+*/
 g.classGroup text {
   fill: #13540c;
   stroke: none;
   font-family: 'trebuchet ms', verdana, arial;
-  font-size: 10px;
+  font-size: 14px;
 }
 g.classGroup rect {
   fill: #cde498;
@@ -277,7 +278,6 @@ svg .classLabel .box {
 }
 svg .classLabel .label {
   fill: #13540c;
-  font-size: 10px;
 }
 .relation {
   stroke: #13540c;

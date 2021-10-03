@@ -1,0 +1,2267 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Matlab Remote IPC自动化数据处理 · 梦里茶</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="陈伟航">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-disqus/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../../papers/" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../android/">
+            
+                <a href="../../../android/">
+            
+                    
+                    Android
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../../android/activity/">
+            
+                <a href="../../../android/activity/">
+            
+                    
+                    activity
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../../../android/activity/activity-si-zhong-qi-dong-mo-shi.html">
+            
+                <a href="../../../android/activity/activity-si-zhong-qi-dong-mo-shi.html">
+            
+                    
+                    Activity四种启动模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../../../android/activity/intent_flag.html">
+            
+                <a href="../../../android/activity/intent_flag.html">
+            
+                    
+                    Intent Flag
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../../../android/activity/duo-task-de-ying-yong.html">
+            
+                <a href="../../../android/activity/duo-task-de-ying-yong.html">
+            
+                    
+                    多task的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../../../android/activity/task-he-hui-tui-zhan.html">
+            
+                <a href="../../../android/activity/task-he-hui-tui-zhan.html">
+            
+                    
+                    Task和回退栈
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../../android/sqlite/">
+            
+                <a href="../../../android/sqlite/">
+            
+                    
+                    sqlite
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../../../android/sqlite/cong-yuan-ma-kan-android-zhong-sqlite-shi-zen-mo-tong-guo-cursorwindow-du-db-de.html">
+            
+                <a href="../../../android/sqlite/cong-yuan-ma-kan-android-zhong-sqlite-shi-zen-mo-tong-guo-cursorwindow-du-db-de.html">
+            
+                    
+                    【源码】CursorWindow读DB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="../../../android/sqlite/sqlite-zai-android-shang-de-yi-ge-bug.html">
+            
+                <a href="../../../android/sqlite/sqlite-zai-android-shang-de-yi-ge-bug.html">
+            
+                    
+                    Sqlite在Android上的一个Bug
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../../android/chromium.html">
+            
+                <a href="../../../android/chromium.html">
+            
+                    
+                    Chromium
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../../android/listview_db.html">
+            
+                <a href="../../../android/listview_db.html">
+            
+                    
+                    ListView读取DB数据最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../../android/androidproject-jie-gou.html">
+            
+                <a href="../../../android/androidproject-jie-gou.html">
+            
+                    
+                    Android Project结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../../android/yi-ge-you-proguard-yu-fastjson-yin-qi-de-xie-an.html">
+            
+                <a href="../../../android/yi-ge-you-proguard-yu-fastjson-yin-qi-de-xie-an.html">
+            
+                    
+                    一个由Proguard与FastJson引起的血案
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../../android/note.html">
+            
+                <a href="../../../android/note.html">
+            
+                    
+                    琐碎的一些tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../../cv/">
+            
+                <a href="../../../cv/">
+            
+                    
+                    Computer Vision
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../../../cv/feature.html">
+            
+                <a href="../../../cv/feature.html">
+            
+                    
+                    特征提取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../../../cv/utils.html">
+            
+                <a href="../../../cv/utils.html">
+            
+                    
+                    计算机视觉常用工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Machine Learning
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../../trick/">
+            
+                <a href="../../trick/">
+            
+                    
+                    技巧
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../trick/imgnet_1h.html">
+            
+                <a href="../../trick/imgnet_1h.html">
+            
+                    
+                    FaceBook: 1 hour training ImageNet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../trick/l2_normalize.html">
+            
+                <a href="../../trick/l2_normalize.html">
+            
+                    
+                    L2 Norm与L2 normalize
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../ncs.html">
+            
+                <a href="../../ncs.html">
+            
+                    
+                    实践
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="../../pratice/torch_best_practice.html">
+            
+                <a href="../../pratice/torch_best_practice.html">
+            
+                    
+                    Pytorch实验代码的亿些小细节
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" >
+            
+                <a target="_blank" href="https://github.com/ahangchen/GDLNotes">
+            
+                    
+                    Tensorflow学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="../mxnet.html">
+            
+                <a href="../mxnet.html">
+            
+                    
+                    MXNet踩坑手记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3" data-path="../pytorch.html">
+            
+                <a href="../pytorch.html">
+            
+                    
+                    PyTorch踩坑手记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.4" data-path="../keras.html">
+            
+                <a href="../keras.html">
+            
+                    
+                    Keras踩坑手记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.5" data-path="../mscnn.html">
+            
+                <a href="../mscnn.html">
+            
+                    
+                    mscnn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Matlab
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.3.6.1" data-path="ripc_auto.html">
+            
+                <a href="ripc_auto.html">
+            
+                    
+                    Matlab Remote IPC自动化数据处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../../papers/">
+            
+                <a href="../../papers/">
+            
+                    
+                    Papers
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.1" data-path="../../papers/classification/">
+            
+                <a href="../../papers/classification/">
+            
+                    
+                    Classification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.2" data-path="../../papers/reid/">
+            
+                <a href="../../papers/reid/">
+            
+                    
+                    Re-identification
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.2.1" data-path="../../papers/reid/tfusion.html">
+            
+                <a href="../../papers/reid/tfusion.html">
+            
+                    
+                    CVPR2018:TFusion完全解读
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.2.2" data-path="../../papers/reid/eccv2018_taudl.html">
+            
+                <a href="../../papers/reid/eccv2018_taudl.html">
+            
+                    
+                    ECCV2018:TAUDL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.2.3" data-path="../../papers/reid/cuhk_sentimes.html">
+            
+                <a href="../../papers/reid/cuhk_sentimes.html">
+            
+                    
+                    CVPR2018:Graph+reid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.2.4" data-path="../../papers/reid/reid.html">
+            
+                <a href="../../papers/reid/reid.html">
+            
+                    
+                    Person Re-identification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.2.5" data-path="../../papers/reid/cvpr-reid.html">
+            
+                <a href="../../papers/reid/cvpr-reid.html">
+            
+                    
+                    CVPR2016 Re-id
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.2.6" data-path="../../papers/reid/reid-topo.html">
+            
+                <a href="../../papers/reid/reid-topo.html">
+            
+                    
+                    Camera topology and Person Re-id
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.2.7" data-path="../../papers/reid/deep_transfer_learning_person_reid.html">
+            
+                <a href="../../papers/reid/deep_transfer_learning_person_reid.html">
+            
+                    
+                    Deep transfer learning Person Re-id
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.2.8" data-path="../../papers/reid/evaluate.html">
+            
+                <a href="../../papers/reid/evaluate.html">
+            
+                    
+                    Evaluate
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.3" data-path="../../papers/detection/">
+            
+                <a href="../../papers/detection/">
+            
+                    
+                    Object Detection
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.3.1" data-path="../../papers/detection/rcnn.html">
+            
+                <a href="../../papers/detection/rcnn.html">
+            
+                    
+                    读论文系列·干货满满的RCNN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.3.2" data-path="../../papers/detection/sppnet.html">
+            
+                <a href="../../papers/detection/sppnet.html">
+            
+                    
+                    读论文系列·SPP-net
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.3.3" data-path="../../papers/detection/fast_rcnn.html">
+            
+                <a href="../../papers/detection/fast_rcnn.html">
+            
+                    
+                    读论文系列·Fast RCNN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.3.4" data-path="../../papers/detection/faster_rcnn.html">
+            
+                <a href="../../papers/detection/faster_rcnn.html">
+            
+                    
+                    读论文系列·Faster RCNN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.3.5" data-path="../../papers/detection/yolo.html">
+            
+                <a href="../../papers/detection/yolo.html">
+            
+                    
+                    读论文系列·YOLO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.3.6" data-path="../../papers/detection/ssd.html">
+            
+                <a href="../../papers/detection/ssd.html">
+            
+                    
+                    读论文系列·SSD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.3.7" data-path="../../papers/detection/yolo23.html">
+            
+                <a href="../../papers/detection/yolo23.html">
+            
+                    
+                    读论文系列·YOLOv2 & YOLOv3
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.3.8" data-path="../../papers/detection/other.html">
+            
+                <a href="../../papers/detection/other.html">
+            
+                    
+                    读论文系列·detection其他文章推荐
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.4" data-path="../../papers/mono_depth/">
+            
+                <a href="../../papers/mono_depth/">
+            
+                    
+                    Depth
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.5" data-path="../../papers/3d_vision/">
+            
+                <a href="../../papers/3d_vision/">
+            
+                    
+                    3D vision
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.5.1" data-path="../../papers/3d_vision/datasets.html">
+            
+                <a href="../../papers/3d_vision/datasets.html">
+            
+                    
+                    数据集相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.5.2" data-path="../../papers/3d_vision/flow.html">
+            
+                <a href="../../papers/3d_vision/flow.html">
+            
+                    
+                    光流相关
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.6" data-path="../../papers/ssah/">
+            
+                <a href="../../papers/ssah/">
+            
+                    
+                    Hashing
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.6.1" data-path="../../papers/ssah/ssah.html">
+            
+                <a href="../../papers/ssah/ssah.html">
+            
+                    
+                    CVPR2018: SSAH
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.7" data-path="../../papers/overview/">
+            
+                <a href="../../papers/overview/">
+            
+                    
+                    大杂烩
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.7.1" data-path="../../papers/overview/cncc2017.html">
+            
+                <a href="../../papers/overview/cncc2017.html">
+            
+                    
+                    CNCC2017 琐记
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.7.2" data-path="../../papers/overview/eccv2016_hydra_ccnn.html">
+            
+                <a href="../../papers/overview/eccv2016_hydra_ccnn.html">
+            
+                    
+                    ECCV 2016 Hydra CCNN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.7.3" data-path="../../papers/overview/cncc_cv.html">
+            
+                <a href="../../papers/overview/cncc_cv.html">
+            
+                    
+                    CNCC2017深度学习与跨媒体智能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.7.4" data-path="../../papers/overview/mla_2016.html">
+            
+                <a href="../../papers/overview/mla_2016.html">
+            
+                    
+                    MLA2016笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../../zzh_ml_notes/">
+            
+                <a href="../../zzh_ml_notes/">
+            
+                    
+                    《机器学习》（周志华）读书笔记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.5.1" data-path="../../zzh_ml_notes/melon/">
+            
+                <a href="../../zzh_ml_notes/melon/">
+            
+                    
+                    西瓜书概念整理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.5.1.1" data-path="../../zzh_ml_notes/melon/ch01.html">
+            
+                <a href="../../zzh_ml_notes/melon/ch01.html">
+            
+                    
+                    绪论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.1.2" data-path="../../zzh_ml_notes/melon/ch02.html">
+            
+                <a href="../../zzh_ml_notes/melon/ch02.html">
+            
+                    
+                    模型评估与选择
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.1.3" data-path="../../zzh_ml_notes/melon/ch03.html">
+            
+                <a href="../../zzh_ml_notes/melon/ch03.html">
+            
+                    
+                    线性模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.1.4" data-path="../../zzh_ml_notes/melon/ch04.html">
+            
+                <a href="../../zzh_ml_notes/melon/ch04.html">
+            
+                    
+                    决策树
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.1.5" data-path="../../zzh_ml_notes/melon/ch05.html">
+            
+                <a href="../../zzh_ml_notes/melon/ch05.html">
+            
+                    
+                    神经网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.1.6" data-path="../../zzh_ml_notes/melon/ch06.html">
+            
+                <a href="../../zzh_ml_notes/melon/ch06.html">
+            
+                    
+                    支持向量机
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.1.7" data-path="../../zzh_ml_notes/melon/ch07.html">
+            
+                <a href="../../zzh_ml_notes/melon/ch07.html">
+            
+                    
+                    贝叶斯分类器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.1.8" data-path="../../zzh_ml_notes/melon/ch08.html">
+            
+                <a href="../../zzh_ml_notes/melon/ch08.html">
+            
+                    
+                    集成学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.1.9" data-path="../../zzh_ml_notes/melon/ch09.html">
+            
+                <a href="../../zzh_ml_notes/melon/ch09.html">
+            
+                    
+                    聚类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.1.10" data-path="../../zzh_ml_notes/melon/ch10.html">
+            
+                <a href="../../zzh_ml_notes/melon/ch10.html">
+            
+                    
+                    降维与度量学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.1.11" data-path="../../zzh_ml_notes/melon/ch11.html">
+            
+                <a href="../../zzh_ml_notes/melon/ch11.html">
+            
+                    
+                    特征选择与稀疏学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.1.12" data-path="../../zzh_ml_notes/melon/ch12.html">
+            
+                <a href="../../zzh_ml_notes/melon/ch12.html">
+            
+                    
+                    计算学习理论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.1.13" data-path="../../zzh_ml_notes/melon/ch13.html">
+            
+                <a href="../../zzh_ml_notes/melon/ch13.html">
+            
+                    
+                    半监督学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.1.14" data-path="../../zzh_ml_notes/melon/ch14.html">
+            
+                <a href="../../zzh_ml_notes/melon/ch14.html">
+            
+                    
+                    概率图模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.1.15" data-path="../../zzh_ml_notes/melon/ch15.html">
+            
+                <a href="../../zzh_ml_notes/melon/ch15.html">
+            
+                    
+                    规则学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.1.16" data-path="../../zzh_ml_notes/melon/ch16.html">
+            
+                <a href="../../zzh_ml_notes/melon/ch16.html">
+            
+                    
+                    强化学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5.1.17" data-path="../../zzh_ml_notes/melon/ch17.html">
+            
+                <a href="../../zzh_ml_notes/melon/ch17.html">
+            
+                    
+                    附录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../../java/">
+            
+                <a href="../../../java/">
+            
+                    
+                    Java
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../../../java/java-web/">
+            
+                <a href="../../../java/java-web/">
+            
+                    
+                    java web
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../../../java/java-web/servlet-zu-zhi.html">
+            
+                <a href="../../../java/java-web/servlet-zu-zhi.html">
+            
+                    
+                    Servlet部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../../../java/java-web/note.html">
+            
+                <a href="../../../java/java-web/note.html">
+            
+                    
+                    琐碎的tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../../../java/note.html">
+            
+                <a href="../../../java/note.html">
+            
+                    
+                    JNI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../../java/note-1.html">
+            
+                <a href="../../../java/note-1.html">
+            
+                    
+                    Note
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../../../java/l1-new-delete.html">
+            
+                <a href="../../../java/l1-new-delete.html">
+            
+                    
+                    Effective Java笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../../../backend/">
+            
+                <a href="../../../backend/">
+            
+                    
+                    后端开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../../../backend/design.html">
+            
+                <a href="../../../backend/design.html">
+            
+                    
+                    架构设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../../../backend/db.html">
+            
+                <a href="../../../backend/db.html">
+            
+                    
+                    数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../../backend/note/">
+            
+                <a href="../../../backend/note/">
+            
+                    
+                    java web
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" data-path="../../../backend/note/servlet-zu-zhi.html">
+            
+                <a href="../../../backend/note/servlet-zu-zhi.html">
+            
+                    
+                    Servlet部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.2" data-path="../../../backend/note/note.html">
+            
+                <a href="../../../backend/note/note.html">
+            
+                    
+                    琐碎的tips
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../../../backend/spring_boot.html">
+            
+                <a href="../../../backend/spring_boot.html">
+            
+                    
+                    Spring boot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../../../backend/django.html">
+            
+                <a href="../../../backend/django.html">
+            
+                    
+                    django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../../../backend/concurrent.html">
+            
+                <a href="../../../backend/concurrent.html">
+            
+                    
+                    分布式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../../../note/">
+            
+                <a href="../../../note/">
+            
+                    
+                    Linux && Hardware
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../../../note/ubuntu_init.html">
+            
+                <a href="../../../note/ubuntu_init.html">
+            
+                    
+                    Ubuntu安装与初始配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../../../note/raspbian/">
+            
+                <a href="../../../note/raspbian/">
+            
+                    
+                    树莓派相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" data-path="../../../note/raspbian/rtlwifi.html">
+            
+                <a href="../../../note/raspbian/rtlwifi.html">
+            
+                    
+                    树莓派3B+无线网卡监听模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.2" data-path="../../../note/raspbian/tlwr703n_openwrt.html">
+            
+                <a href="../../../note/raspbian/tlwr703n_openwrt.html">
+            
+                    
+                    TP-LINK TL-WR703N v1.7 openwrt flashing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../../../python/">
+            
+                <a href="../../../python/">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../../../python/django.html">
+            
+                <a href="../../../python/django.html">
+            
+                    
+                    django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../../../python/raw.html">
+            
+                <a href="../../../python/raw.html">
+            
+                    
+                    原生模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../../../python/design.html">
+            
+                <a href="../../../python/design.html">
+            
+                    
+                    设计模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../../../python/viz.html">
+            
+                <a href="../../../python/viz.html">
+            
+                    
+                    可视化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../../../python/libs.html">
+            
+                <a href="../../../python/libs.html">
+            
+                    
+                    常用库踩坑指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../../../web-front/">
+            
+                <a href="../../../web-front/">
+            
+                    
+                    web前端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../../../web-front/head_content.html">
+            
+                <a href="../../../web-front/head_content.html">
+            
+                    
+                    header div固定，content div填充父容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../../../web-front/json_res.html">
+            
+                <a href="../../../web-front/json_res.html">
+            
+                    
+                    json接口资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../../../ui.html">
+            
+                <a href="../../../ui.html">
+            
+                    
+                    UI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../../../kit/">
+            
+                <a href="../../../kit/">
+            
+                    
+                    kit
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../../../kit/note.html">
+            
+                <a href="../../../kit/note.html">
+            
+                    
+                    vim
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="../../../kit/git/">
+            
+                <a href="../../../kit/git/">
+            
+                    
+                    git/github
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.2.1" data-path="../../../kit/git/green_blush.html">
+            
+                <a href="../../../kit/git/green_blush.html">
+            
+                    
+                    刷爆github小绿点
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="../../../kit/markdown/">
+            
+                <a href="../../../kit/markdown/">
+            
+                    
+                    Markdown/gitbook
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.3.1" data-path="../../../kit/markdown/pieces.html">
+            
+                <a href="../../../kit/markdown/pieces.html">
+            
+                    
+                    琐碎知识点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3.2" data-path="../../../kit/markdown/gitbook_disqus.html">
+            
+                <a href="../../../kit/markdown/gitbook_disqus.html">
+            
+                    
+                    gitbook添加disqus作为评论
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3.3" data-path="../../../kit/markdown/chrome_mark2_md.html">
+            
+                <a href="../../../kit/markdown/chrome_mark2_md.html">
+            
+                    
+                    导出chrome书签为Markdown
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3.4" data-path="../../../kit/markdown/wx_md.html">
+            
+                <a href="../../../kit/markdown/wx_md.html">
+            
+                    
+                    Markdown here && 微信公众号
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="../../../kit/latex/">
+            
+                <a href="../../../kit/latex/">
+            
+                    
+                    LaTex
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.4.1" data-path="../../../kit/latex/note.html">
+            
+                <a href="../../../kit/latex/note.html">
+            
+                    
+                    LaTex琐记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.5" data-path="../../../kit/ss.html">
+            
+                <a href="../../../kit/ss.html">
+            
+                    
+                    科学上网
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.6" data-path="../../../kit/vmware.html">
+            
+                <a href="../../../kit/vmware.html">
+            
+                    
+                    虚拟机
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../../../thinking-in-program/">
+            
+                <a href="../../../thinking-in-program/">
+            
+                    
+                    thinking-in-program
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.12.1" data-path="../../../thinking-in-program/log.html">
+            
+                <a href="../../../thinking-in-program/log.html">
+            
+                    
+                    怎样打日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../../../star.html">
+            
+                <a href="../../../star.html">
+            
+                    
+                    我的收藏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../../../pieces/">
+            
+                <a href="../../../pieces/">
+            
+                    
+                    琐记
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.14.1" data-path="../../../pieces/paper.html">
+            
+                <a href="../../../pieces/paper.html">
+            
+                    
+                    论文心得
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../../../support.html">
+            
+                <a href="../../../support.html">
+            
+                    
+                    赞赏支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >Matlab Remote IPC自动化数据处理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="matlab-remote-ipc&#x81EA;&#x52A8;&#x5316;&#x6570;&#x636E;&#x5904;&#x7406;">Matlab Remote IPC&#x81EA;&#x52A8;&#x5316;&#x6570;&#x636E;&#x5904;&#x7406;</h1>
+<blockquote>
+<p>&#x8F6C;&#x8F7D;&#x8BF7;&#x6CE8;&#x660E;&#x4F5C;&#x8005;<a href="https://github.com/ahangchen" target="_blank">&#x68A6;&#x91CC;&#x8336;</a></p>
+</blockquote>
+<h2 id="&#x9700;&#x6C42;">&#x9700;&#x6C42;</h2>
+<p>&#x5728;&#x7814;&#x7A76;&#x4E2D;&#x9047;&#x5230;&#x8FD9;&#x6837;&#x4E00;&#x79CD;&#x9700;&#x6C42;&#xFF0C;</p>
+<ul>
+<li>&#x5728;Matlab&#x7AEF;&#x505A;GPU&#x8FD0;&#x7B97;&#xFF1B;</li>
+<li>&#x5728;Python&#x7AEF;&#x505A;&#x6570;&#x636E;&#x6E05;&#x6D17;&#x548C;&#x6570;&#x636E;&#x5206;&#x6790;&#xFF1B;</li>
+<li>&#x4E24;&#x7AEF;&#x5206;&#x5C5E;&#x4E24;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#xFF1B;</li>
+<li>M&#x7AEF;&#x9700;&#x8981;&#x7B49;&#x5F85;P&#x7AEF;&#x5B8C;&#x6210;&#x6570;&#x636E;&#x6E05;&#x6D17;&#x624D;&#x80FD;&#x5F00;&#x59CB;&#x505A;&#x8BAD;&#x7EC3;&#x548C;&#x9884;&#x6D4B;</li>
+<li>P&#x7AEF;&#x9700;&#x8981;&#x7B49;&#x5F85;M&#x7AEF;&#x5B8C;&#x6210;&#x8BAD;&#x7EC3;&#x548C;&#x9884;&#x6D4B;&#x624D;&#x80FD;&#x505A;&#x6570;&#x636E;&#x5206;&#x6790;</li>
+</ul>
+<h2 id="&#x95EE;&#x9898;">&#x95EE;&#x9898;</h2>
+<ul>
+<li>&#x6570;&#x636E;&#x5F88;&#x591A;&#xFF0C;&#x4E0D;&#x9002;&#x5408;&#x5C06;&#x4E24;&#x7AEF;&#x5408;&#x5E76;&#x5230;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x4E0A;</li>
+<li>&#x5B58;&#x5728;&#x589E;&#x91CF;&#x8BAD;&#x7EC3;&#xFF0C;&#x5BF9;&#x540C;&#x4E00;&#x4EFD;&#x6570;&#x636E;&#xFF0C;&#x53EF;&#x80FD;&#x8981;&#x7ED3;&#x5408;&#x591A;&#x4EFD;&#x989D;&#x5916;&#x6570;&#x636E;&#x8FDB;&#x884C;N&#x6B21;&#x4F20;&#x8F93;</li>
+<li>&#x7531;&#x4E8E;&#x91C7;&#x7528;10&#x6298;&#x4EA4;&#x53C9;&#x9A8C;&#x8BC1;&#xFF0C;&#x6570;&#x636E;&#x5212;&#x5206;&#x4E3A;10&#x4EFD;&#xFF0C;&#x603B;&#x5171;&#x8981;&#x8FDB;&#x884C;10&#xD7;N&#x6B21;&#x4F20;&#x8F93;</li>
+<li>M&#x7AEF;&#x548C;P&#x7AEF;&#x90FD;&#x9700;&#x8981;&#x5404;&#x81EA;&#x8FD0;&#x884C;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x624D;&#x80FD;&#x51FA;&#x7ED3;&#x679C;&#xFF0C;&#x9700;&#x8981;&#x7B49;&#x5F85;&#xFF0C;&#x8BF4;&#x5FEB;&#x4E0D;&#x5FEB;&#xFF0C;&#x8BF4;&#x6162;&#x4E0D;&#x6162;</li>
+</ul>
+<blockquote>
+<p>&#x4E0A;&#x9762;&#x7684;&#x51E0;&#x4E2A;&#x70B9;&#x4F7F;&#x5F97;&#x8BAD;&#x7EC3;&#x7684;&#x8FC7;&#x7A0B;&#x975E;&#x5E38;&#x7E41;&#x7410;&#x8017;&#x65F6;</p>
+</blockquote>
+<h2 id="&#x63A2;&#x7D22;">&#x63A2;&#x7D22;</h2>
+<p>&#x4F5C;&#x4E3A;&#x4E0D;&#x8010;&#x5FC3;&#x800C;&#x4E14;&#x61D2;&#x7684;&#x7A0B;&#x5E8F;&#x5458;&#xFF0C;&#x8D85;&#x8FC7;15&#x79D2;&#x7684;&#x4E8B;&#x60C5;&#x5C31;&#x60F3;&#x8981;&#x81EA;&#x52A8;&#x5316;&#xFF0C;&#x4E8E;&#x662F;&#x5F00;&#x59CB;&#x60F3;&#x80FD;&#x4E0D;&#x80FD;&#x628A;&#x4E0A;&#x9762;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x81EA;&#x52A8;&#x5316;</p>
+<h3 id="&#x65B9;&#x6848;&#x4E00;-&#x7528;&#x4E00;&#x79CD;&#x8BED;&#x8A00;&#x91CD;&#x5199;&#x53E6;&#x4E00;&#x65B9;&#x7684;&#x4EE3;&#x7801;">&#x65B9;&#x6848;&#x4E00; &#x7528;&#x4E00;&#x79CD;&#x8BED;&#x8A00;&#x91CD;&#x5199;&#x53E6;&#x4E00;&#x65B9;&#x7684;&#x4EE3;&#x7801;</h3>
+<ul>
+<li>Python&#x7AEF;&#x903B;&#x8F91;&#x590D;&#x6742;&#xFF0C;&#x4E0E;&#x6570;&#x636E;&#x5173;&#x8054;&#x5BC6;&#x5207;&#xFF0C;&#x91CD;&#x6784;&#x4E3A;Matlab&#x4EE3;&#x7801;&#x5DE5;&#x7A0B;&#x91CF;&#x5927;&#xFF08;&#x800C;&#x4E14;&#x6211;&#x8FD8;&#x662F;&#x6BD4;&#x8F83;&#x719F;&#x6089;Python&#xFF09;</li>
+<li>Matlab&#x7AEF;&#x662F;&#x67D0;&#x7BC7;&#x8BBA;&#x6587;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x4F7F;&#x7528;&#x4E86;MatConvNet&#x8FD9;&#x4E2A;&#x5E93;&#x505A;CNN&#xFF0C;&#x7528;Python&#x5B9E;&#x73B0;&#x5DE5;&#x7A0B;&#x91CF;&#x4E5F;&#x5F88;&#x5927;&#xFF0C;&#x800C;&#x4E14;&#x56E0;&#x4E3A;&#x662F;&#x522B;&#x4EBA;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x8FD8;&#x53EF;&#x80FD;&#x6709;&#x5F88;&#x591A;&#x672A;&#x77E5;&#x7684;&#x5751;</li>
+</ul>
+<h3 id="&#x65B9;&#x6848;&#x4E8C;-&#x4F7F;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x5E93;&#x4F5C;&#x4E3A;lib&#x76F8;&#x4E92;&#x8C03;&#x7528;">&#x65B9;&#x6848;&#x4E8C; &#x4F7F;&#x7528;<a href="http://mlabwrap.sourceforge.net/" target="_blank">&#x7B2C;&#x4E09;&#x65B9;&#x5E93;</a>&#x4F5C;&#x4E3A;Lib&#x76F8;&#x4E92;&#x8C03;&#x7528;</h3>
+<ul>
+<li>&#x7531;&#x4E8E;Matlab&#x7AEF;&#x6D89;&#x53CA;GPU&#x8FD0;&#x7B97;&#xFF0C;&#x914D;&#x7F6E;&#x6BD4;&#x8F83;&#x590D;&#x6742;</li>
+<li>&#x4F5C;&#x4E3A;&#x5E93;&#x76F8;&#x4E92;&#x8C03;&#x7528;&#x4F7F;&#x5F97;&#x4E24;&#x4E2A;&#x6A21;&#x5757;&#x7684;&#x8026;&#x5408;&#x589E;&#x52A0;&#xFF0C;&#x4E0D;&#x7B26;&#x5408;&#x89E3;&#x8026;&#x539F;&#x5219;</li>
+<li>&#x9700;&#x8981;&#x7F16;&#x5199;&#x63A5;&#x53E3;&#x4EE3;&#x7801;</li>
+</ul>
+<h3 id="&#x65B9;&#x6848;&#x4E09;-matlab&#x548C;python&#x8FDB;&#x884C;&#x8FDB;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;">&#x65B9;&#x6848;&#x4E09; Matlab&#x548C;Python&#x8FDB;&#x884C;&#x8FDB;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;</h3>
+<ul>
+<li>&#x8FDB;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;&#x8981;&#x6C42;&#x4E24;&#x8FB9;&#x5404;&#x6709;&#x4E00;&#x4E2A;&#x53EF;&#x6267;&#x884C;&#x7A0B;&#x5E8F;&#xFF0C;&#x4F46;&#x662F;Matlab&#x6253;&#x5305;&#x9EBB;&#x70E6;&#xFF08;&#x9700;&#x8981;&#x4E0B;&#x53E6;&#x4E00;&#x4E2A;&#x6536;&#x8D39;&#x7684;&#x6253;&#x5305;&#x5DE5;&#x5177;&#xFF09;&#x5177;&#x4F53;&#x770B;<a href="https://www.youtube.com/watch?v=6b_NmBEW9ak" target="_blank">&#x8FD9;&#x91CC;</a>&#xFF0C;&#x5728;GUI&#x754C;&#x9762;&#x4E2D;&#x64CD;&#x4F5C;&#x76F8;&#x5BF9;&#x65B9;&#x4FBF;&#xFF0C;&#x5E76;&#x4E14;&#x6253;&#x5305;&#x540E;&#x4E0D;&#x597D;&#x8C03;&#x8BD5;</li>
+<li>&#x8FDC;&#x7A0B;&#x8FDB;&#x7A0B;&#x95F4;&#x901A;&#x4FE1;&#x6709;&#x8BB8;&#x591A;&#x65B9;&#x6848;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#xFF0C;&#x4F8B;&#x5982;socket&#xFF0C;&#x8FD9;&#x4E2A;&#x5DE5;&#x4F5C;&#x91CF;&#x6BD4;&#x4E0A;&#x9762;&#x7684;&#x65B9;&#x6848;&#x5C0F;&#xFF0C;&#x4F46;&#x4E5F;&#x9700;&#x8981;&#x989D;&#x5916;&#x7F16;&#x5199;&#x4E00;&#x90E8;&#x5206;&#x529F;&#x80FD;&#x4EE3;&#x7801;</li>
+</ul>
+<h3 id="&#x65B9;&#x6848;&#x56DB;-final&#x4F7F;&#x7528;matlab&#x8FDB;&#x884C;&#x6267;&#x884C;shell&#x547D;&#x4EE4;&#x8FDB;&#x884C;scp&#xFF0C;&#x4EE5;&#x6587;&#x4EF6;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x4F20;&#x8F93;">&#x65B9;&#x6848;&#x56DB; (Final)&#x4F7F;&#x7528;Matlab&#x8FDB;&#x884C;&#x6267;&#x884C;shell&#x547D;&#x4EE4;&#x8FDB;&#x884C;scp&#xFF0C;&#x4EE5;&#x6587;&#x4EF6;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x4F20;&#x8F93;</h3>
+<ul>
+<li>&#x6539;&#x52A8;&#x7684;&#x4EE3;&#x7801;&#x6700;&#x5C11;</li>
+<li>&#x4F9D;&#x65E7;&#x662F;&#x4E24;&#x4E2A;&#x6A21;&#x5757;&#xFF0C;&#x4F9D;&#x65E7;&#x4F4E;&#x8026;&#x5408;</li>
+<li>&#x901A;&#x4FE1;&#x6027;&#x80FD;&#x6CA1;&#x6709;&#x5E93;&#x8C03;&#x7528;&#x6216;&#x8005;Socket&#x90A3;&#x4E48;&#x597D;&#xFF0C;&#x4F46;&#x7A0B;&#x5E8F;&#x4E3B;&#x8981;&#x6027;&#x80FD;&#x74F6;&#x9888;&#x4E0D;&#x5728;&#x6570;&#x636E;&#x4F20;&#x8F93;&#xFF0C;&#x800C;&#x5728;&#x4E8E;&#x8BAD;&#x7EC3;&#x548C;&#x9884;&#x6D4B;&#xFF0C;&#x6240;&#x4EE5;&#x6CA1;&#x5173;&#x7CFB;</li>
+<li>&#x6267;&#x884C;ssh&#x7684;&#x65F6;&#x5019;&#x53EF;&#x4EE5;&#x540C;&#x65F6;&#x6267;&#x884C;&#x53E6;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x4ECE;&#x800C;&#x8C03;&#x7528;Python&#x7AEF;&#x811A;&#x672C;&#x8FDB;&#x884C;Python&#x7AEF;&#x5DE5;&#x4F5C;</li>
+</ul>
+<p>&#x4E0B;&#x9762;&#x5177;&#x4F53;&#x8BB2;&#x65B9;&#x6848;&#x56DB;&#x7684;&#x5B9E;&#x73B0;</p>
+<h2 id="&#x5B9E;&#x73B0;">&#x5B9E;&#x73B0;</h2>
+<h3 id="matlab&#x6267;&#x884C;shell&#x547D;&#x4EE4;">Matlab&#x6267;&#x884C;shell&#x547D;&#x4EE4;</h3>
+<pre><code class="lang-text">setenv(&apos;d_name&apos;, dataset_name);
+setenv(&apos;std_idx&apos;, num2str(i));
+% transport raw image predict data
+!env LD_LIBRARY_PATH=&apos;&apos; scp ${d_name}_train.log cwh@192.168.231.171:/home/cwh/coding/Project/data/${std_idx}-train/renew_pid.log
+!env LD_LIBRARY_PATH=&apos;&apos; ssh cwh@192.168.231.171 &quot;cd /home/cwh/coding/Project; python data_analysis.py data/${std_idx}-train&quot;
+</code></pre>
+<p>&#x5176;&#x4E2D;</p>
+<ul>
+<li>&#x901A;&#x8FC7;setenv&#x6765;&#x8BBE;&#x7F6E;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#xFF0C;&#x4ECE;&#x800C;&#x52A8;&#x6001;&#x51B3;&#x5B9A;&#x8981;&#x6267;&#x884C;&#x7684;&#x811A;&#x672C;&#x7684;&#x5185;&#x5BB9;</li>
+<li>&#x5728;matlab&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x4F7F;&#x7528;<code>!</code>&#x5F00;&#x5934;&#xFF0C;&#x4EE3;&#x8868;&#x8FD9;&#x662F;&#x4E00;&#x884C;shell&#x547D;&#x4EE4;</li>
+<li>&#x9700;&#x8981;&#x628A;LD_LIBRARY_PATH&#x8FD9;&#x4E2A;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x7F6E;&#x4E3A;&#x7A7A;&#xFF0C;&#x9632;&#x6B62;&#x4F7F;&#x7528;matlab&#x81EA;&#x5E26;&#x7684;&#x4E00;&#x4E9B;lib&#xFF0C;&#x5BFC;&#x81F4;ssh&#x7B49;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x5931;&#x8D25;</li>
+</ul>
+<h3 id="ssh">SSH</h3>
+<ul>
+<li>Matlab&#x662F;&#x6709;&#x4E00;&#x4E2A;<a href="https://cn.mathworks.com/matlabcentral/fileexchange/27999-ssh-from-matlab--updated--+-sftp-scp" target="_blank">&#x5E93;</a>&#x53EF;&#x4EE5;&#x505A;ssh&#x548C;scp&#x7684;</li>
+<li>&#x4F46;&#x662F;&#xFF0C;&#x4E0D;&#x60F3;&#x628A;&#x5BC6;&#x7801;&#x5199;&#x5728;&#x4EE3;&#x7801;&#x91CC;&#xFF0C;&#x5E76;&#x4E14;&#x61D2;&#x5F97;&#x53BB;&#x7528;&#x7B2C;&#x4E09;&#x65B9;&#x7684;&#x4E1C;&#x897F;</li>
+<li>&#x4E8E;&#x662F;&#x60F3;&#x76F4;&#x63A5;&#x7528;shell&#x8C03;&#x7528;</li>
+<li>shell&#x8C03;&#x7528;&#x6709;&#x4E00;&#x4E2A;&#x8001;&#x5927;&#x96BE;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5C31;&#x662F;&#x9700;&#x8981;&#x8F93;&#x5BC6;&#x7801;</li>
+<li>&#x53D7;Hadoop&#x5206;&#x5E03;&#x5F0F;&#x914D;&#x7F6E;&#x7684;&#x542F;&#x53D1;&#xFF0C;&#x53D1;&#x73B0;&#x53EF;&#x4EE5;&#x505A;ssh&#x514D;&#x5BC6;&#x7801;&#x914D;&#x7F6E;&#xFF0C;&#x907F;&#x5F00;&#x8F93;&#x5BC6;&#x7801;&#x7684;&#x95EE;&#x9898;</li>
+<li>&#x514D;&#x5BC6;&#x7801;&#x5177;&#x4F53;&#x53C2;&#x8003;&#x8FD9;&#x4E2A;<a href="https://my.oschina.net/aiguozhe/blog/33994" target="_blank">&#x6559;&#x7A0B;</a></li>
+<li>ssh&#x914D;&#x7F6E;&#x514D;&#x5BC6;&#x4E4B;&#x540E;&#xFF0C;scp&#x4E5F;&#x662F;&#x514D;&#x5BC6;&#x7684;&#xFF0C;&#x53E6;&#x5916;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x597D;&#x5904;&#xFF0C;ssh&#x53EF;&#x4EE5;&#x901A;&#x8FC7;<code>&quot;&quot;</code>&#x6765;&#x5D4C;&#x5165;ssh&#x4E4B;&#x540E;&#x8981;&#x6267;&#x884C;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x4ECE;&#x800C;&#x505A;Python&#x8C03;&#x7528;</li>
+</ul>
+<h3 id="python">Python</h3>
+<ul>
+<li><p>&#x5982;&#x679C;&#x4E4B;&#x524D;Python&#x7AEF;&#x662F;&#x7528;IDE&#x5F00;&#x53D1;&#x7684;&#xFF0C;&#x8F6C;&#x4E3A;shell&#x8C03;&#x7528;&#x5C31;&#x8981;&#x6CE8;&#x610F;&#x4E24;&#x4E2A;&#x95EE;&#x9898;</p>
+<ul>
+<li>&#x8DEF;&#x5F84;&#xFF0C;cd&#x5230;&#x6B63;&#x786E;&#x7684;&#x76EE;&#x5F55;&#xFF0C;Python&#x7AEF;&#x7684;&#x6587;&#x4EF6;&#x64CD;&#x4F5C;&#x548C;lib import&#x7684;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;&#x662F;&#x76F8;&#x5BF9;&#x4E8E;&#x8981;&#x6267;&#x884C;&#x7684;py&#x6587;&#x4EF6;</li>
+<li><p>&#x5E93;</p>
+<pre><code class="lang-text"># &#x52A0;&#x8F7D;&#x5BF9;&#x5E94;&#x7684;&#x5E93;
+env LD_LIBRARY_PATH=&apos;/your/lib/path/sth.so&apos;
+</code></pre>
+</li>
+<li><p>&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;&#xFF0C;&#x53C2;&#x8003;&#x8FD9;&#x4E2A;<a href="http://lingxiankong.github.io/blog/2014/01/14/command-line-parser/" target="_blank">&#x6559;&#x7A0B;</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="&#x540C;&#x6B65;&#x63A7;&#x5236;">&#x540C;&#x6B65;&#x63A7;&#x5236;</h3>
+<ul>
+<li>&#x7531;&#x4E8E;matlab&#x8C03;&#x7528;shell&#x547D;&#x4EE4;&#x65F6;&#x4F1A;&#x9677;&#x5165;&#x7B49;&#x5F85;&#xFF0C;&#x4F1A;&#x7B49;&#x5F85;&#x547D;&#x4EE4;&#x5B8C;&#x6210;&#x518D;&#x6267;&#x884C;&#x4E0B;&#x4E00;&#x6B65;&#xFF0C;&#x4E0D;&#x50CF;socket&#x53D1;&#x5B8C;&#x6D88;&#x606F;&#x540E;&#x4E0D;&#x77E5;&#x9053;&#x4EC0;&#x4E48;&#x65F6;&#x5019;&#x53E6;&#x4E00;&#x8FB9;&#x8FD0;&#x884C;&#x7ED3;&#x675F;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x5B9E;&#x73B0;&#x6392;&#x961F;&#x7B49;&#x5F85;&#x540C;&#x6B65;&#x4E92;&#x65A5;&#x7684;&#x4E1C;&#x897F;</li>
+<li>&#x5982;&#x679C;&#x9700;&#x8981;&#x5728;&#x7B49;&#x5F85;&#x7684;&#x65F6;&#x5019;&#x505A;&#x4E9B;&#x5E76;&#x53D1;&#xFF0C;&#x53EF;&#x4EE5;&#x8003;&#x8651;<a href="http://blog.sina.com.cn/s/blog_45eac6860100lzlk.html" target="_blank">matlab &#x5E76;&#x884C;&#x5DE5;&#x5177;&#x7BB1;</a>&#xFF0C;&#x7ED3;&#x5408;Python&#x7AEF;&#x7684;&#x5E76;&#x53D1;&#x51E0;&#x4E4E;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5206;&#x5E03;&#x5F0F;&#x6846;&#x67B6;&#x4E86;&#xFF0C;&#x6709;&#x7A7A;&#x518D;&#x6DF1;&#x5165;&#x53BB;&#x641E;&#x4E00;&#x641E;</li>
+</ul>
+<h2 id="summary">SUMMARY</h2>
+<ul>
+<li>matlab&#x8C03;shell</li>
+<li>shell&#x4E2D;ssh&#x505A;&#x8FDC;&#x7A0B;&#x8FDB;&#x7A0B;&#x8C03;&#x7528;</li>
+<li>scp&#x505A;&#x6570;&#x636E;&#x4F20;&#x8F93;</li>
+<li>&#x6548;&#x679C;&#xFF1A;&#x5C3D;&#x53EF;&#x80FD;&#x8F7B;&#x91CF;&#x5730;&#x89E3;&#x51B3;&#x81EA;&#x52A8;&#x5316;&#x7684;&#x95EE;&#x9898;</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Matlab">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../../papers/" class="navigation navigation-next " aria-label="Next page: Papers">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Matlab Remote IPC自动化数据处理","level":"1.4.3.6.1","depth":4,"next":{"title":"Papers","level":"1.4.4","depth":2,"path":"ml/papers/README.md","ref":"ml/papers/README.md","articles":[{"title":"Classification","level":"1.4.4.1","depth":3,"path":"ml/papers/classification/README.md","ref":"ml/papers/classification/README.md","articles":[]},{"title":"Re-identification","level":"1.4.4.2","depth":3,"path":"ml/papers/reid/README.md","ref":"ml/papers/reid/README.md","articles":[{"title":"CVPR2018:TFusion完全解读","level":"1.4.4.2.1","depth":4,"path":"ml/papers/reid/tfusion.md","ref":"ml/papers/reid/tfusion.md","articles":[]},{"title":"ECCV2018:TAUDL","level":"1.4.4.2.2","depth":4,"path":"ml/papers/reid/eccv2018_taudl.md","ref":"ml/papers/reid/eccv2018_taudl.md","articles":[]},{"title":"CVPR2018:Graph+reid","level":"1.4.4.2.3","depth":4,"path":"ml/papers/reid/cuhk_sentimes.md","ref":"ml/papers/reid/cuhk_sentimes.md","articles":[]},{"title":"Person Re-identification","level":"1.4.4.2.4","depth":4,"path":"ml/papers/reid/reid.md","ref":"ml/papers/reid/reid.md","articles":[]},{"title":"CVPR2016 Re-id","level":"1.4.4.2.5","depth":4,"path":"ml/papers/reid/cvpr-reid.md","ref":"ml/papers/reid/cvpr-reid.md","articles":[]},{"title":"Camera topology and Person Re-id","level":"1.4.4.2.6","depth":4,"path":"ml/papers/reid/reid-topo.md","ref":"ml/papers/reid/reid-topo.md","articles":[]},{"title":"Deep transfer learning Person Re-id","level":"1.4.4.2.7","depth":4,"path":"ml/papers/reid/deep_transfer_learning_person_reid.md","ref":"ml/papers/reid/deep_transfer_learning_person_reid.md","articles":[]},{"title":"Evaluate","level":"1.4.4.2.8","depth":4,"path":"ml/papers/reid/evaluate.md","ref":"ml/papers/reid/evaluate.md","articles":[]}]},{"title":"Object Detection","level":"1.4.4.3","depth":3,"path":"ml/papers/detection/README.md","ref":"ml/papers/detection/README.md","articles":[{"title":"读论文系列·干货满满的RCNN","level":"1.4.4.3.1","depth":4,"path":"ml/papers/detection/rcnn.md","ref":"ml/papers/detection/rcnn.md","articles":[]},{"title":"读论文系列·SPP-net","level":"1.4.4.3.2","depth":4,"path":"ml/papers/detection/sppnet.md","ref":"ml/papers/detection/sppnet.md","articles":[]},{"title":"读论文系列·Fast RCNN","level":"1.4.4.3.3","depth":4,"path":"ml/papers/detection/fast_rcnn.md","ref":"ml/papers/detection/fast_rcnn.md","articles":[]},{"title":"读论文系列·Faster RCNN","level":"1.4.4.3.4","depth":4,"path":"ml/papers/detection/faster_rcnn.md","ref":"ml/papers/detection/faster_rcnn.md","articles":[]},{"title":"读论文系列·YOLO","level":"1.4.4.3.5","depth":4,"path":"ml/papers/detection/yolo.md","ref":"ml/papers/detection/yolo.md","articles":[]},{"title":"读论文系列·SSD","level":"1.4.4.3.6","depth":4,"path":"ml/papers/detection/ssd.md","ref":"ml/papers/detection/ssd.md","articles":[]},{"title":"读论文系列·YOLOv2 & YOLOv3","level":"1.4.4.3.7","depth":4,"path":"ml/papers/detection/yolo23.md","ref":"ml/papers/detection/yolo23.md","articles":[]},{"title":"读论文系列·detection其他文章推荐","level":"1.4.4.3.8","depth":4,"path":"ml/papers/detection/other.md","ref":"ml/papers/detection/other.md","articles":[]}]},{"title":"Depth","level":"1.4.4.4","depth":3,"path":"ml/papers/mono_depth/README.md","ref":"ml/papers/mono_depth/README.md","articles":[]},{"title":"3D vision","level":"1.4.4.5","depth":3,"path":"ml/papers/3d_vision/README.md","ref":"ml/papers/3d_vision/README.md","articles":[{"title":"数据集相关","level":"1.4.4.5.1","depth":4,"path":"ml/papers/3d_vision/datasets.md","ref":"ml/papers/3d_vision/datasets.md","articles":[]},{"title":"光流相关","level":"1.4.4.5.2","depth":4,"path":"ml/papers/3d_vision/flow.md","ref":"ml/papers/3d_vision/flow.md","articles":[]}]},{"title":"Hashing","level":"1.4.4.6","depth":3,"path":"ml/papers/ssah/README.md","ref":"ml/papers/ssah/README.md","articles":[{"title":"CVPR2018: SSAH","level":"1.4.4.6.1","depth":4,"path":"ml/papers/ssah/ssah.md","ref":"ml/papers/ssah/ssah.md","articles":[]}]},{"title":"大杂烩","level":"1.4.4.7","depth":3,"path":"ml/papers/overview/README.md","ref":"ml/papers/overview/README.md","articles":[{"title":"CNCC2017 琐记","level":"1.4.4.7.1","depth":4,"path":"ml/papers/overview/cncc2017.md","ref":"ml/papers/overview/cncc2017.md","articles":[]},{"title":"ECCV 2016 Hydra CCNN","level":"1.4.4.7.2","depth":4,"path":"ml/papers/overview/eccv2016_hydra_ccnn.md","ref":"ml/papers/overview/eccv2016_hydra_ccnn.md","articles":[]},{"title":"CNCC2017深度学习与跨媒体智能","level":"1.4.4.7.3","depth":4,"path":"ml/papers/overview/cncc_cv.md","ref":"ml/papers/overview/cncc_cv.md","articles":[]},{"title":"MLA2016笔记","level":"1.4.4.7.4","depth":4,"path":"ml/papers/overview/mla_2016.md","ref":"ml/papers/overview/mla_2016.md","articles":[]}]}]},"previous":{"title":"Matlab","level":"1.4.3.6","depth":3,"path":"ml/kit/matlab/README.md","ref":"ml/kit/matlab/README.md","articles":[{"title":"Matlab Remote IPC自动化数据处理","level":"1.4.3.6.1","depth":4,"path":"ml/kit/matlab/ripc_auto.md","ref":"ml/kit/matlab/ripc_auto.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["disqus","github","toggle-chapters","mathjax","mermaid-gb3"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"disqus":{"useIdentifier":false,"shortName":"ahangchen-blog"},"github":{"url":"https://github.com/ahangchen/windy-afternoon"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"mathjax":{"forceSVG":false,"version":"2.6-latest"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"toggle-chapters":{}},"theme":"default","author":"陈伟航","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"梦里茶","gitbook":"*"},"file":{"path":"ml/kit/matlab/ripc_auto.md","mtime":"2021-10-01T05:22:58.993Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2021-10-03T02:53:02.684Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/URI.js/1.16.1/URI.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-disqus/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="https://cdn.staticfile.org/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-mathjax/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../../../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

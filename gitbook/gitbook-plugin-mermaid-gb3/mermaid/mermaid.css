@@ -12,9 +12,6 @@
   stroke: #CCCCFF;
   stroke-width: 1px;
 }
-.arrowheadPath {
-  fill: #333333;
-}
 .edgePath .path {
   stroke: #333333;
 }
@@ -253,85 +250,10 @@ text.actor {
   font-size: 18px;
   fill: black;
 }
-g.classGroup text {
-  fill: #9370DB;
-  stroke: none;
-  font-family: 'trebuchet ms', verdana, arial;
-  font-size: 10px;
-}
-g.classGroup rect {
-  fill: #ECECFF;
-  stroke: #9370DB;
-}
-g.classGroup line {
-  stroke: #9370DB;
-  stroke-width: 1;
-}
-svg .classLabel .box {
-  stroke: none;
-  stroke-width: 0;
-  fill: #ECECFF;
-  opacity: 0.5;
-}
-svg .classLabel .label {
-  fill: #9370DB;
-  font-size: 10px;
-}
-.relation {
-  stroke: #9370DB;
-  stroke-width: 1;
-  fill: none;
-}
-.composition {
-  fill: #9370DB;
-  stroke: #9370DB;
-  stroke-width: 1;
-}
-#compositionStart {
-  fill: #9370DB;
-  stroke: #9370DB;
-  stroke-width: 1;
-}
-#compositionEnd {
-  fill: #9370DB;
-  stroke: #9370DB;
-  stroke-width: 1;
-}
-.aggregation {
-  fill: #ECECFF;
-  stroke: #9370DB;
-  stroke-width: 1;
-}
-#aggregationStart {
-  fill: #ECECFF;
-  stroke: #9370DB;
-  stroke-width: 1;
-}
-#aggregationEnd {
-  fill: #ECECFF;
-  stroke: #9370DB;
-  stroke-width: 1;
-}
-#dependencyStart {
-  fill: #9370DB;
-  stroke: #9370DB;
-  stroke-width: 1;
-}
-#dependencyEnd {
-  fill: #9370DB;
-  stroke: #9370DB;
-  stroke-width: 1;
-}
-#extensionStart {
-  fill: #9370DB;
-  stroke: #9370DB;
-  stroke-width: 1;
-}
-#extensionEnd {
-  fill: #9370DB;
-  stroke: #9370DB;
-  stroke-width: 1;
-}
+/*
+
+
+*/
 .node text {
   font-family: 'trebuchet ms', verdana, arial;
   font-size: 14px;
